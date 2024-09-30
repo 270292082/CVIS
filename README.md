@@ -1,10 +1,7 @@
-# CVIS
-Covid Digital Reports
-
-SCENARIO A : NZ COVID Vaccine Information System 
+# SCENARIO A : NZ COVID Vaccine Information System 
 NZ government is developing a vaccine information system where users can view their COVID-19 records, including test and vaccine records. This will be called My Covid Record, including COVID-19 history records, test results, vaccine information, and digital vaccination certificates. This tool can generate a unique QR code that will display users' test and vaccination records for verification by other businesses. This tool will allow users to download digital vaccination and COVID-19 test certificates used in New Zealand and overseas.
 
-Requirements:
+### Requirements:
 The application can be implemented as a typical desktop, mobile, or cross-platform application. The students can choose their programming language and develop different UI designs. Following is the list of some of the functional requirements for the vaccine information system. The students are encouraged to do some research to identify further functional/non-functional requirements:
 
 1. Users should be able to create a new account or log into the system.
