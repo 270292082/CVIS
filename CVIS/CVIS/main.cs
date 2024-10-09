@@ -36,13 +36,13 @@
  *   getPatientVaccines() ; No input and output an list of strings (date).
  *   getPatientStat() ; No input and output the status of the patient in a string.
  *   getPatientStatQR() ; No input and output the status of the patient in a QR code.
- *   getPatientInfo() ; No input and output a list of strings.
+ *   getPatientInfo() ; No input and output a dictionary of strings.
  *   setPatientVaccines(var list) ; Receive a list of strings (date) as input and redefine the dataset with this list.
  *   setPatientStat(string stat) ; Receive a string (status of patient regarding the vaccination) and redefine the dataset with this string.
- *   setPatientInfo(var dict) ; Receive a dictionary as input and redefine the dataset with this list.
+ *   setPatientInfo(var dict) ; Receive a dictionary as input and redefine the dataset with this dictionary.
  *  
  *  
- *   getStaffInfo() ; No input and output an list of strings.
+ *   getStaffInfo() ; No input and output an dictionary of strings.
  *   getStaffReports() ; No input and output a list of "report" object.
  *   setStaffInfo(var dict) ; Receive a dictionary as input and redefine the dataset with it.
  *   setStaffReports(var list) ; Receive a list of "report" object and redefine the dataset with it.
@@ -52,7 +52,7 @@
  *   setModInfo(var dict) ; Receive a dictionary as input and redefine the dataset with this list.
  *  
  *  
- *   getAdminInfo() ; No input and output an list of strings.
+ *   getAdminInfo() ; No input and output a dictionary of strings.
  *   setAdminInfo(var dict) ; Receive a dictionary as input and redefine the dataset with this list.
  *  
  *  
