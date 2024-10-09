@@ -48,7 +48,7 @@
  *   setStaffReports(var list) ; Receive a list of "report" object and redefine the dataset with it.
  *  
  *  
- *   getModInfo() ; No input and output an list of strings.
+ *   getModInfo() ; No input and output a dictionary of strings.
  *   setModInfo(var dict) ; Receive a dictionary as input and redefine the dataset with this list.
  *  
  *  
