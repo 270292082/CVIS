@@ -91,7 +91,7 @@
  *   reset_passwd() ; Launch the password reset page for the logged user.
  *  
  *  
- *   login(string username, string passwd) ; Check if the credentials are into the dataset.
+ *   login() ; Launch the login page.
  *   register() ; Launch the register page for the user to input it's information.
  *   logout() ; Log out the logged user.
  */
