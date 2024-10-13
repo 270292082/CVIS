@@ -77,12 +77,14 @@ namespace CVIS
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            label1.Text = Patient.getVaccines("Jeremy")[1];
+            System.Diagnostics.Debug.WriteLine("Launching Function.");
+            label1.Text = Patient.getStatus(12345,0);
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
+
     }
 }

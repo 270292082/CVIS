@@ -17,30 +17,71 @@ namespace funcPatient
 {
     public class Patient
     {
-        public static List<string> getVaccines(string patient, int permission)
+        public static List<string> getVaccines(int patient, int permission)
         {
             List<string> vaccines = new List<string>();
 
-            if (!File.Exists(".data")) { return vaccines; }
+            if (!File.Exists(".data")) { return vaccines; } // Couldn't open the dataset, because doesn't exist.
 
             var data = JsonSerializer.Deserialize<Data>(File.ReadAllText(".data"));
-           
-            if (data == null ) { return vaccines; }
+            if (data == null ) { return vaccines; } // Couldn't open the dataset, permission issues or used by another process.
 
             foreach ( var p in data.Patients ) 
             {
-
-                vaccines = p.getVaccines(permission);
+                if (p.ID == patient) // Check if the iteration patient matches with the target.
+                {
+                    vaccines = p.getVaccines(permission);
+                    return vaccines;
+                }
             }
+            Console.WriteLine("Error: The patient wasn't found in the dataset!");
             return vaccines;
         }
 
-        public static string getStat()
+        public static string getStatus(int patient, int permission)
+        {
+            string result = string.Empty;
+
+            if (!File.Exists(".data")) { return result; } // Couldn't open the dataset, because doesn't exist.
+
+            var data = JsonSerializer.Deserialize<Data>(File.ReadAllText(".data"));
+            if (data == null ) { return result; } // Couldn't open the dataset, permission issues or used by another process.
+
+            foreach ( var p in data.Patients ) 
+            {
+                if (p.ID == patient) // Check if the iteration patient matches with the target.
+                {
+                    System.Diagnostics.Debug.WriteLine("Step 1 done");
+                    result = p.getStatus(permission);
+                    return result;
+                }
+            }
+
+            Console.WriteLine("Error: The patient wasn't found in the dataset!");
+            return result;
+        }
+        public static string getStatusQR(int patient, int permission)
         {
             string result = string.Empty;
             
+            if (!File.Exists(".data")) { return result; } // Couldn't open the dataset, because doesn't exist.
+
+            var data = JsonSerializer.Deserialize<Data>(File.ReadAllText(".data"));
+            if (data == null ) { return result; } // Couldn't open the dataset, permission issues or used by another process.
+
+            foreach ( var p in data.Patients ) 
+            {
+                if (p.ID == patient) // Check if the iteration patient matches with the target.
+                {
+                    result = p.getStatus(permission);
+                    return result;
+                }
+            }
+
+            Console.WriteLine("Error: The patient wasn't found in the dataset!");
             return result;
         }
+
 
     }
 }
