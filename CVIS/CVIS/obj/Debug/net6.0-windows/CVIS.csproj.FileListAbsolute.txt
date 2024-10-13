@@ -4,7 +4,6 @@ D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\bin\Debug\net6.0-wi
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.dll
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.pdb
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.csproj.AssemblyReference.cache
-D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Form1.resources
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.csproj.GenerateResource.cache
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.GeneratedMSBuildEditorConfig.editorconfig
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.AssemblyInfoInputs.cache
@@ -15,3 +14,4 @@ D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-wi
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.pdb
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.genruntimeconfig.cache
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\ref\CVIS.dll
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.main.resources
