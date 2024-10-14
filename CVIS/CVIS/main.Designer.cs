@@ -1,6 +1,6 @@
 ﻿namespace CVIS
 {
-    partial class main
+    partial class index
     {
         /// <summary>
         ///  Required designer variable.
@@ -19,7 +19,6 @@
             }
             base.Dispose(disposing);
         }
-
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -28,36 +27,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            SuspendLayout();
+            this.qrcode = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
-            // label1
+            // qrcode
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Consolas", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(14, 12);
-            label1.Name = "label1";
-            label1.Size = new Size(56, 18);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
-            label1.Click += label1_Click;
+            this.qrcode.AutoSize = true;
+            this.qrcode.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.qrcode.Location = new System.Drawing.Point(12, 9);
+            this.qrcode.Name = "qrcode";
+            this.qrcode.Size = new System.Drawing.Size(43, 13);
+            this.qrcode.TabIndex = 0;
+            this.qrcode.Text = "QRCode";
+            this.qrcode.Click += new System.EventHandler(this.qrcode_Click);
             // 
-            // main
+            // index
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
-            Controls.Add(label1);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "main";
-            Text = "CVIS";
-            Load += Form1_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.qrcode);
+            this.Name = "index";
+            this.Text = "CVIS";
+            this.Load += new System.EventHandler(this.index_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
-        private Label label1;
+        private Label qrcode;
     }
 }

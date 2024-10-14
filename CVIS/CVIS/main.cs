@@ -66,24 +66,33 @@
 
 
 using funcPatient;
+using System.Reflection.PortableExecutable;
+using System.Diagnostics;
+
 namespace CVIS
 {
-    public partial class main : Form
+    public partial class index : Form
     {
-        public main()
+        public index()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void main_Load(object sender, EventArgs e)
         {
-            label1.Text = Task.Run(async () => Patient.getStatusQR(654321, 0)).Result;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void qrcode_Click(object sender, EventArgs e)
         {
 
         }
 
+        private void index_Load(object sender, EventArgs e)
+        {
+            Debug.WriteLine("Hello");
+            string qrcode_content = Task.Run(async () => Patient.getStatusQR(654321, 0)).Result;
+            qrcode.Text = qrcode_content;
+
+        }
     }
 }
