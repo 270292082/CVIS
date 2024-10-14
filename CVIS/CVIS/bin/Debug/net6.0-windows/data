@@ -1,0 +1,29 @@
+{
+	"Patients": [
+	    {
+		"username": "alix0",
+		"passwd": "hellokitty",
+		"FirstName": "Alice",
+		"LastName": "Manjaro",
+		"Age": 30,
+		"ID": 123456,
+		"Phone": 649281,
+		"Email": "alice.manjaro@gmail.com",
+		"vaccines": [ "18/04/2004" ]
+	     },
+
+	     {
+		"username": "jdoe",
+		"passwd": "qwerty",
+		"FirstName": "John",
+		"LastName": "Doe",
+		"Age": 43,
+		"ID": 654321,
+		"Phone": 649281,
+		"Email": "john.doe@gmail.com",
+		"vaccines": [ "20/06/2014", "14/10/2018" ]
+	     }
+
+
+	]
+}

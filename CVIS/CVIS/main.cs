@@ -77,8 +77,7 @@ namespace CVIS
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine("Launching Function.");
-            label1.Text = Patient.getStatus(12345,0);
+            label1.Text = Task.Run(async () => Patient.getStatusQR(654321, 0)).Result;
         }
 
         private void label1_Click(object sender, EventArgs e)
