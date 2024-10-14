@@ -89,9 +89,14 @@ namespace CVIS
 
         private void index_Load(object sender, EventArgs e)
         {
-            Debug.WriteLine("Hello");
+            Debug.WriteLine("Generate QR");
             string qrcode_content = Task.Run(async () => Patient.getStatusQR(654321, 0)).Result;
+            if (qrcode_content == "")
+            {
+                Debug.WriteLine("Failed!");
+            }
             qrcode.Text = qrcode_content;
+
 
         }
     }

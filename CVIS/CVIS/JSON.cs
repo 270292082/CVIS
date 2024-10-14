@@ -60,29 +60,32 @@ namespace JSON
             // Launch a client ready for interaction with qr gen website.
             using (var client = new HttpClient())
             {
-                string url = "https://qrcode.show/";
-
-
-                // Specifies the message we want on the QR code.
-                if (vaccines.Count == 0) { url += "Non-Vaccinated"; }
-                if (vaccines.Count == 1) { url += "Partially"; }
-                if (vaccines.Count == 2) { url += "Vaccinated"; }
-
-
-                HttpResponseMessage response = await client.GetAsync(url); // Launch the get request on the website.
-
-                if (response.IsSuccessStatusCode)
+                try
                 {
+                    string url = "https://qrcode.show/";
+
+
+                    // Specifies the message we want on the QR code.
+                    if (vaccines.Count == 0) { url += "Non-Vaccinated"; }
+                    if (vaccines.Count == 1) { url += "Partially"; }
+                    if (vaccines.Count == 2) { url += "Vaccinated"; }
+
+
+                    HttpResponseMessage response = await client.GetAsync(url); // Launch the get request on the website.
+
                     string qrcode = await response.Content.ReadAsStringAsync(); // Convert the response into string.
+                    if (qrcode[0] != '█') return "";
                     return qrcode;
+
                 }
-                else
+                catch (Exception error) 
                 {
-                    Debug.WriteLine($"Error : Couldn't load the QR code ({response.StatusCode})");
+                    Debug.WriteLine($"\n!!! Error : Couldn't load the QR code !!! :\n{error}\n");
                     return "";
                 }
             }
         }
+
  
    }
 

@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(202, 207);
             this.Controls.Add(this.qrcode);
             this.Name = "index";
-            this.Text = "CVIS";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.index_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
