@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using System.Net.Http;
 using System.Diagnostics;
+using SysFunc;
 
 namespace JSON
 {
@@ -49,7 +50,7 @@ namespace JSON
             if (vaccines.Count == 2 ) { return "Vaccinated"; }
             return "";
         }
-        public async Task<string> getStatusQR(int permission)
+        public string getStatusQR(int permission)
         {
             if (permission > 3)
             {
@@ -57,36 +58,29 @@ namespace JSON
                 return "";
             }
 
-            // Launch a client ready for interaction with qr gen website.
-            using (var client = new HttpClient())
+            try
             {
-                try
-                {
-                    string url = "https://qrcode.show/";
+                string msg = string.Empty; 
+                // Specifies the message we want on the QR code.
+                if (vaccines.Count == 0) { msg = "Non-Vaccinated"; }
+                if (vaccines.Count == 1) { msg = "Partially"; }
+                if (vaccines.Count == 2) { msg = "Vaccinated"; }
+
+                string qrcode = QR.Gen(msg).Result;
 
 
-                    // Specifies the message we want on the QR code.
-                    if (vaccines.Count == 0) { url += "Non-Vaccinated"; }
-                    if (vaccines.Count == 1) { url += "Partially"; }
-                    if (vaccines.Count == 2) { url += "Vaccinated"; }
+                if (qrcode[0] != '█') return "";
+                return qrcode;
 
-
-                    HttpResponseMessage response = await client.GetAsync(url); // Launch the get request on the website.
-
-                    string qrcode = await response.Content.ReadAsStringAsync(); // Convert the response into string.
-                    if (qrcode[0] != '█') return "";
-                    return qrcode;
-
-                }
-                catch (Exception error) 
-                {
-                    Debug.WriteLine($"\n!!! Error : Couldn't load the QR code !!! :\n{error}\n");
-                    return "";
-                }
+            }
+            catch (Exception error) 
+            {
+                Debug.WriteLine($"\n!!! Error : Couldn't get the status !!! :\n{error}\n");
+                return "";
             }
         }
 
- 
+         
    }
 
     public class Staff

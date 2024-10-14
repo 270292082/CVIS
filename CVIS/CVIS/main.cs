@@ -68,6 +68,7 @@
 using funcPatient;
 using System.Reflection.PortableExecutable;
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 
 namespace CVIS
 {
@@ -89,15 +90,8 @@ namespace CVIS
 
         private void index_Load(object sender, EventArgs e)
         {
-            Debug.WriteLine("Generate QR");
             string qrcode_content = Task.Run(async () => Patient.getStatusQR(654321, 0)).Result;
-            if (qrcode_content == "")
-            {
-                Debug.WriteLine("Failed!");
-            }
-            qrcode.Text = qrcode_content;
-
-
+            Debug.WriteLine(qrcode_content);
         }
     }
 }

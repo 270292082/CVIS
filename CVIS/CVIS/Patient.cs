@@ -75,7 +75,7 @@ namespace funcPatient
             {
                 if (p.ID == patient) // Check if the iteration patient matches with the target.
                 {
-                    result = p.getStatusQR(permission).Result;
+                    result = p.getStatusQR(permission);
                     return result;
                 }
             }
