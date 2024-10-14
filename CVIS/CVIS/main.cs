@@ -65,7 +65,7 @@
  */
 
 
-using funcPatient;
+using PatientFunc;
 using System.Reflection.PortableExecutable;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
@@ -90,7 +90,7 @@ namespace CVIS
 
         private void index_Load(object sender, EventArgs e)
         {
-            string qrcode_content = Task.Run(async () => Patient.getStatusQR(654321, 0)).Result;
+            string qrcode_content = Task.Run(async () => PatientFunc.PatientFunc.getStatusQR(654321, 0)).Result;
             Debug.WriteLine(qrcode_content);
         }
     }
