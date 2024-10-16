@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QCm087ByWp4=",
+  "dgSpecHash": "FJar6+jB3RhGhBj6oY/c5M4hwJ4bcAZTquOeLavc7z5ZNgF8/6QbTvjJhySDucvp6nRMbSUnyyIbTtIzo2BlaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Thomas\\Desktop\\Schl\\106\\CVIS\\CVIS-main\\CVIS-main\\CVIS\\CVIS\\CVIS.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Thomas\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.35\\microsoft.windowsdesktop.app.ref.6.0.35.nupkg.sha512",
-    "C:\\Users\\Thomas\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.35\\microsoft.netcore.app.ref.6.0.35.nupkg.sha512",
-    "C:\\Users\\Thomas\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.35\\microsoft.aspnetcore.app.ref.6.0.35.nupkg.sha512",
-    "C:\\Users\\Thomas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.35\\microsoft.netcore.app.host.win-x64.6.0.35.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Users\\270292082\\OneDrive - UP Education\\Desktop\\CVIS-main\\CVIS-main\\CVIS\\CVIS\\CVIS.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

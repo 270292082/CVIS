@@ -46,7 +46,11 @@ D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.pdb
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.genruntimeconfig.cache
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\ref\CVIS.dll
-D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.index.resources
 C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Properties.Resources.resources
 C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Patient_Main.resources
 C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.main.resources
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.main.resources
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Patient_Main.resources
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Properties.Resources.resources
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Patient_Profile.resources
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Login.resources

@@ -28,31 +28,32 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
-            display = new Panel();
-            SuspendLayout();
+            this.display = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
             // 
             // display
             // 
-            display.Dock = DockStyle.Fill;
-            display.Location = new Point(0, 0);
-            display.Name = "display";
-            display.Size = new Size(754, 471);
-            display.TabIndex = 0;
-            display.Paint += display_Paint;
+            this.display.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.display.Location = new System.Drawing.Point(0, 0);
+            this.display.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.display.Name = "display";
+            this.display.Size = new System.Drawing.Size(654, 361);
+            this.display.TabIndex = 0;
             // 
             // main
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightCyan;
-            ClientSize = new Size(754, 471);
-            Controls.Add(display);
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "main";
-            Text = " ";
-            Load += main_Load;
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCyan;
+            this.ClientSize = new System.Drawing.Size(654, 361);
+            this.Controls.Add(this.display);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "main";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.main_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
