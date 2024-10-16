@@ -72,26 +72,31 @@ using System.Runtime.CompilerServices;
 
 namespace CVIS
 {
-    public partial class index : Form
+    public partial class main : Form
     {
-        public index()
+        public main()
         {
             InitializeComponent();
         }
 
         private void main_Load(object sender, EventArgs e)
         {
+            // string qrcode_content = Task.Run(async () => PatientFunc.PatientFunc.getStatusQR(654321, 0)).Result;
+            loadPage(new Patient_Main()); 
         }
 
-        private void qrcode_Click(object sender, EventArgs e)
+        private void loadPage(Form form)
         {
-
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            display.Controls.Clear();
+            display.Controls.Add(form);
+            form.Show();
         }
-
-        private void index_Load(object sender, EventArgs e)
+        private void display_Paint(object sender, PaintEventArgs e)
         {
-            string qrcode_content = Task.Run(async () => PatientFunc.PatientFunc.getStatusQR(654321, 0)).Result;
-            Debug.WriteLine(qrcode_content);
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace CVIS
 {
-    partial class index
+    partial class main
     {
         /// <summary>
         ///  Required designer variable.
@@ -27,36 +27,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.qrcode = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
+            display = new Panel();
+            SuspendLayout();
             // 
-            // qrcode
+            // display
             // 
-            this.qrcode.AutoSize = true;
-            this.qrcode.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.qrcode.Location = new System.Drawing.Point(12, 9);
-            this.qrcode.Name = "qrcode";
-            this.qrcode.Size = new System.Drawing.Size(43, 13);
-            this.qrcode.TabIndex = 0;
-            this.qrcode.Text = "QRCode";
-            this.qrcode.Click += new System.EventHandler(this.qrcode_Click);
+            display.Dock = DockStyle.Fill;
+            display.Location = new Point(0, 0);
+            display.Name = "display";
+            display.Size = new Size(754, 471);
+            display.TabIndex = 0;
+            display.Paint += display_Paint;
             // 
-            // index
+            // main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(202, 207);
-            this.Controls.Add(this.qrcode);
-            this.Name = "index";
-            this.Text = " ";
-            this.Load += new System.EventHandler(this.index_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightCyan;
+            ClientSize = new Size(754, 471);
+            Controls.Add(display);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "main";
+            Text = " ";
+            Load += main_Load;
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private Label qrcode;
+        private Panel display;
     }
 }
