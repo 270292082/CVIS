@@ -69,6 +69,7 @@ using PatientFunc;
 using System.Reflection.PortableExecutable;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
+using SysFunc;
 
 namespace CVIS
 {
@@ -82,18 +83,10 @@ namespace CVIS
         private void main_Load(object sender, EventArgs e)
         {
             // string qrcode_content = Task.Run(async () => PatientFunc.PatientFunc.getStatusQR(654321, 0)).Result;
-            loadPage(new Patient_Main()); 
+            Sys.loadPage(display, new Patient_Main()); 
         }
 
-        private void loadPage(Form form)
-        {
-            form.TopLevel = false;
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Dock = DockStyle.Fill;
-            display.Controls.Clear();
-            display.Controls.Add(form);
-            form.Show();
-        }
+        
         private void display_Paint(object sender, PaintEventArgs e)
         {
 

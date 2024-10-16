@@ -29,4 +29,16 @@ namespace SysFunc {
             }
         }
     }
+    public class Sys
+    {
+        public static void loadPage(Panel display, Form form)
+        {
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            display.Controls.Clear();
+            display.Controls.Add(form);
+            form.Show();
+        }
+    }
 }
