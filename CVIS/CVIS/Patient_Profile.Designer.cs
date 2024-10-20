@@ -33,6 +33,9 @@
             this.logo = new System.Windows.Forms.PictureBox();
             this.profile_picture = new System.Windows.Forms.PictureBox();
             this.content = new System.Windows.Forms.Panel();
+            this.position = new System.Windows.Forms.Label();
+            this.name_text = new System.Windows.Forms.Label();
+            this.patient_ID_text = new System.Windows.Forms.Label();
             this.settings = new System.Windows.Forms.PictureBox();
             this.info = new System.Windows.Forms.Panel();
             this.user_status = new System.Windows.Forms.Panel();
@@ -94,6 +97,9 @@
             // 
             // content
             // 
+            this.content.Controls.Add(this.position);
+            this.content.Controls.Add(this.name_text);
+            this.content.Controls.Add(this.patient_ID_text);
             this.content.Controls.Add(this.settings);
             this.content.Controls.Add(this.info);
             this.content.Controls.Add(this.user_status);
@@ -102,6 +108,33 @@
             this.content.Name = "content";
             this.content.Size = new System.Drawing.Size(630, 284);
             this.content.TabIndex = 7;
+            // 
+            // position
+            // 
+            this.position.AutoSize = true;
+            this.position.Location = new System.Drawing.Point(104, 57);
+            this.position.Name = "position";
+            this.position.Size = new System.Drawing.Size(44, 15);
+            this.position.TabIndex = 8;
+            this.position.Text = "Patient";
+            // 
+            // name_text
+            // 
+            this.name_text.AutoSize = true;
+            this.name_text.Location = new System.Drawing.Point(104, 42);
+            this.name_text.Name = "name_text";
+            this.name_text.Size = new System.Drawing.Size(47, 15);
+            this.name_text.TabIndex = 7;
+            this.name_text.Text = "[Name]";
+            // 
+            // patient_ID_text
+            // 
+            this.patient_ID_text.AutoSize = true;
+            this.patient_ID_text.Location = new System.Drawing.Point(104, 27);
+            this.patient_ID_text.Name = "patient_ID_text";
+            this.patient_ID_text.Size = new System.Drawing.Size(26, 15);
+            this.patient_ID_text.TabIndex = 6;
+            this.patient_ID_text.Text = "[ID]";
             // 
             // settings
             // 
@@ -138,11 +171,13 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Patient_Profile";
             this.Text = "Patient_Profile";
+            this.Load += new System.EventHandler(this.Patient_Profile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.profile)).EndInit();
             this.banner.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.profile_picture)).EndInit();
             this.content.ResumeLayout(false);
+            this.content.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.settings)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -159,5 +194,8 @@
         private Panel info;
         private Panel user_status;
         private PictureBox settings;
+        private Label position;
+        private Label name_text;
+        private Label patient_ID_text;
     }
 }

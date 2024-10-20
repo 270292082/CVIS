@@ -14,8 +14,8 @@ namespace JSON
    public class Patient
    {
         // ! Permission breach !
-        // Needs of fixing, but I don't know yet how to switch them to private without breaking the code
-        // (public functions amongst the Patient class don't have the permission to read for some reasons.)
+        //   Needs of fixing, but I don't know yet how to switch them to private without breaking the code
+        //   (public functions amongst the Patient class don't have the permission to read for some reasons.)
         public string username { get; set; } = string.Empty;
         public string passwd { get; set; } = string.Empty;
         public string FirstName { get; set; } = string.Empty;

@@ -83,7 +83,7 @@ namespace CVIS
         private void main_Load(object sender, EventArgs e)
         {
             // string qrcode_content = Task.Run(async () => PatientFunc.PatientFunc.getStatusQR(654321, 0)).Result;
-            Sys.loadPage(display, new Login()); 
+            Sys.loadPage(display, new Login(this)); 
         }
 
         
@@ -91,6 +91,8 @@ namespace CVIS
         {
 
         }
+
+        public Panel Display => display;
 
     }
 }

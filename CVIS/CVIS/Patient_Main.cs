@@ -12,9 +12,21 @@ namespace CVIS
 {
     public partial class Patient_Main : Form
     {
-        public Patient_Main()
-        {
+        // This variable is defined in order to interract with the component of main, in this case we want to interact with it's display to change pages.
+        private main _main;
+        public Patient_Main(main Main, JSON.Patient patient) {
             InitializeComponent();
+            _main = Main;
+        }
+
+        private void banner_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Patient_Main_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

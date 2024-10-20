@@ -1,9 +1,7 @@
-﻿using System;
-using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using System.Net.Http;
-using System.Diagnostics; 
+﻿using System.Text.Json;
+using System.Diagnostics;
+
+using JSON;
 
 namespace SysFunc {
 
@@ -39,6 +37,15 @@ namespace SysFunc {
             display.Controls.Clear();
             display.Controls.Add(form);
             form.Show();
+        }
+
+        public static JSON.Data readJSON(string data) {
+
+            if (!File.Exists(data)) { Debug.WriteLine("! ERROR ! : The file doesn't exist!");  return new JSON.Data(); }
+            var result = JsonSerializer.Deserialize<Data>(File.ReadAllText(data));
+
+            if (result == null) { return new JSON.Data(); }
+            return result;
         }
     }
 }

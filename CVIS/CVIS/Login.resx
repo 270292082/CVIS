@@ -5734,7 +5734,7 @@
         YII=
 </value>
   </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="login_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA10AAADHCAYAAADibjnnAAABgmlDQ1BJQ0MgcHJvZmlsZQAAKM+VkTlI
         A0EYhb8kiiIRBSOIWGwRrUyjIpYSRREUJIngVbi7MVHIrmE3wcZSsBUsPBqvwsZaWwtbQRA8QKwtrBRt

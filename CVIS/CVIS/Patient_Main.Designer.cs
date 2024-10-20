@@ -52,6 +52,7 @@
             this.banner.Name = "banner";
             this.banner.Size = new System.Drawing.Size(654, 60);
             this.banner.TabIndex = 5;
+            this.banner.Paint += new System.Windows.Forms.PaintEventHandler(this.banner_Paint);
             // 
             // logo
             // 
@@ -113,6 +114,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Patient_Main";
             this.Text = "Patient_Main";
+            this.Load += new System.EventHandler(this.Patient_Main_Load);
             this.banner.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.profile)).EndInit();
