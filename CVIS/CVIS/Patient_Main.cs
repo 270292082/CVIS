@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,16 +18,35 @@ namespace CVIS
         public Patient_Main(main Main, JSON.Patient patient) {
             InitializeComponent();
             _main = Main;
-        }
 
-        private void banner_Paint(object sender, PaintEventArgs e)
-        {
+            string info = string.Empty;
+            info += "Name : " + patient.FirstName + " " + patient.LastName + "\n\n";
+            info += "Age : " + patient.Age + "\n\n";
+            info += "Gender : " + patient.Gender + "\n\n";
 
+            string qrcode_content = Task.Run(async () => PatientFunc.PatientFunc.getStatusQR(patient.ID, 0)).Result;
+            qrcode_text.Text = qrcode_content;
+
+
+            info_text.Text = info;
+
+            vac_data.AllowUserToAddRows = false;
+
+            for (int i = 0; i < patient.getVaccines(0).Count; i++)
+            {
+                vac_data.Rows.Add(i, patient.getVaccines(i));
+                vac_data.Rows[i].Cells[0].Value = (i+1) + " Dose";
+                vac_data.Rows[i].Cells[1].Value = patient.vaccines_type[i];
+                vac_data.Rows[i].Cells[2].Value = patient.vaccines_lot[i];
+                vac_data.Rows[i].Cells[3].Value = patient.vaccines[i];
+                vac_data.Rows[i].Cells[4].Value = patient.vaccines_doctor[i];
+            }
         }
 
         private void Patient_Main_Load(object sender, EventArgs e)
         {
 
         }
+
     }
 }

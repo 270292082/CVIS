@@ -21,8 +21,23 @@ namespace CVIS
             InitializeComponent();
             _main = Main;
 
-            patient_ID_text.Text = patient.ID.ToString();
-            name_text.Text = patient.FirstName + " " + patient.LastName;
+            string info_msg = string.Empty;
+            info_msg += "Name : " + patient.FirstName + " " + patient.LastName + "\n\n";
+            info_msg += "Age : " + patient.Age + "\n\n";
+            info_msg += "Gender : " + patient.Gender + "\n\n";
+            info_msg += "ID Number : " + patient.ID + "\n\n";
+            info_msg += "Email Address : " + patient.Email + "\n\n";
+            info_msg += "Mobile Number : " + patient.Phone + "\n\n";
+            info_msg += "Address : " + patient.Address + "\n\n";
+
+            patient_ID_text.Text = "User ID : " + patient.ID.ToString();
+            info_text.Text = info_msg;
+
+            info_msg = string.Empty;
+            info_msg += "Name : " + patient.EmergencyContactName+ "\n";
+            info_msg += "Mobile Number : " + patient.EmergencyContactPhone + "\n";
+            info_msg += "Relation : " + patient.EmergencyContactRelation + "\n";
+            emergency_contact_text.Text = info_msg;
         }
 
         private void profile_Click(object sender, EventArgs e)
@@ -33,5 +48,6 @@ namespace CVIS
         private void Patient_Profile_Load(object sender, EventArgs e)
         {
         }
+
     }
 }

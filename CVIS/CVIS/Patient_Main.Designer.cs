@@ -32,11 +32,23 @@
             this.logo = new System.Windows.Forms.PictureBox();
             this.profile = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.vac_data = new System.Windows.Forms.DataGridView();
+            this.vaccination = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.manufacturer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lot_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dov = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vaccinator = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.qrcode_text = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.info_text = new System.Windows.Forms.Label();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profile)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vac_data)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // banner
@@ -52,7 +64,6 @@
             this.banner.Name = "banner";
             this.banner.Size = new System.Drawing.Size(654, 60);
             this.banner.TabIndex = 5;
-            this.banner.Paint += new System.Windows.Forms.PaintEventHandler(this.banner_Paint);
             // 
             // logo
             // 
@@ -78,27 +89,99 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.vac_data);
             this.panel2.Location = new System.Drawing.Point(12, 196);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(630, 148);
             this.panel2.TabIndex = 7;
             // 
+            // vac_data
+            // 
+            this.vac_data.BackgroundColor = System.Drawing.Color.LightCyan;
+            this.vac_data.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.vac_data.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.vac_data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vac_data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.vaccination,
+            this.manufacturer,
+            this.lot_number,
+            this.dov,
+            this.vaccinator});
+            this.vac_data.Location = new System.Drawing.Point(0, 3);
+            this.vac_data.Name = "vac_data";
+            this.vac_data.RowTemplate.Height = 25;
+            this.vac_data.Size = new System.Drawing.Size(627, 142);
+            this.vac_data.TabIndex = 0;
+            // 
+            // vaccination
+            // 
+            this.vaccination.HeaderText = "Vaccination";
+            this.vaccination.Name = "vaccination";
+            this.vaccination.Width = 120;
+            // 
+            // manufacturer
+            // 
+            this.manufacturer.HeaderText = "Manufacturer";
+            this.manufacturer.Name = "manufacturer";
+            this.manufacturer.Width = 120;
+            // 
+            // lot_number
+            // 
+            this.lot_number.HeaderText = "Lot Number";
+            this.lot_number.Name = "lot_number";
+            this.lot_number.Width = 120;
+            // 
+            // dov
+            // 
+            this.dov.HeaderText = "Date of Vaccination";
+            this.dov.Name = "dov";
+            this.dov.Width = 105;
+            // 
+            // vaccinator
+            // 
+            this.vaccinator.HeaderText = "Vaccinator";
+            this.vaccinator.Name = "vaccinator";
+            this.vaccinator.Width = 120;
+            // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(387, 64);
+            this.panel3.Controls.Add(this.qrcode_text);
+            this.panel3.Location = new System.Drawing.Point(515, 64);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(255, 127);
+            this.panel3.Size = new System.Drawing.Size(127, 127);
             this.panel3.TabIndex = 8;
+            // 
+            // qrcode_text
+            // 
+            this.qrcode_text.BackColor = System.Drawing.Color.LightCyan;
+            this.qrcode_text.Font = new System.Drawing.Font("Consolas", 3.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.qrcode_text.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.qrcode_text.Location = new System.Drawing.Point(0, 0);
+            this.qrcode_text.Name = "qrcode_text";
+            this.qrcode_text.Size = new System.Drawing.Size(127, 127);
+            this.qrcode_text.TabIndex = 0;
+            this.qrcode_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.info_text);
             this.panel1.Location = new System.Drawing.Point(12, 64);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(368, 127);
+            this.panel1.Size = new System.Drawing.Size(497, 127);
             this.panel1.TabIndex = 6;
+            // 
+            // info_text
+            // 
+            this.info_text.AutoSize = true;
+            this.info_text.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.info_text.Location = new System.Drawing.Point(4, 9);
+            this.info_text.Name = "info_text";
+            this.info_text.Size = new System.Drawing.Size(45, 20);
+            this.info_text.TabIndex = 0;
+            this.info_text.Text = "[Info]";
             // 
             // Patient_Main
             // 
@@ -118,6 +201,11 @@
             this.banner.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.profile)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.vac_data)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,5 +219,13 @@
         private Panel panel2;
         private Panel panel3;
         private Panel panel1;
+        private Label qrcode_text;
+        private Label info_text;
+        private DataGridView vac_data;
+        private DataGridViewTextBoxColumn vaccination;
+        private DataGridViewTextBoxColumn manufacturer;
+        private DataGridViewTextBoxColumn lot_number;
+        private DataGridViewTextBoxColumn dov;
+        private DataGridViewTextBoxColumn vaccinator;
     }
 }

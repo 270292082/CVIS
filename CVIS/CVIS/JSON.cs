@@ -21,10 +21,18 @@ namespace JSON
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
         public int Age { get; set; } = 0;
+        public string Gender { get; set; } = string.Empty;
         public int ID { get; set; } = 0;
         public int Phone { get; set; } = 0;
         public string Email { get; set; } = string.Empty;
+        public string Address { get; set; } = string.Empty;
         public List<string> vaccines { get; set; } = new List<string>();
+        public List<string> vaccines_type { get; set; } = new List<string>();
+        public List<string> vaccines_lot { get; set; } = new List<string>();
+        public List<string> vaccines_doctor { get; set; } = new List<string>();
+        public string EmergencyContactName { get; set; } = string.Empty;
+        public int EmergencyContactPhone { get; set; } = 0;
+        public string EmergencyContactRelation { get; set; } = string.Empty;
 
 
         public List<string> getVaccines(int permission)
@@ -55,11 +63,18 @@ namespace JSON
 
             try
             {
-                string msg = string.Empty; 
+                string msg = string.Empty;
+                msg += FirstName + "_" + LastName + "-";
+                foreach (string v in vaccines )
+                {
+                    msg += v + "_";
+                }
+                msg += "-";
+
                 // Specifies the message we want on the QR code.
-                if (vaccines.Count == 0) { msg = "Non-Vaccinated"; }
-                if (vaccines.Count == 1) { msg = "Partially"; }
-                if (vaccines.Count == 2) { msg = "Vaccinated"; }
+                if (vaccines.Count == 0) { msg += "Non-Vaccinated"; }
+                if (vaccines.Count == 1) { msg += "Partially"; }
+                if (vaccines.Count == 2) { msg += "Vaccinated"; }
 
                 string qrcode = QR.Gen(msg).Result;
 

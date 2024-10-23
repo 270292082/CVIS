@@ -37,12 +37,17 @@ namespace CVIS
             {
                 if (username_input.Text == patient.username && password_input.Text == patient.passwd)
                 {
-                    Sys.loadPage(_main.Display, new Patient_Profile(_main, patient));
+                    Sys.loadPage(_main.Display, new Patient_Main(_main, patient));
                 }
             }
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

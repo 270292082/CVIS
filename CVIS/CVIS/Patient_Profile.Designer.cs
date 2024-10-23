@@ -28,23 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Patient_Profile));
             this.profile = new System.Windows.Forms.PictureBox();
             this.banner = new System.Windows.Forms.Panel();
             this.logo = new System.Windows.Forms.PictureBox();
             this.profile_picture = new System.Windows.Forms.PictureBox();
             this.content = new System.Windows.Forms.Panel();
-            this.position = new System.Windows.Forms.Label();
-            this.name_text = new System.Windows.Forms.Label();
             this.patient_ID_text = new System.Windows.Forms.Label();
             this.settings = new System.Windows.Forms.PictureBox();
             this.info = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.emergency_edit_button = new System.Windows.Forms.Button();
+            this.emergency_contact_text = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.user_status = new System.Windows.Forms.Panel();
+            this.info_text = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.relevantdoc_text = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.profile)).BeginInit();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profile_picture)).BeginInit();
             this.content.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.settings)).BeginInit();
+            this.info.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.user_status.SuspendLayout();
             this.SuspendLayout();
             // 
             // profile
@@ -97,8 +108,6 @@
             // 
             // content
             // 
-            this.content.Controls.Add(this.position);
-            this.content.Controls.Add(this.name_text);
             this.content.Controls.Add(this.patient_ID_text);
             this.content.Controls.Add(this.settings);
             this.content.Controls.Add(this.info);
@@ -109,32 +118,14 @@
             this.content.Size = new System.Drawing.Size(630, 284);
             this.content.TabIndex = 7;
             // 
-            // position
-            // 
-            this.position.AutoSize = true;
-            this.position.Location = new System.Drawing.Point(104, 57);
-            this.position.Name = "position";
-            this.position.Size = new System.Drawing.Size(44, 15);
-            this.position.TabIndex = 8;
-            this.position.Text = "Patient";
-            // 
-            // name_text
-            // 
-            this.name_text.AutoSize = true;
-            this.name_text.Location = new System.Drawing.Point(104, 42);
-            this.name_text.Name = "name_text";
-            this.name_text.Size = new System.Drawing.Size(47, 15);
-            this.name_text.TabIndex = 7;
-            this.name_text.Text = "[Name]";
-            // 
             // patient_ID_text
             // 
             this.patient_ID_text.AutoSize = true;
             this.patient_ID_text.Location = new System.Drawing.Point(104, 27);
             this.patient_ID_text.Name = "patient_ID_text";
-            this.patient_ID_text.Size = new System.Drawing.Size(26, 15);
+            this.patient_ID_text.Size = new System.Drawing.Size(50, 15);
             this.patient_ID_text.TabIndex = 6;
-            this.patient_ID_text.Text = "[ID]";
+            this.patient_ID_text.Text = "User ID :";
             // 
             // settings
             // 
@@ -148,17 +139,110 @@
             // 
             // info
             // 
+            this.info.Controls.Add(this.relevantdoc_text);
+            this.info.Controls.Add(this.label2);
+            this.info.Controls.Add(this.label1);
+            this.info.Controls.Add(this.emergency_edit_button);
+            this.info.Controls.Add(this.emergency_contact_text);
+            this.info.Controls.Add(this.pictureBox2);
+            this.info.Controls.Add(this.pictureBox1);
             this.info.Location = new System.Drawing.Point(372, 87);
             this.info.Name = "info";
             this.info.Size = new System.Drawing.Size(255, 194);
             this.info.TabIndex = 4;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(10, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(235, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Emergency Contact";
+            // 
+            // emergency_edit_button
+            // 
+            this.emergency_edit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
+            this.emergency_edit_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("emergency_edit_button.BackgroundImage")));
+            this.emergency_edit_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.emergency_edit_button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
+            this.emergency_edit_button.FlatAppearance.BorderSize = 0;
+            this.emergency_edit_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
+            this.emergency_edit_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
+            this.emergency_edit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.emergency_edit_button.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.emergency_edit_button.Location = new System.Drawing.Point(10, 78);
+            this.emergency_edit_button.Name = "emergency_edit_button";
+            this.emergency_edit_button.Size = new System.Drawing.Size(235, 29);
+            this.emergency_edit_button.TabIndex = 3;
+            this.emergency_edit_button.Text = "Edit Emergency Contact";
+            this.emergency_edit_button.UseVisualStyleBackColor = false;
+            // 
+            // emergency_contact_text
+            // 
+            this.emergency_contact_text.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
+            this.emergency_contact_text.Location = new System.Drawing.Point(10, 29);
+            this.emergency_contact_text.Name = "emergency_contact_text";
+            this.emergency_contact_text.Size = new System.Drawing.Size(235, 46);
+            this.emergency_contact_text.TabIndex = 2;
+            this.emergency_contact_text.Text = "[Info]";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(3, 119);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(249, 75);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(249, 113);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // user_status
             // 
+            this.user_status.Controls.Add(this.info_text);
             this.user_status.Location = new System.Drawing.Point(3, 87);
             this.user_status.Name = "user_status";
             this.user_status.Size = new System.Drawing.Size(363, 194);
             this.user_status.TabIndex = 3;
+            // 
+            // info_text
+            // 
+            this.info_text.Location = new System.Drawing.Point(10, 9);
+            this.info_text.Name = "info_text";
+            this.info_text.Size = new System.Drawing.Size(348, 176);
+            this.info_text.TabIndex = 7;
+            this.info_text.Text = "[Info]";
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(10, 128);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(235, 19);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Relevant Documents";
+            // 
+            // relevantdoc_text
+            // 
+            this.relevantdoc_text.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
+            this.relevantdoc_text.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.relevantdoc_text.Location = new System.Drawing.Point(10, 147);
+            this.relevantdoc_text.Name = "relevantdoc_text";
+            this.relevantdoc_text.Size = new System.Drawing.Size(235, 42);
+            this.relevantdoc_text.TabIndex = 6;
+            this.relevantdoc_text.Text = "None";
             // 
             // Patient_Profile
             // 
@@ -179,6 +263,10 @@
             this.content.ResumeLayout(false);
             this.content.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.settings)).EndInit();
+            this.info.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.user_status.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,8 +282,14 @@
         private Panel info;
         private Panel user_status;
         private PictureBox settings;
-        private Label position;
-        private Label name_text;
+        private Label info_text;
         private Label patient_ID_text;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
+        private Label emergency_contact_text;
+        private Button emergency_edit_button;
+        private Label label1;
+        private Label relevantdoc_text;
+        private Label label2;
     }
 }
