@@ -30,7 +30,7 @@
         {
             this.banner = new System.Windows.Forms.Panel();
             this.logo = new System.Windows.Forms.PictureBox();
-            this.profile = new System.Windows.Forms.PictureBox();
+            this.profile_button = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.vac_data = new System.Windows.Forms.DataGridView();
             this.vaccination = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,7 +44,7 @@
             this.info_text = new System.Windows.Forms.Label();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.profile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.profile_button)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vac_data)).BeginInit();
             this.panel3.SuspendLayout();
@@ -58,7 +58,7 @@
             this.banner.AutoSize = true;
             this.banner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(136)))));
             this.banner.Controls.Add(this.logo);
-            this.banner.Controls.Add(this.profile);
+            this.banner.Controls.Add(this.profile_button);
             this.banner.Location = new System.Drawing.Point(0, 0);
             this.banner.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.banner.Name = "banner";
@@ -76,16 +76,17 @@
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
             // 
-            // profile
+            // profile_button
             // 
-            this.profile.Image = global::CVIS.Properties.Resources.profile_placeholder;
-            this.profile.Location = new System.Drawing.Point(570, 9);
-            this.profile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.profile.Name = "profile";
-            this.profile.Size = new System.Drawing.Size(72, 42);
-            this.profile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.profile.TabIndex = 1;
-            this.profile.TabStop = false;
+            this.profile_button.Image = global::CVIS.Properties.Resources.profile_placeholder;
+            this.profile_button.Location = new System.Drawing.Point(570, 9);
+            this.profile_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.profile_button.Name = "profile_button";
+            this.profile_button.Size = new System.Drawing.Size(72, 42);
+            this.profile_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.profile_button.TabIndex = 1;
+            this.profile_button.TabStop = false;
+            this.profile_button.Click += new System.EventHandler(this.profile_button_Click);
             // 
             // panel2
             // 
@@ -197,10 +198,9 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Patient_Main";
             this.Text = "Patient_Main";
-            this.Load += new System.EventHandler(this.Patient_Main_Load);
             this.banner.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.profile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.profile_button)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.vac_data)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -215,7 +215,7 @@
 
         private Panel banner;
         private PictureBox logo;
-        private PictureBox profile;
+        private PictureBox profile_button;
         private Panel panel2;
         private Panel panel3;
         private Panel panel1;

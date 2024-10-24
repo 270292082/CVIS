@@ -20,7 +20,7 @@ namespace JSON
         public string passwd { get; set; } = string.Empty;
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
-        public int Age { get; set; } = 0;
+        public string DOB { get; set; } = string.Empty;
         public string Gender { get; set; } = string.Empty;
         public int ID { get; set; } = 0;
         public int Phone { get; set; } = 0;

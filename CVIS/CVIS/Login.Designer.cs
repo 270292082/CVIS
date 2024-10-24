@@ -91,7 +91,6 @@
             this.password_input.PasswordChar = '*';
             this.password_input.Size = new System.Drawing.Size(269, 33);
             this.password_input.TabIndex = 2;
-            this.password_input.TextChanged += new System.EventHandler(this.password_input_TextChanged);
             // 
             // username_input
             // 
@@ -104,7 +103,6 @@
             this.username_input.Name = "username_input";
             this.username_input.Size = new System.Drawing.Size(269, 33);
             this.username_input.TabIndex = 1;
-            this.username_input.TextChanged += new System.EventHandler(this.username_input_TextChanged);
             // 
             // Login
             // 
@@ -116,7 +114,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -9,19 +9,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using SysFunc;
+
 namespace CVIS
 {
     public partial class Patient_Main : Form
     {
         // This variable is defined in order to interract with the component of main, in this case we want to interact with it's display to change pages.
         private main _main;
+        private JSON.Patient _patient;
         public Patient_Main(main Main, JSON.Patient patient) {
             InitializeComponent();
             _main = Main;
+            _patient = patient; 
 
             string info = string.Empty;
             info += "Name : " + patient.FirstName + " " + patient.LastName + "\n\n";
-            info += "Age : " + patient.Age + "\n\n";
+            info += "DOB : " + patient.DOB + "\n\n";
             info += "Gender : " + patient.Gender + "\n\n";
 
             string qrcode_content = Task.Run(async () => PatientFunc.PatientFunc.getStatusQR(patient.ID, 0)).Result;
@@ -43,10 +47,9 @@ namespace CVIS
             }
         }
 
-        private void Patient_Main_Load(object sender, EventArgs e)
+        private void profile_button_Click(object sender, EventArgs e)
         {
-
+            Sys.loadPage(_main.Display, new Patient_Profile(_main, _patient));
         }
-
     }
 }

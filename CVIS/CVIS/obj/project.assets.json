@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\270292082\\OneDrive - UP Education\\Desktop\\CVIS-main\\CVIS-main\\CVIS\\CVIS\\CVIS.csproj",
+      "projectUniqueName": "D:\\Users\\270292082\\Downloads\\CVIS-main\\CVIS-main\\CVIS\\CVIS\\CVIS.csproj",
       "projectName": "CVIS",
-      "projectPath": "D:\\Users\\270292082\\OneDrive - UP Education\\Desktop\\CVIS-main\\CVIS-main\\CVIS\\CVIS\\CVIS.csproj",
+      "projectPath": "D:\\Users\\270292082\\Downloads\\CVIS-main\\CVIS-main\\CVIS\\CVIS\\CVIS.csproj",
       "packagesPath": "D:\\Users\\270292082\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\270292082\\OneDrive - UP Education\\Desktop\\CVIS-main\\CVIS-main\\CVIS\\CVIS\\obj\\",
+      "outputPath": "D:\\Users\\270292082\\Downloads\\CVIS-main\\CVIS-main\\CVIS\\CVIS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

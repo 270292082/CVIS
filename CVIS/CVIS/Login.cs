@@ -15,16 +15,6 @@ namespace CVIS
             _main = Main;
         }
 
-        private void username_input_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void password_input_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void login_button_Click(object sender, EventArgs e)
         {
             var dataset = Sys.readJSON("data");
@@ -42,14 +32,5 @@ namespace CVIS
             }
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
