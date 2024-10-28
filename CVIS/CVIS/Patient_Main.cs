@@ -50,6 +50,8 @@ namespace CVIS
             display_nav.Size = new Size(251, 361);
             display_nav.Location = new Point(-251, 0);
             display_nav.Visible = true;
+
+            Sys.loadPage(display_nav, new Navigation(display_nav));
         }
 
         private void profile_button_Click(object sender, EventArgs e)
@@ -64,7 +66,8 @@ namespace CVIS
 
         private void logo_Click(object sender, EventArgs e)
         {
-            Sys.toggleNav(display_nav,1);
+            Sys.toggleNav(display_nav, 1);
         }
+
     }
 }

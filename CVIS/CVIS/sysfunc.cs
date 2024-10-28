@@ -31,7 +31,7 @@ namespace SysFunc {
     public class Sys
     {
 
-        private static System.Timers.Timer _timer = new System.Timers.Timer(10);
+        private static System.Timers.Timer _timer;
 
         public static void toggleNav(Panel display, int active=2)
         {
@@ -48,8 +48,14 @@ namespace SysFunc {
         {
             if (display.Location.X == 0) return;
 
-            // define a timer for executing command at each tick.
-            _timer.AutoReset = true;
+            Debug.WriteLine("Init Show");
+
+            // Clear the content of the timer.
+            _timer = new System.Timers.Timer(10);
+
+            // Set the timer actions.
+            _timer.AutoReset = true; 
+            _timer.Elapsed -= async (sender, e) => navTick(sender, e, display, 0);
             _timer.Elapsed += async (sender, e) => navTick(sender, e, display, 1);
             _timer.Enabled = true;
             _timer.Start();
@@ -59,9 +65,15 @@ namespace SysFunc {
         {
             if (display.Location.X == -251) return;
 
-            // define a timer for executing command at each tick.
+            Debug.WriteLine("Init Hide");
+
+            // Clear the content of the timer.
+            _timer = new System.Timers.Timer(10);
+
+            // Set the timer actions.
             _timer.AutoReset = true;
-            _timer.Elapsed += (sender, e) => navTick(sender, e, display, 0);
+            _timer.Elapsed -= async (sender, e) => navTick(sender, e, display, 1);
+            _timer.Elapsed += async (sender, e) => navTick(sender, e, display, 0);
             _timer.Enabled = true;
             _timer.Start();
         }
@@ -69,22 +81,21 @@ namespace SysFunc {
         private async static Task navTick(Object source, ElapsedEventArgs e, Panel display, int show)
         {
             int step = 10;
+
+            Debug.WriteLine(display.Location.X.ToString());
             if (show == 1)
             {
 
-                // ! ERROR !
-                // Doesn't perform the animation.
-                Debug.WriteLine("Hello");
-                Debug.WriteLine(display.Location.ToString());
-
-                // Show the navigation.
+                // Animation for showing the navigation.
+                Debug.WriteLine("Show");
                 if (display.Location.X >= -10) { display.Invoke(new Action(() => { display.Location = new Point(-10, 0); })); _timer.Stop(); }
                 display.Invoke(new Action(() => { display.Location = new Point(display.Location.X + step, 0); }));
             }
-            else
+            else if (show == 0)
             {
-                // Hide the navigation.
-                if (display.Location.X <= 0) { display.Invoke(new Action(() => { display.Location = new Point(-251, 0); })); display.Visible = false; _timer.Stop(); }
+                // Animation for hiding the navigation.
+                Debug.WriteLine("Hide");
+                if (display.Location.X <= -251) { display.Invoke(new Action(() => { display.Location = new Point(-251, 0); }));  _timer.Stop(); }
                 display.Invoke(new Action(() => { display.Location = new Point(display.Location.X - step, 0); }));
 
             }
