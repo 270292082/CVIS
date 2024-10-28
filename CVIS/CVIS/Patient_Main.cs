@@ -45,11 +45,26 @@ namespace CVIS
                 vac_data.Rows[i].Cells[3].Value = patient.vaccines[i];
                 vac_data.Rows[i].Cells[4].Value = patient.vaccines_doctor[i];
             }
+
+            // Set the position and size for the navigation panel.
+            display_nav.Size = new Size(251, 361);
+            display_nav.Location = new Point(-251, 0);
+            display_nav.Visible = true;
         }
 
         private void profile_button_Click(object sender, EventArgs e)
         {
             Sys.loadPage(_main.Display, new Patient_Profile(_main, _patient));
+        }
+
+        private void Patient_Main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+            Sys.toggleNav(display_nav,1);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Timers;
+using System.Text.Json;
 using System.Diagnostics;
 
 using JSON;
@@ -29,6 +30,66 @@ namespace SysFunc {
     }
     public class Sys
     {
+
+        private static System.Timers.Timer _timer = new System.Timers.Timer(10);
+
+        public static void toggleNav(Panel display, int active=2)
+        {
+            if (active == 2)
+            {
+                if (display.Location.X == -251 ) { showNav(display); }
+                else { hideNav(display); }
+            }
+            if (active == 1) { showNav(display); }
+            else if (active == 0) { hideNav(display); }
+        }
+
+        private static void showNav(Panel display)
+        {
+            if (display.Location.X == 0) return;
+
+            // define a timer for executing command at each tick.
+            _timer.AutoReset = true;
+            _timer.Elapsed += async (sender, e) => navTick(sender, e, display, 1);
+            _timer.Enabled = true;
+            _timer.Start();
+        }
+
+        private static void hideNav(Panel display)
+        {
+            if (display.Location.X == -251) return;
+
+            // define a timer for executing command at each tick.
+            _timer.AutoReset = true;
+            _timer.Elapsed += (sender, e) => navTick(sender, e, display, 0);
+            _timer.Enabled = true;
+            _timer.Start();
+        }
+
+        private async static Task navTick(Object source, ElapsedEventArgs e, Panel display, int show)
+        {
+            int step = 10;
+            if (show == 1)
+            {
+
+                // ! ERROR !
+                // Doesn't perform the animation.
+                Debug.WriteLine("Hello");
+                Debug.WriteLine(display.Location.ToString());
+
+                // Show the navigation.
+                if (display.Location.X >= -10) { display.Invoke(new Action(() => { display.Location = new Point(-10, 0); })); _timer.Stop(); }
+                display.Invoke(new Action(() => { display.Location = new Point(display.Location.X + step, 0); }));
+            }
+            else
+            {
+                // Hide the navigation.
+                if (display.Location.X <= 0) { display.Invoke(new Action(() => { display.Location = new Point(-251, 0); })); display.Visible = false; _timer.Stop(); }
+                display.Invoke(new Action(() => { display.Location = new Point(display.Location.X - step, 0); }));
+
+            }
+        }
+
         public static void loadPage(Panel display, Form form)
         {
             form.TopLevel = false;

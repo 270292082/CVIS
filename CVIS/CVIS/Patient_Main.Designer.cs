@@ -42,6 +42,7 @@
             this.qrcode_text = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.info_text = new System.Windows.Forms.Label();
+            this.display_nav = new System.Windows.Forms.Panel();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profile_button)).BeginInit();
@@ -75,6 +76,7 @@
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
+            this.logo.Click += new System.EventHandler(this.logo_Click);
             // 
             // profile_button
             // 
@@ -184,12 +186,20 @@
             this.info_text.TabIndex = 0;
             this.info_text.Text = "[Info]";
             // 
+            // display_nav
+            // 
+            this.display_nav.Location = new System.Drawing.Point(0, 0);
+            this.display_nav.Name = "display_nav";
+            this.display_nav.Size = new System.Drawing.Size(5, 361);
+            this.display_nav.TabIndex = 1;
+            // 
             // Patient_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(654, 361);
+            this.Controls.Add(this.display_nav);
             this.Controls.Add(this.banner);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
@@ -198,6 +208,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Patient_Main";
             this.Text = "Patient_Main";
+            this.Load += new System.EventHandler(this.Patient_Main_Load);
             this.banner.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.profile_button)).EndInit();
@@ -227,5 +238,6 @@
         private DataGridViewTextBoxColumn lot_number;
         private DataGridViewTextBoxColumn dov;
         private DataGridViewTextBoxColumn vaccinator;
+        private Panel display_nav;
     }
 }
