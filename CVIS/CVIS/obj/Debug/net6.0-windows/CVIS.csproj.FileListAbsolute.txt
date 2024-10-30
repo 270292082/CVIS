@@ -1,0 +1,79 @@
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.exe
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.deps.json
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.runtimeconfig.json
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.dll
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.pdb
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.csproj.AssemblyReference.cache
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.csproj.GenerateResource.cache
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.AssemblyInfoInputs.cache
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.AssemblyInfo.cs
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.csproj.CoreCompileInputs.cache
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.dll
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\refint\CVIS.dll
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.pdb
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.genruntimeconfig.cache
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\ref\CVIS.dll
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.main.resources
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.exe
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.deps.json
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.runtimeconfig.json
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.dll
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.pdb
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.csproj.GenerateResource.cache
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.AssemblyInfoInputs.cache
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.AssemblyInfo.cs
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.csproj.CoreCompileInputs.cache
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.dll
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\refint\CVIS.dll
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.pdb
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.genruntimeconfig.cache
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\ref\CVIS.dll
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.exe
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.deps.json
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.runtimeconfig.json
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.dll
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.pdb
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.csproj.AssemblyReference.cache
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.csproj.GenerateResource.cache
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.AssemblyInfoInputs.cache
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.AssemblyInfo.cs
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.csproj.CoreCompileInputs.cache
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.dll
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\refint\CVIS.dll
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.pdb
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.genruntimeconfig.cache
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\ref\CVIS.dll
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Properties.Resources.resources
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Patient_Main.resources
+C:\Users\Thomas\Desktop\Schl\106\CVIS\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.main.resources
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.main.resources
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Patient_Main.resources
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Properties.Resources.resources
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Patient_Profile.resources
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Login.resources
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.exe
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.deps.json
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.runtimeconfig.json
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.dll
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\CVIS.pdb
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.csproj.AssemblyReference.cache
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Login.resources
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.main.resources
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Patient_Main.resources
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Patient_Profile.resources
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Properties.Resources.resources
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.csproj.GenerateResource.cache
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.AssemblyInfoInputs.cache
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.AssemblyInfo.cs
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.csproj.CoreCompileInputs.cache
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.dll
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\refint\CVIS.dll
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.pdb
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.genruntimeconfig.cache
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\ref\CVIS.dll
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Navigation.resources
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Staff_Main.resources
