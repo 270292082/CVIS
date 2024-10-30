@@ -95,12 +95,16 @@ namespace JSON
 
     public class Staff
     {
-        private string FirstName { get; set; } = string.Empty;
-        private string LastName { get; set; } = string.Empty;
-        private int Age { get; set; } = 0;
+        public string username { get; set; } = string.Empty;
+        public string passwd { get; set; } = string.Empty;
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
+        public int Age { get; set; } = 0;
         public int ID { get; set; } = 0;
-        private int Phone { get; set; } = 0;
-        private string Email { get; set; } = string.Empty;
+        public int Phone { get; set; } = 0;
+        public string Email { get; set; } = string.Empty;
+        public string Address { get; set; } = string.Empty;
+
     }
 
     public class Mod

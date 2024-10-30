@@ -76,3 +76,4 @@ D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-wind
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.genruntimeconfig.cache
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\ref\CVIS.dll
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Navigation.resources
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Staff_Main.resources

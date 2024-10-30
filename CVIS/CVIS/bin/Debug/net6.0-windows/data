@@ -38,26 +38,20 @@
 		"EmergencyContactName": "Martin Blanchard",
 		"EmergencyContactPhone": 876832,
 		"EmergencyContactRelation": "Brother"
-	     },
-
+             }
+        ],
+        "Staffs": [
 	     {
 		"username": "wafton",
-		"passwd": "qwerty",
-		"FirstName": "John",
-		"LastName": "Doe",
-		"DOB": "05/02/1983",
+		"passwd": "mike",
+		"FirstName": "William",
+		"LastName": "Afton",
+		"DOB": "18/04/1983",
 		"Gender": "Male",
-		"ID": 654321,
+		"ID": 198321,
 		"Phone": 649281,
-		"Email": "john.doe@gmail.com",
-		"Address": "9 Madeira Lane, Grafton, Auckland 1023",
-		"vaccines": [ "20/06/2014", "14/10/2018" ],
-		"vaccines_type": [ "Pfizer", "mRNA" ],
-		"vaccines_lot" : [ "C4892A", "C8922A" ],
-                "vaccines_doctor": [ "Dr. Mikalow", "Dr. Shaman" ],
-		"EmergencyContactName": "Martin Blanchard",
-		"EmergencyContactPhone": 876832,
-		"EmergencyContactRelation": "Brother"
+		"Email": "william.afton@gmail.com",
+		"Address": "9 Madeira Lane, Grafton, Auckland 1023"
 	     }
 
 	]

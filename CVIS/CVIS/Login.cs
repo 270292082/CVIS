@@ -8,11 +8,11 @@ namespace CVIS
     public partial class Login : Form
     {
         // This variable is defined in order to interract with the component of main, in this case we want to interact with it's display to change pages.
-        private main _main;
-        public Login(main Main)
+        private Panel _display;
+        public Login(Panel display)
         {
             InitializeComponent();
-            _main = Main;
+            _display = display;
         }
 
         private void login_button_Click(object sender, EventArgs e)
@@ -27,9 +27,18 @@ namespace CVIS
             {
                 if (username_input.Text == patient.username && password_input.Text == patient.passwd)
                 {
-                    Sys.loadPage(_main.Display, new Patient_Main(_main, patient));
+                    Sys.loadPage(_display, new Patient_Main(_display, patient));
                 }
             }
+
+            foreach (var staff in dataset.Staffs)
+            {
+                if (username_input.Text == staff.username && password_input.Text == staff.passwd)
+                {
+                    Sys.loadPage(_display, new Staff_Main(_display, staff));
+                }
+            }
+
         }
 
         private void Login_Load(object sender, EventArgs e)

@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Patient_Profile));
             this.profile = new System.Windows.Forms.PictureBox();
             this.banner = new System.Windows.Forms.Panel();
+            this.menu_button = new System.Windows.Forms.PictureBox();
             this.logo_button = new System.Windows.Forms.PictureBox();
             this.profile_picture = new System.Windows.Forms.PictureBox();
             this.content = new System.Windows.Forms.Panel();
@@ -47,8 +48,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.user_status = new System.Windows.Forms.Panel();
             this.info_text = new System.Windows.Forms.Label();
+            this.display_nav = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.profile)).BeginInit();
             this.banner.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profile_picture)).BeginInit();
             this.content.SuspendLayout();
@@ -75,6 +78,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.banner.AutoSize = true;
             this.banner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(136)))));
+            this.banner.Controls.Add(this.menu_button);
             this.banner.Controls.Add(this.logo_button);
             this.banner.Controls.Add(this.profile);
             this.banner.Location = new System.Drawing.Point(0, 0);
@@ -83,13 +87,24 @@
             this.banner.Size = new System.Drawing.Size(654, 60);
             this.banner.TabIndex = 6;
             // 
+            // menu_button
+            // 
+            this.menu_button.Image = ((System.Drawing.Image)(resources.GetObject("menu_button.Image")));
+            this.menu_button.Location = new System.Drawing.Point(12, 10);
+            this.menu_button.Name = "menu_button";
+            this.menu_button.Size = new System.Drawing.Size(20, 40);
+            this.menu_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.menu_button.TabIndex = 8;
+            this.menu_button.TabStop = false;
+            this.menu_button.Click += new System.EventHandler(this.menu_button_Click);
+            // 
             // logo_button
             // 
             this.logo_button.Image = global::CVIS.Properties.Resources.logo_white;
-            this.logo_button.Location = new System.Drawing.Point(12, 8);
+            this.logo_button.Location = new System.Drawing.Point(38, 10);
             this.logo_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.logo_button.Name = "logo_button";
-            this.logo_button.Size = new System.Drawing.Size(131, 45);
+            this.logo_button.Size = new System.Drawing.Size(105, 40);
             this.logo_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo_button.TabIndex = 0;
             this.logo_button.TabStop = false;
@@ -255,19 +270,29 @@
             this.info_text.TabIndex = 7;
             this.info_text.Text = "[Info]";
             // 
+            // display_nav
+            // 
+            this.display_nav.Location = new System.Drawing.Point(0, 0);
+            this.display_nav.Name = "display_nav";
+            this.display_nav.Size = new System.Drawing.Size(5, 361);
+            this.display_nav.TabIndex = 9;
+            // 
             // Patient_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(654, 361);
+            this.Controls.Add(this.display_nav);
             this.Controls.Add(this.content);
             this.Controls.Add(this.banner);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Patient_Profile";
             this.Text = "Patient_Profile";
+            this.Load += new System.EventHandler(this.Patient_Profile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.profile)).EndInit();
             this.banner.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.menu_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.profile_picture)).EndInit();
             this.content.ResumeLayout(false);
@@ -301,5 +326,7 @@
         private Label label2;
         private Label qrcode_text;
         private Label vac_stat_text;
+        private PictureBox menu_button;
+        private Panel display_nav;
     }
 }

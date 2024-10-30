@@ -2,6 +2,7 @@
 using System.Text.Json;
 using System.Diagnostics;
 
+using CVIS;
 using JSON;
 
 namespace SysFunc {
@@ -28,6 +29,54 @@ namespace SysFunc {
             }
         }
     }
+
+    public class User
+    {
+        public static void Profile(Panel display, int ID) 
+        {
+            JSON.Data data = Sys.readJSON("data");
+            if (data == null) { Debug.WriteLine("! ERROR ! : The database cannot be accessed!"); return; }
+
+            // Search in the database the corresponding ID.
+
+            // Patients
+            foreach (var patient in data.Patients)
+            {
+                if (ID == patient.ID)
+                {
+                    Sys.loadPage(display, new Patient_Profile(display, patient));
+                }
+            }
+
+            // Staff
+            foreach (var staff in data.Staffs)
+            {
+                if(ID == staff.ID)
+                {
+                    // Launch the Staff Profile.
+                }
+            }
+
+            // Moderators
+            foreach (var mod in data.Mods)
+            {
+                if (ID == mod.ID)
+                {
+                    // Launch the Mod Profile.
+                }
+            }
+
+            // Admins
+            foreach (var admin in data.Admins)
+            {
+                if (ID == admin.ID)
+                {
+                    // Launch the Admin Profile.
+                }
+            }
+        }
+    }
+
     public class Sys
     {
 

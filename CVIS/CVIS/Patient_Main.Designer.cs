@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Patient_Main));
             this.banner = new System.Windows.Forms.Panel();
+            this.menu_button = new System.Windows.Forms.PictureBox();
             this.logo = new System.Windows.Forms.PictureBox();
             this.profile_button = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -44,6 +46,7 @@
             this.info_text = new System.Windows.Forms.Label();
             this.display_nav = new System.Windows.Forms.Panel();
             this.banner.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profile_button)).BeginInit();
             this.panel2.SuspendLayout();
@@ -58,6 +61,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.banner.AutoSize = true;
             this.banner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(136)))));
+            this.banner.Controls.Add(this.menu_button);
             this.banner.Controls.Add(this.logo);
             this.banner.Controls.Add(this.profile_button);
             this.banner.Location = new System.Drawing.Point(0, 0);
@@ -66,13 +70,24 @@
             this.banner.Size = new System.Drawing.Size(654, 60);
             this.banner.TabIndex = 5;
             // 
+            // menu_button
+            // 
+            this.menu_button.Image = ((System.Drawing.Image)(resources.GetObject("menu_button.Image")));
+            this.menu_button.Location = new System.Drawing.Point(12, 10);
+            this.menu_button.Name = "menu_button";
+            this.menu_button.Size = new System.Drawing.Size(20, 40);
+            this.menu_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.menu_button.TabIndex = 2;
+            this.menu_button.TabStop = false;
+            this.menu_button.Click += new System.EventHandler(this.menu_button_Click);
+            // 
             // logo
             // 
             this.logo.Image = global::CVIS.Properties.Resources.logo_white;
-            this.logo.Location = new System.Drawing.Point(12, 8);
+            this.logo.Location = new System.Drawing.Point(38, 10);
             this.logo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(131, 45);
+            this.logo.Size = new System.Drawing.Size(105, 40);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
@@ -210,6 +225,7 @@
             this.Text = "Patient_Main";
             this.Load += new System.EventHandler(this.Patient_Main_Load);
             this.banner.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.menu_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.profile_button)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -239,5 +255,6 @@
         private DataGridViewTextBoxColumn dov;
         private DataGridViewTextBoxColumn vaccinator;
         private Panel display_nav;
+        private PictureBox menu_button;
     }
 }

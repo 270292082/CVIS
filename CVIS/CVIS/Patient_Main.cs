@@ -16,11 +16,11 @@ namespace CVIS
     public partial class Patient_Main : Form
     {
         // This variable is defined in order to interract with the component of main, in this case we want to interact with it's display to change pages.
-        private main _main;
+        private Panel _display;
         private JSON.Patient _patient;
-        public Patient_Main(main Main, JSON.Patient patient) {
+        public Patient_Main(Panel display, JSON.Patient patient) {
             InitializeComponent();
-            _main = Main;
+            _display = display;
             _patient = patient; 
 
             string info = string.Empty;
@@ -50,13 +50,12 @@ namespace CVIS
             display_nav.Size = new Size(251, 361);
             display_nav.Location = new Point(-251, 0);
             display_nav.Visible = true;
-
-            Sys.loadPage(display_nav, new Navigation(display_nav));
+            Sys.loadPage(display_nav, new Navigation(_display, display_nav));
         }
 
         private void profile_button_Click(object sender, EventArgs e)
         {
-            Sys.loadPage(_main.Display, new Patient_Profile(_main, _patient));
+            Sys.loadPage(_display, new Patient_Profile(_display, _patient));
         }
 
         private void Patient_Main_Load(object sender, EventArgs e)
@@ -66,8 +65,12 @@ namespace CVIS
 
         private void logo_Click(object sender, EventArgs e)
         {
-            Sys.toggleNav(display_nav, 1);
+
         }
 
+        private void menu_button_Click(object sender, EventArgs e)
+        {
+            Sys.toggleNav(display_nav, 1);
+        }
     }
 }
