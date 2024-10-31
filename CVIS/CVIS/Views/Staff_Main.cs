@@ -46,16 +46,12 @@ namespace CVIS
             display_nav.Visible = true;
             Sys.loadPage(display_nav, new Navigation(_display, display_nav));
 
+            
         }
 
         private void scan_qr_button_Click(object sender, EventArgs e)
         {
             MessageBox.Show("No scanners were detected!", "ERROR!");
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
         }
 
         private void menu_button_Click(object sender, EventArgs e)
