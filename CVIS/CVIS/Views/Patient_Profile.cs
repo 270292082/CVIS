@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +18,8 @@ namespace CVIS
         // This variable is defined in order to interract with the component of main, in this case we want to interact with it's display to change pages.
         private Panel _page_display;
         private JSON.Patient _patient;
+        public Panel QRCode_Display => qrcode_display;
+
         public Patient_Profile(Panel page_display, JSON.Patient patient)
         {
             InitializeComponent();
@@ -49,7 +52,14 @@ namespace CVIS
             display_nav.Size = new Size(251, 361);
             display_nav.Location = new Point(-251, 0);
             display_nav.Visible = true;
-            Sys.loadPage(display_nav, new Navigation_Patient(page_display, this, display_nav));
+            Sys.loadPage(display_nav, new Navigation_Patient(page_display, qrcode_display, display_nav, patient));
+
+
+            // Set the position and size for the qrcode display panel.
+            qrcode_display.Visible = true;
+            qrcode_display.Size = new Size(249, 311);
+            qrcode_display.Location = new Point(0, 1000);
+            Sys.loadPage(qrcode_display, new QR_Code_Form(qrcode_display, patient));
 
 
         }
@@ -72,6 +82,5 @@ namespace CVIS
             Sys.toggleNav(display_nav, 1);
         }
 
-        
     }
 }

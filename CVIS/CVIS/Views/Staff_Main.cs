@@ -41,9 +41,9 @@ namespace CVIS
 
 
             // Set the position and size for the navigation panel.
-            display_nav.Size = new Size(251, 361);
-            display_nav.Location = new Point(-251, 0);
-            display_nav.Visible = true;
+            // display_nav.Size = new Size(251, 361);
+            // display_nav.Location = new Point(-251, 0);
+            // display_nav.Visible = true;
             //Sys.loadPage(display_nav, new Navigation_Staff(_display, display_nav));       Navigation_Staff needs to be defined!
 
             
@@ -56,7 +56,7 @@ namespace CVIS
 
         private void menu_button_Click(object sender, EventArgs e)
         {
-            Sys.toggleNav(display_nav, 1);
+            //Sys.toggleNav(display_nav, 1);
         }
     }
 }

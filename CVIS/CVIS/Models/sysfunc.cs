@@ -97,8 +97,6 @@ namespace SysFunc {
         {
             if (display.Location.X == 0) return;
 
-            Debug.WriteLine("Init Show");
-
             // Clear the content of the timer.
             _timer = new System.Timers.Timer(10);
 
@@ -113,8 +111,6 @@ namespace SysFunc {
         private static void hideNav(Panel display)
         {
             if (display.Location.X == -251) return;
-
-            Debug.WriteLine("Init Hide");
 
             // Clear the content of the timer.
             _timer = new System.Timers.Timer(10);
@@ -131,19 +127,16 @@ namespace SysFunc {
         {
             int step = 10;
 
-            Debug.WriteLine(display.Location.X.ToString());
             if (show == 1)
             {
 
                 // Animation for showing the navigation.
-                Debug.WriteLine("Show");
                 if (display.Location.X >= -10) { display.Invoke(new Action(() => { display.Location = new Point(-10, 0); })); _timer.Stop(); }
                 display.Invoke(new Action(() => { display.Location = new Point(display.Location.X + step, 0); }));
             }
             else if (show == 0)
             {
                 // Animation for hiding the navigation.
-                Debug.WriteLine("Hide");
                 if (display.Location.X <= -251) { display.Invoke(new Action(() => { display.Location = new Point(-251, 0); }));  _timer.Stop(); }
                 display.Invoke(new Action(() => { display.Location = new Point(display.Location.X - step, 0); }));
 

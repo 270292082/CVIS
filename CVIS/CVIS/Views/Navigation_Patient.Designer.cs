@@ -111,6 +111,7 @@
             this.profile_button2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.profile_button2.TabIndex = 7;
             this.profile_button2.TabStop = false;
+            this.profile_button2.Click += new System.EventHandler(this.profile_button2_Click);
             // 
             // pictureBox3
             // 
@@ -196,7 +197,7 @@
             this.close_button.TabStop = false;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
             // 
-            // Navigation
+            // Navigation_Patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -206,7 +207,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.logo_button);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Navigation";
+            this.Name = "Navigation_Patient";
             this.Text = "Navigation";
             ((System.ComponentModel.ISupportInitialize)(this.logo_button)).EndInit();
             this.panel1.ResumeLayout(false);

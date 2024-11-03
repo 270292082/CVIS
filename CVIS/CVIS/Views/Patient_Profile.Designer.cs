@@ -49,6 +49,7 @@
             this.user_status = new System.Windows.Forms.Panel();
             this.info_text = new System.Windows.Forms.Label();
             this.display_nav = new System.Windows.Forms.Panel();
+            this.qrcode_display = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.profile)).BeginInit();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
@@ -277,12 +278,20 @@
             this.display_nav.Size = new System.Drawing.Size(5, 361);
             this.display_nav.TabIndex = 9;
             // 
+            // qrcode_display
+            // 
+            this.qrcode_display.Location = new System.Drawing.Point(554, 10);
+            this.qrcode_display.Name = "qrcode_display";
+            this.qrcode_display.Size = new System.Drawing.Size(11, 41);
+            this.qrcode_display.TabIndex = 10;
+            // 
             // Patient_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(654, 361);
+            this.Controls.Add(this.qrcode_display);
             this.Controls.Add(this.display_nav);
             this.Controls.Add(this.content);
             this.Controls.Add(this.banner);
@@ -328,5 +337,6 @@
         private Label vac_stat_text;
         private PictureBox menu_button;
         private Panel display_nav;
+        private Panel qrcode_display;
     }
 }

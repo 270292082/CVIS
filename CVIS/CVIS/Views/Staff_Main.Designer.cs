@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff_Main));
-            this.display_nav = new System.Windows.Forms.Panel();
             this.banner = new System.Windows.Forms.Panel();
             this.menu_button = new System.Windows.Forms.PictureBox();
             this.logo_button = new System.Windows.Forms.PictureBox();
@@ -107,13 +106,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // display_nav
-            // 
-            this.display_nav.Location = new System.Drawing.Point(0, 0);
-            this.display_nav.Name = "display_nav";
-            this.display_nav.Size = new System.Drawing.Size(5, 361);
-            this.display_nav.TabIndex = 11;
             // 
             // banner
             // 
@@ -644,7 +636,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(654, 361);
-            this.Controls.Add(this.display_nav);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.banner);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -677,8 +668,6 @@
         }
 
         #endregion
-
-        private Panel display_nav;
         private Panel banner;
         private PictureBox menu_button;
         private PictureBox logo_button;

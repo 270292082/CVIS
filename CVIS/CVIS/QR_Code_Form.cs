@@ -27,7 +27,7 @@ namespace CVIS
         {
             qr_code_text.Text = await _patient.getStatusQR();
             user_name_text.Text = _patient.FirstName + " " + _patient.LastName;
-            user_id_text.Text += _patient.ID;
+            user_id_text.Text = _patient.ID.ToString();
         }
 
         private async void QR_Code_Form_Load(object sender, EventArgs e)
@@ -36,9 +36,7 @@ namespace CVIS
         }
         private void cross_button_Click(object sender, EventArgs e)
         {
-            
+            _display.Location = new Point(0, 1000);
         }
-
-        
     }
 }
