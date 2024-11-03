@@ -7,7 +7,6 @@ D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-wind
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Properties.Resources.resources
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Login.resources
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.main.resources
-D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Navigation.resources
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Patient_Main.resources
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Patient_Profile.resources
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Staff_Main.resources
@@ -21,3 +20,5 @@ D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-wind
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.pdb
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.genruntimeconfig.cache
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\ref\CVIS.dll
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.QR_Code_Form.resources
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Navigation_Patient.resources

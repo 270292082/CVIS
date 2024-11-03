@@ -4,13 +4,16 @@
     <_LastSelectedProfileId>D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="QR_Code_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\Navigation.cs">
+    <Compile Update="Views\Navigation_Patient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Patient_Main.cs">
