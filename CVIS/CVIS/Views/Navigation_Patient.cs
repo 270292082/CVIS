@@ -30,6 +30,7 @@ namespace CVIS
 
         private void logo_button_Click(object sender, EventArgs e)
         {
+            Sys.loadPage(_page_display, new Patient_Main(_page_display, _patient));
         }
 
         private void close_button_Click(object sender, EventArgs e)
@@ -66,6 +67,14 @@ namespace CVIS
             _qrcode_display.Location = new Point(202, 25);
         }
 
-        
+        private void settings_button1_Click(object sender, EventArgs e)
+        {
+            Sys.loadPage(_page_display, new Patient_Settings(_page_display, _patient));
+        }
+
+        private void settings_button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

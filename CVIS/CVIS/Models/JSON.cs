@@ -30,7 +30,8 @@ namespace JSON
         public List<string> vaccines_type { get; set; } = new List<string>();
         public List<string> vaccines_lot { get; set; } = new List<string>();
         public List<string> vaccines_doctor { get; set; } = new List<string>();
-        public string EmergencyContactName { get; set; } = string.Empty;
+        public string EmergencyContactFirstName { get; set; } = string.Empty;
+        public string EmergencyContactLastName { get; set; } = string.Empty;
         public int EmergencyContactPhone { get; set; } = 0;
         public string EmergencyContactRelation { get; set; } = string.Empty;
 

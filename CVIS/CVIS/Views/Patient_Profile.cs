@@ -39,7 +39,7 @@ namespace CVIS
             info_text.Text = info_msg;
 
             info_msg = string.Empty;
-            info_msg += "Name : " + patient.EmergencyContactName+ "\n";
+            info_msg += "Name : " + patient.EmergencyContactFirstName+ " " + patient.EmergencyContactLastName + "\n";
             info_msg += "Mobile Number : " + patient.EmergencyContactPhone + "\n";
             info_msg += "Relation : " + patient.EmergencyContactRelation + "\n";
             emergency_contact_text.Text = info_msg;

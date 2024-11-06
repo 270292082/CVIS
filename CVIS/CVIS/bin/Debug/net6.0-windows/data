@@ -15,7 +15,8 @@
 		"vaccines_type": [ "Pfizer" ],
 		"vaccines_lot" : [ "C4892A" ],
 		"vaccines_doctor": [ "Dr. Misha" ],
-		"EmergencyContactName": "Florence Marshall",
+		"EmergencyContactFirstName": "Florence",
+                "EmergencyContactLastName": "Marshall",
 		"EmergencyContactPhone": 122365,
 		"EmergencyContactRelation": "Flatmate"
 	     },
@@ -35,7 +36,8 @@
 		"vaccines_type": [ "Pfizer", "mRNA" ],
 		"vaccines_lot" : [ "C4892A", "C8922A" ],
                 "vaccines_doctor": [ "Dr. Mikalow", "Dr. Shaman" ],
-		"EmergencyContactName": "Martin Blanchard",
+		"EmergencyContactFirstName": "Martin",
+                "EmergencyContactLastName": "Blanchard",
 		"EmergencyContactPhone": 876832,
 		"EmergencyContactRelation": "Brother"
              }
