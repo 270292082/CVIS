@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "EvLwCEElPGiX76fAtYuO/tvLsJjansoIbsdAG8EOsDdcqipHqVfVY1nMS/9on9vjqjW+HHGzaftxNd3CfjGGRQ==",
+  "dgSpecHash": "TFOhaM4j57PQsuzO+AtMsmOTJnZFQwB/4sRDOTF2p0aaQ2mGU2vYk+y/ZSJEXkG/wsXhubQQKEHrb+vbpW9TdQ==",
   "success": true,
   "projectFilePath": "D:\\Users\\270292082\\Downloads\\CVIS-main\\CVIS-main\\CVIS\\CVIS\\CVIS.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "D:\\Users\\270292082\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "D:\\Users\\270292082\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "D:\\Users\\270292082\\.nuget\\packages\\npgsql\\8.0.5\\npgsql.8.0.5.nupkg.sha512",
+    "D:\\Users\\270292082\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "D:\\Users\\270292082\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "D:\\Users\\270292082\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "D:\\Users\\270292082\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,9 +1,13 @@
 ﻿using System.Timers;
 using System.Text.Json;
 using System.Diagnostics;
+using System.Data.SqlClient;
 
 using CVIS;
 using JSON;
+
+using Npgsql;
+using System.Data;
 
 namespace SysFunc {
 
@@ -32,7 +36,7 @@ namespace SysFunc {
 
     public class User
     {
-        public static void Profile(Panel page_display, Form page, int ID) 
+        public static void Profile(Panel page_display, Form page, string ID) 
         {
             JSON.Data data = Sys.readJSON("data");
             if (data == null) { Debug.WriteLine("! ERROR ! : The database cannot be accessed!"); return; }
@@ -75,6 +79,41 @@ namespace SysFunc {
                 }
             }
         }
+    }
+
+    public class DATABASE
+    {
+        // !!! THE FUNCTION OF THE CLASS 'DATABASE' ARE UNDER MAINTENANCE !!!
+        public static NpgsqlDataAdapter sendQuery(string query)
+        {
+            NpgsqlDataAdapter result = new NpgsqlDataAdapter();
+
+            //string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=123456789abc;Database=CVIS;";
+            string connectionString = "Data Source=C:\\Program Files\\SQLiteStudio\\CVIS-Database;Version=3;";
+            using (var connection = new NpgsqlConnection(connectionString))
+            {
+                connection.Open();
+                using (var output = new NpgsqlDataAdapter(query, connection))
+                {
+                    Debug.WriteLine(output.ToString());
+                }
+            }
+            return result;
+        }
+        public static Patient getPatient(string ID)
+        {
+            Patient patient = new Patient();
+
+            // Some code here to get request from SQL database.
+            string query = "SELECT * FROM Patients";
+            sendQuery(query);
+
+            return patient;
+
+        }
+
+        
+
     }
 
     public class Sys

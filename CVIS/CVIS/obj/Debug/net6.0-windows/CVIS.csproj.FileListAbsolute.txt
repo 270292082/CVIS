@@ -23,3 +23,11 @@ D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-wind
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.QR_Code_Form.resources
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Navigation_Patient.resources
 D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Patient_Settings.resources
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\Npgsql.dll
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\System.Text.Json.dll
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Users\270292082\Downloads\CVIS-main\CVIS-main\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.csproj.CopyComplete

@@ -22,7 +22,7 @@ namespace JSON
         public string LastName { get; set; } = string.Empty;
         public string DOB { get; set; } = string.Empty;
         public string Gender { get; set; } = string.Empty;
-        public int ID { get; set; } = 0;
+        public string ID { get; set; } = string.Empty;
         public int Phone { get; set; } = 0;
         public string Email { get; set; } = string.Empty;
         public string Address { get; set; } = string.Empty;
@@ -95,7 +95,7 @@ namespace JSON
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
         public int Age { get; set; } = 0;
-        public int ID { get; set; } = 0;
+        public string ID { get; set; } = string.Empty;
         public int Phone { get; set; } = 0;
         public string Email { get; set; } = string.Empty;
         public string Address { get; set; } = string.Empty;
@@ -107,7 +107,7 @@ namespace JSON
         private string FirstName { get; set; } = string.Empty;
         private string LastName { get; set; } = string.Empty;
         private int Age { get; set; } = 0;
-        public int ID { get; set; } = 0;
+        public string ID { get; set; } = string.Empty;
         private int Phone { get; set; } = 0;
         private string Email { get; set; } = string.Empty;
     }
@@ -116,7 +116,7 @@ namespace JSON
         private string FirstName { get; set; } = string.Empty;
         private string LastName { get; set; } = string.Empty;
         private int Age { get; set; } = 0;
-        public int ID { get; set; } = 0;
+        public string ID { get; set; } = string.Empty;
         private int Phone { get; set; } = 0;
         private string Email { get; set; } = string.Empty;
     }
