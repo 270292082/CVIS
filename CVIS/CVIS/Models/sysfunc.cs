@@ -1,14 +1,11 @@
 ﻿using System.Timers;
 using System.Text.Json;
 using System.Diagnostics;
-using System.Data.SqlClient;
 
 using CVIS;
 using JSON;
 
 using Microsoft.Data.Sqlite;
-using System.Data;
-using Npgsql.Replication;
 
 namespace SysFunc {
 
