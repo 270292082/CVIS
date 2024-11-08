@@ -6,8 +6,9 @@ using System.Data.SqlClient;
 using CVIS;
 using JSON;
 
-using Npgsql;
+using Microsoft.Data.Sqlite;
 using System.Data;
+using Npgsql.Replication;
 
 namespace SysFunc {
 
@@ -84,21 +85,33 @@ namespace SysFunc {
     public class DATABASE
     {
         // !!! THE FUNCTION OF THE CLASS 'DATABASE' ARE UNDER MAINTENANCE !!!
-        public static NpgsqlDataAdapter sendQuery(string query)
+        public static List<string> sendQuery(string query)
         {
-            NpgsqlDataAdapter result = new NpgsqlDataAdapter();
+            List<string> result = new List<string>();
 
             //string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=123456789abc;Database=CVIS;";
-            string connectionString = "Data Source=C:\\Program Files\\SQLiteStudio\\CVIS-Database;Version=3;";
-            using (var connection = new NpgsqlConnection(connectionString))
+            string connectionString = "Data Source=C:\\Users\\Thomas\\Downloads\\CVIS-main\\CVIS-main\\DATABASE\\CVIS-DATABASE.db";
+            using (var connection = new SqliteConnection(connectionString))
             {
                 connection.Open();
-                using (var output = new NpgsqlDataAdapter(query, connection))
+                
+                var command = connection.CreateCommand();
+                command.CommandText = query;
+
+                using (var output = command.ExecuteReader())
                 {
-                    Debug.WriteLine(output.ToString());
+                    while (output.Read())
+                    {
+                        result.Add(output.GetString(0));
+                        Debug.WriteLine(output.GetString(0));
+                    }
+
                 }
+
             }
+
             return result;
+
         }
         public static Patient getPatient(string ID)
         {
