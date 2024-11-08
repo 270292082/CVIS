@@ -81,10 +81,9 @@ namespace SysFunc {
 
     public class DATABASE
     {
-        // !!! THE FUNCTION OF THE CLASS 'DATABASE' ARE UNDER MAINTENANCE !!!
-        public static List<string> sendQuery(string query)
+        public static Dictionary<string, List<string>> sendQuery(string query)
         {
-            List<string> result = new List<string>();
+            Dictionary<string, List<string>> result = new Dictionary<string, List<string>>();
 
             string connectionString = "Data Source=C:\\Users\\Thomas\\Documents\\CVIS\\DATABASE\\CVIS-DATABASE.db";
             using (var connection = new SqliteConnection(connectionString))
@@ -96,10 +95,18 @@ namespace SysFunc {
 
                 using (var output = command.ExecuteReader())
                 {
+
                     while (output.Read())
                     {
-                        result.Add(output.GetString(0));
-                        Debug.WriteLine(output.GetString(0));
+                        List<string> patient_info = new List<string>();
+
+                        for (int i = 0; i < output.FieldCount; i++)
+                        {
+                            patient_info.Add(output.GetString(i));
+                        }
+
+                        // Store the patient info in the dictionary with it's ID as a key.
+                        result.Add(output.GetString(0), patient_info);
                     }
 
                 }
@@ -109,13 +116,16 @@ namespace SysFunc {
             return result;
 
         }
-        public static Patient getPatient(string ID)
+        public static Patient getPatients()
         {
             Patient patient = new Patient();
 
             // Some code here to get request from SQL database.
             string query = "SELECT * FROM Patients";
-            sendQuery(query);
+            Dictionary<string, List<string>> result = sendQuery(query);
+
+            Debug.WriteLine(result["123456"][1]);
+
 
             return patient;
 

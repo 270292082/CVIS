@@ -31,7 +31,7 @@ namespace CVIS
         {
             Sys.loadPage(display, new Login(display));
             Debug.WriteLine("Launching query...");
-            DATABASE.getPatient("123456");
+            DATABASE.getPatients();
         }
 
         
