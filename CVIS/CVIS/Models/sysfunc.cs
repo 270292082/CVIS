@@ -89,8 +89,7 @@ namespace SysFunc {
         {
             List<string> result = new List<string>();
 
-            //string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=123456789abc;Database=CVIS;";
-            string connectionString = "Data Source=C:\\Users\\Thomas\\Downloads\\CVIS-main\\CVIS-main\\DATABASE\\CVIS-DATABASE.db";
+            string connectionString = "Data Source=C:\\Users\\Thomas\\Documents\\CVIS\\DATABASE\\CVIS-DATABASE.db";
             using (var connection = new SqliteConnection(connectionString))
             {
                 connection.Open();

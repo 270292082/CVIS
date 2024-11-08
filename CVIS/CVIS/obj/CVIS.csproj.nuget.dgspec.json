@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\270292082\\Downloads\\CVIS-main\\CVIS-main\\CVIS\\CVIS\\CVIS.csproj": {}
+    "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\CVIS.csproj": {}
   },
   "projects": {
-    "D:\\Users\\270292082\\Downloads\\CVIS-main\\CVIS-main\\CVIS\\CVIS\\CVIS.csproj": {
+    "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\CVIS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\270292082\\Downloads\\CVIS-main\\CVIS-main\\CVIS\\CVIS\\CVIS.csproj",
+        "projectUniqueName": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\CVIS.csproj",
         "projectName": "CVIS",
-        "projectPath": "D:\\Users\\270292082\\Downloads\\CVIS-main\\CVIS-main\\CVIS\\CVIS\\CVIS.csproj",
-        "packagesPath": "D:\\Users\\270292082\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\270292082\\Downloads\\CVIS-main\\CVIS-main\\CVIS\\CVIS\\obj\\",
+        "projectPath": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\CVIS.csproj",
+        "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "D:\\Users\\270292082\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,15 +34,28 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[8.0.5, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
             }
           },
           "imports": [
@@ -60,6 +69,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -68,7 +95,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

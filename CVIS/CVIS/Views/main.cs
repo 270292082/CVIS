@@ -30,8 +30,8 @@ namespace CVIS
         private void main_Load(object sender, EventArgs e)
         {
             Sys.loadPage(display, new Login(display));
-            //Debug.WriteLine("Launching query...");
-            //DATABASE.getPatient("123456");
+            Debug.WriteLine("Launching query...");
+            DATABASE.getPatient("123456");
         }
 
         
