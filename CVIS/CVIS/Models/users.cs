@@ -59,7 +59,7 @@ namespace users
             try
             {
                 string msg = string.Empty;
-                msg += FirstName + "_" + LastName + "-";
+                msg += firstName + "_" + lastName + "-";
                 foreach (string v in vaccines )
                 {
                     msg += v + "_";

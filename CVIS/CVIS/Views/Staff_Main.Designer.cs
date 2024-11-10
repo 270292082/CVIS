@@ -325,7 +325,7 @@
             // 
             // patientBindingSource
             // 
-            this.patientBindingSource.DataSource = typeof(JSON.Patient);
+            this.patientBindingSource.DataSource = typeof(users.Patient);
             // 
             // button3
             // 

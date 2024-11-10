@@ -27,7 +27,7 @@ namespace CVIS
         private async Task InitializeAsync()
         {
             qr_code_text.Text = await _patient.getStatusQR();
-            user_name_text.Text = _patient.FirstName + " " + _patient.LastName;
+            user_name_text.Text = _patient.firstName + " " + _patient.lastName;
             user_id_text.Text = _patient.ID.ToString();
         }
 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using users;
 using SysFunc;
 
 namespace CVIS
@@ -15,8 +16,8 @@ namespace CVIS
     public partial class Patient_Settings : Form
     {
         private Panel _page_display;
-        private JSON.Patient _patient;
-        public Patient_Settings(Panel page_display, JSON.Patient patient)
+        private Patient _patient;
+        public Patient_Settings(Panel page_display, Patient patient)
         {
             InitializeComponent();
             _page_display = page_display;
@@ -24,7 +25,7 @@ namespace CVIS
 
             username_input.Text = patient.username;
             password_input.Text = patient.passwd;
-            phone_input.Text = patient.Phone.ToString();
+            phone_input.Text = patient.phone.ToString();
 
 
             // Set the position and size for the navigation panel.

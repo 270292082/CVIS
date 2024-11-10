@@ -11,37 +11,39 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using SysFunc;
 
+using users;
+
 namespace CVIS
 {
     public partial class Patient_Profile : Form
     {
         // This variable is defined in order to interract with the component of main, in this case we want to interact with it's display to change pages.
         private Panel _page_display;
-        private JSON.Patient _patient;
+        private Patient _patient;
         public Panel QRCode_Display => qrcode_display;
 
-        public Patient_Profile(Panel page_display, JSON.Patient patient)
+        public Patient_Profile(Panel page_display, Patient patient)
         {
             InitializeComponent();
             _page_display = page_display;
             _patient= patient;
 
             string info_msg = string.Empty;
-            info_msg += "Name : " + patient.FirstName + " " + patient.LastName + "\n\n";
+            info_msg += "Name : " + patient.firstName + " " + patient.lastName + "\n\n";
             info_msg += "DOB : " + patient.DOB + "\n\n";
-            info_msg += "Gender : " + patient.Gender + "\n\n";
+            info_msg += "Gender : " + patient.gender + "\n\n";
             info_msg += "ID Number : " + patient.ID + "\n\n";
-            info_msg += "Email Address : " + patient.Email + "\n\n";
-            info_msg += "Mobile Number : " + patient.Phone + "\n\n";
-            info_msg += "Address : " + patient.Address + "\n\n";
+            info_msg += "Email Address : " + patient.email + "\n\n";
+            info_msg += "Mobile Number : " + patient.phone + "\n\n";
+            info_msg += "Address : " + patient.address + "\n\n";
 
             patient_ID_text.Text = "User ID : " + patient.ID.ToString();
             info_text.Text = info_msg;
 
             info_msg = string.Empty;
-            info_msg += "Name : " + patient.EmergencyContactFirstName+ " " + patient.EmergencyContactLastName + "\n";
-            info_msg += "Mobile Number : " + patient.EmergencyContactPhone + "\n";
-            info_msg += "Relation : " + patient.EmergencyContactRelation + "\n";
+            info_msg += "Name : " + patient.firstName + " " + patient.lastName + "\n";
+            info_msg += "Mobile Number : " + patient.emergencyContactPhone + "\n";
+            info_msg += "Relation : " + patient.emergencyContactRelation + "\n";
             emergency_contact_text.Text = info_msg;
 
             

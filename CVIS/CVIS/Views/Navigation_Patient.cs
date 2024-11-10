@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using users;
 using SysFunc;
 
 namespace CVIS
@@ -17,9 +18,9 @@ namespace CVIS
         private Panel _page_display;
         private Panel _qrcode_display;
         private Panel _display_nav;
-        private JSON.Patient _patient;
+        private Patient _patient;
 
-        public Navigation_Patient(Panel page_display, Panel qrcode_display, Panel display_nav, JSON.Patient patient)
+        public Navigation_Patient(Panel page_display, Panel qrcode_display, Panel display_nav, Patient patient)
         {
             InitializeComponent();
             _qrcode_display = qrcode_display;

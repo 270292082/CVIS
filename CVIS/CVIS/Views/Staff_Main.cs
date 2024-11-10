@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using users;
 using SysFunc;
 
 namespace CVIS
@@ -15,7 +16,7 @@ namespace CVIS
     public partial class Staff_Main : Form
     {
         private Panel _display;
-        public Staff_Main(Panel display, JSON.Staff staff)
+        public Staff_Main(Panel display, Staff staff)
         {
             InitializeComponent();
             _display= display;

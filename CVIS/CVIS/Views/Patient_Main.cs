@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using JSON;
+using users;
 using SysFunc;
 
 namespace CVIS
@@ -26,9 +26,9 @@ namespace CVIS
             _patient = patient; 
 
             string info = string.Empty;
-            info += "Name : " + patient.FirstName + " " + patient.LastName + "\n\n";
+            info += "Name : " + patient.firstName + " " + patient.lastName + "\n\n";
             info += "DOB : " + patient.DOB + "\n\n";
-            info += "Gender : " + patient.Gender + "\n\n";
+            info += "Gender : " + patient.gender + "\n\n";
 
             info_text.Text = info;
 
