@@ -96,7 +96,7 @@ join Patient_Vaccine on Patients.ID = Patient_Vaccine.patient_ID
 join Patient_Emergency_Contact on Patients.ID = Patient_Emergency_Contact.patient_ID
 where Patients.ID = '654321';
 
---- join teo databases ---
+--- join two databases ---
 select * from Admins
 join Admin_Info
 on Admins.admin_ID = Admin_Info.admin_ID
