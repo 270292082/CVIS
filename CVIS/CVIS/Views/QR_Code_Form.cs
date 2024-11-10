@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using users;
 using SysFunc;
 
 namespace CVIS
@@ -15,8 +16,8 @@ namespace CVIS
     public partial class QR_Code_Form : Form
     {
         Panel _display;
-        JSON.Patient _patient;
-        public QR_Code_Form(Panel display, JSON.Patient patient)
+        Patient _patient;
+        public QR_Code_Form(Panel display, Patient patient)
         {
             InitializeComponent();
             _display = display;
