@@ -1,102 +1,104 @@
---- patients table ---
+--- Patients table ---
 create table Patients (
 	ID varchar(30) primary key unique not null,
 	username varchar(255) unique not null,
 	password varchar(255) not null,
-	FirstName varchar(50) not null,
-	LastName varchar(50) not null,
+	firstName varchar(50) not null,
+	lastName varchar(50) not null,
 	DOB DATE not null,
-	Gender varchar(10),
-	Phone varchar(20) not null,
-	Email varchar(100) unique not null,
-	Address text not null
+	gender varchar(10),
+	phone varchar(20) not null,
+	email varchar(100) unique not null,
+	address text not null
 );
- 
---- vaccination status ---
-create table Patient_Vaccine (
-	patient_ID varchar(30) references patients(ID)on delete cascade,
-	Vaccine_Date Date not null,
-	Vaccine_Type varchar(50),
-	Vaccine_Lot varchar(50),
-	Vaccine_Doctor varchar(100)
+	
+--- Vaccinations status ---
+create table Patients_Vaccines (
+	ID varchar(30) references patients(ID)on delete cascade,
+	vaccine_Date Date not null,
+	vaccine_Type varchar(50),
+	vaccine_Lot varchar(50),
+	vaccine_Doctor varchar(100)
 );
- 
---- patient emergency contact ---
-create table Patient_Emergency_Contact (
-	patient_ID varchar(30) references patients(ID) on delete cascade,
-	ContactName varchar(50) not null,
-	ContactPhone varchar(20) not null,
-	ContactRelation varchar(50)
+	
+--- Patients Emergency Contact ---
+create table Patients_Emergency_Contacts (
+	ID varchar(30) references patients(ID) on delete cascade,
+	contactName varchar(50) not null,
+	contactPhone varchar(20) not null,
+	contactRelation varchar(50)
 );
- 
- 
---- Admin table (credentials) ---
-create table Admins (
-	admin_ID varchar(30) primary key not null unique,
-	Email varchar(100) unique not null,
-	Password varchar(100) not null,
-	FullName varchar(100) not null,
-	Position varchar(50),
-	HospitalDepartment varchar(100)
+	
+	
+--- Staffs table (credentials) ---
+create table Staffs (
+	ID varchar(30) primary key not null unique,
+	username varchar(100) unique not null,
+	password varchar(100) not null,
+	firstName varchar(100) not null,
+	lastName varchar(100) not null,
+	email varchar(100) unique not null,
+	position varchar(50),
+	hospitalDepartment varchar(100)
 );
- 
---- Admin Info Table ---
-create table Admin_Info (
-	admin_ID varchar(30) references Admins(admin_ID) on delete cascade,
-	MedicalLicense varchar(30) unique not null,
-	LicenseExp Date not null,
-	Specialization varchar(50),
-	Phone varchar(20),
-	Address Text,
-	RolePermission varchar(20)
+	
+--- Staffs Info Table ---
+create table Staffs_Info (
+	ID varchar(30) references Staffs(ID) on delete cascade,
+	medicalLicense varchar(30) unique not null,
+	licenseExp Date not null,
+	specialization varchar(50),
+	phone varchar(20),
+	address Text,
+	rolePermission varchar(20)
 );
- 
- 
---- patients table data insert ---
-insert into Patients (ID,username,password,FirstName,LastName,DOB,Gender,Phone,Email,Address)
+	
+	
+--- Patients table data insert ---
+insert into Patients (ID, username, password, firstName, lastName, DOB, gender, phone, email, address)
 values
 ('123456','alix0','hellokitty','Alice','Manjaro','2004-04-18','Female','649281','alice.manjaro@gmail.com','8 Ronayne Street, Auckland CBD, Auckland 1010'),
 ('654321','jdoe','qwerty','John','Doe','1980-12-21','Male','649281','john.doe@gmail.com','9 Madeira Lane, Grafton, Auckland 1023');
- 
---- vaccine table data insert ---
-insert into Patient_Vaccine (patient_ID,Vaccine_Date,Vaccine_Type,Vaccine_Lot,Vaccine_Doctor)
+
+--- Vaccines table data insert ---
+insert into Patients_Vaccines (ID, vaccine_Date, vaccine_Type, vaccine_Lot, vaccine_Doctor)
 values
 ('123456','2022-04-24','Pfizer','C4892A','Dr. Misha'),
 ('654321','2022-04-24','Pfizer','C4892A','Dr. Mikalow'),
 ('654321','2022-06-24','mRNA','C8922A','Dr. Shaman');
- 
+
 --- Emergency contact table data insert ---
-insert into Patient_Emergency_Contact (patient_ID,ContactName,ContactPhone,ContactRelation)
+insert into Patients_Emergency_Contacts (ID, contactName, contactPhone, contactRelation)
 values
 ('123456','Florence Marshall','122365','Flatmate'),
 ('654321','Martin Blanchard','876832','Brother');
- 
- 
---- Admins table data insert ----
-insert into Admins (admin_ID,Email,Password,FullName,Position,HospitalDepartment)
+	
+	
+--- Staffs table data insert ----
+insert into Staffs (ID, username, password, firstName, lastName, email, position, hospitalDepartment)
 values
-('AD123456','lucius.snape@gmail.com','whitehead','Lucius Snape','Nurse','Auckland City Hospital, Emergency');
- 
---- Admin_Info table data insert
-insert into Admin_Info (admin_ID,MedicalLicense,LicenseExp,Specialization,Phone,Address,RolePermission)
+('AD123456','Lucius Snape','luciux','whitehead','lucius.snape@gmail.com','Nurse','Auckland City Hospital');
+	
+--- Staffs Info table data insert
+insert into Staffs_Info (ID, medicalLicense, licenseExp, specialization, phone, address, rolePermission)
 values
 ('AD123456','NRS123456','2030-05-30','ER Nurse','0213334445','58 Symonds Street, Grafton, Auckland 1010','Staff');
- 
- 
+
+	
 select * from Patients;
-select * from Patient_Vaccine;
-select * from Patient_Emergency_Contact;
-select * from Admins;
-select * from Admin_Info;
- 
+select * from Patients_Vaccines;
+select * from Patients_Emergency_Contacts;
+select * from Staffs;
+select * from Staffs_Info;
+
 -- join three databases ---
 select * from Patients
-join Patient_Vaccine on Patients.ID = Patient_Vaccine.patient_ID 
-join Patient_Emergency_Contact on Patients.ID = Patient_Emergency_Contact.patient_ID
+join Patients_Vaccines on Patients.ID = Patients_Vaccines.ID 
+join Patients_Emergency_Contacts on Patients.ID = Patients_Emergency_Contacts.ID
 where Patients.ID = '654321';
- 
+
 --- join teo databases ---
-select * from Admins
-join Admin_Info
-on Admins.admin_ID = Admin_Info.admin_ID
-where Admins.admin_ID = 'AD123456';
+select * from Staffs
+join Staffs_Info
+on Staffs.ID = Staffs_Info.ID
+where Staffs.ID = 'AD123456';

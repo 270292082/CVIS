@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using JSON;
 using SysFunc;
 
 namespace CVIS
@@ -17,9 +18,9 @@ namespace CVIS
     {
         // This variable is defined in order to interract with the component of main, in this case we want to interact with it's display to change pages.
         private Panel _page_display;
-        private JSON.Patient _patient;
+        private Patient _patient;
         public Panel QRCode_Display => qrcode_display;
-        public Patient_Main(Panel page_display, JSON.Patient patient) {
+        public Patient_Main(Panel page_display, Patient patient) {
             InitializeComponent();
             _page_display = page_display;
             _patient = patient; 

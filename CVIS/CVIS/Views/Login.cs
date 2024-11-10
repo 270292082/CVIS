@@ -17,26 +17,24 @@ namespace CVIS
 
         private void login_button_Click(object sender, EventArgs e)
         {
-            var dataset = Sys.readJSON("data");
+            var PATIENTS = Database.getPatients();
             if (username_input.Text.Length <= 0 && password_input.Text.Length <= 0)
             {
                 return;
             }
 
-            foreach (var patient in dataset.Patients)
-            {
-                if (username_input.Text == patient.username && password_input.Text == patient.passwd)
-                {
-                    Sys.loadPage(_page_display, new Patient_Main(_page_display, patient));
-                }
-            }
+            //foreach (var patient in PATIENTS.Keys)
+            //{
+                //if (username_input.Text == patient.username && password_input.Text == patient.passwd)
+                //{
+                    //Sys.loadPage(_page_display, new Patient_Main(_page_display, patient));
+                //}
+            //}
 
-            foreach (var staff in dataset.Staffs)
+            var STAFFS = Database.getStaffs();
+            foreach (var staff in STAFFS)
             {
-                if (username_input.Text == staff.username && password_input.Text == staff.passwd)
-                {
-                    Sys.loadPage(_page_display, new Staff_Main(_page_display, staff));
-                }
+                Debug.WriteLine(staff.ToString());
             }
 
         }

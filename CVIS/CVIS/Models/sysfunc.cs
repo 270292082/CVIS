@@ -6,6 +6,7 @@ using CVIS;
 using JSON;
 
 using Microsoft.Data.Sqlite;
+using System.Security;
 
 namespace SysFunc {
 
@@ -27,53 +28,6 @@ namespace SysFunc {
                 {
                     Debug.WriteLine($"\n!!! Error : Couldn't load the QR code !!! :\n{error}\n");
                     return "";
-                }
-            }
-        }
-    }
-
-    public class User
-    {
-        public static void Profile(Panel page_display, Form page, string ID) 
-        {
-            JSON.Data data = Sys.readJSON("data");
-            if (data == null) { Debug.WriteLine("! ERROR ! : The database cannot be accessed!"); return; }
-
-            // Search in the database the corresponding ID.
-
-            // Patients
-            foreach (var patient in data.Patients)
-            {
-                if (ID == patient.ID)
-                {
-                    Sys.loadPage(page_display, new Patient_Profile(page_display, patient));
-                }
-            }
-
-            // Staff
-            foreach (var staff in data.Staffs)
-            {
-                if(ID == staff.ID)
-                {
-                    // Launch the Staff Profile.
-                }
-            }
-
-            // Moderators
-            foreach (var mod in data.Mods)
-            {
-                if (ID == mod.ID)
-                {
-                    // Launch the Mod Profile.
-                }
-            }
-
-            // Admins
-            foreach (var admin in data.Admins)
-            {
-                if (ID == admin.ID)
-                {
-                    // Launch the Admin Profile.
                 }
             }
         }
@@ -116,21 +70,48 @@ namespace SysFunc {
             return result;
 
         }
-        public static Patient getPatients()
+        public static Dictionary<string, Dictionary<string, string>> getPatients()
         {
-            Patient patient = new Patient();
+            Dictionary<string, Dictionary<string, string>> PATIENTS = new Dictionary<string, Dictionary<string, string>>();
 
             // Some code here to get request from SQL database.
             string query = "SELECT * FROM Patients";
-            Dictionary<string, Dictionary<string, string>> result = sendQuery(query);
-
-            Debug.WriteLine(result["123456"]["Phone"]);
+            PATIENTS = sendQuery(query);
 
 
-            return patient;
+
+            return PATIENTS;
 
         }
 
+        public static Dictionary<string, Dictionary<string, string>> getStaffs()
+        {
+            Dictionary<string, Dictionary<string, string>> STAFFS = new Dictionary<string, Dictionary<string, string>>();
+
+            // Some code here to get request from SQL database.
+            string query = "SELECT * FROM Staffs";
+            STAFFS = sendQuery(query);
+
+
+
+            return STAFFS;
+
+        }
+
+        public static Dictionary<string, Dictionary<string, string>> getUsers()
+        {
+            Dictionary<string, Dictionary<string, string>> USERS = new Dictionary<string, Dictionary<string,string>>();
+
+            // Request for Patients.
+            string query1 = "SELECT * FROM Patients";
+            USERS = sendQuery(query1);
+
+
+            return USERS;
+
+
+
+        }
         
 
     }
@@ -211,13 +192,5 @@ namespace SysFunc {
             form.Show();
         }
 
-        public static JSON.Data readJSON(string data) {
-
-            if (!File.Exists(data)) { Debug.WriteLine("! ERROR ! : The file doesn't exist!");  return new JSON.Data(); }
-            var result = JsonSerializer.Deserialize<Data>(File.ReadAllText(data));
-
-            if (result == null) { return new JSON.Data(); }
-            return result;
-        }
     }
 }
