@@ -77,7 +77,7 @@ values
 --- Staffs table data insert ----
 insert into Staffs (ID, username, password, firstName, lastName, email, position, hospitalDepartment)
 values
-('AD123456','Lucius Snape','luciux','whitehead','lucius.snape@gmail.com','Nurse','Auckland City Hospital');
+('AD123456','luciux','whitehead','Lucius', 'Snape', 'lucius.snape@gmail.com','Nurse','Auckland City Hospital');
 	
 --- Staffs Info table data insert
 insert into Staffs_Info (ID, medicalLicense, licenseExp, specialization, phone, address, rolePermission)

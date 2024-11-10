@@ -2,6 +2,7 @@
 using System.Text.Json;
 
 using SysFunc;
+using users;
 
 namespace CVIS
 {
@@ -23,18 +24,18 @@ namespace CVIS
                 return;
             }
 
-            //foreach (var patient in PATIENTS.Keys)
-            //{
-                //if (username_input.Text == patient.username && password_input.Text == patient.passwd)
-                //{
-                    //Sys.loadPage(_page_display, new Patient_Main(_page_display, patient));
-                //}
-            //}
+            foreach (var p in PATIENTS.Keys)
+            {
+                if (username_input.Text == PATIENTS[p]["username"] && password_input.Text == PATIENTS[p]["password"])
+                {
+                    Sys.loadPage(_page_display, new Patient_Main(_page_display, Patient.dataToClass(PATIENTS[p])));
+                }
+            }
 
             var STAFFS = Database.getStaffs();
             foreach (var staff in STAFFS)
             {
-                Debug.WriteLine(staff.ToString());
+
             }
 
         }

@@ -24,7 +24,7 @@ namespace CVIS
             _patient = patient;
 
             username_input.Text = patient.username;
-            password_input.Text = patient.passwd;
+            password_input.Text = patient.password;
             phone_input.Text = patient.phone.ToString();
 
 

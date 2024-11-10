@@ -16,14 +16,14 @@ namespace users
         // ! Permission breach !
         //   Needs of fixing, but I don't know yet how to switch them to private without breaking the code
         //   (public functions amongst the Patient class don't have the permission to read for some reasons.)
+        public string ID { get; set; } = string.Empty;
         public string username { get; set; } = string.Empty;
-        public string passwd { get; set; } = string.Empty;
+        public string password { get; set; } = string.Empty;
         public string firstName { get; set; } = string.Empty;
         public string lastName { get; set; } = string.Empty;
         public string DOB { get; set; } = string.Empty;
         public string gender { get; set; } = string.Empty;
-        public string ID { get; set; } = string.Empty;
-        public int phone { get; set; } = 0;
+        public string phone { get; set; } = string.Empty;
         public string email { get; set; } = string.Empty;
         public string address { get; set; } = string.Empty;
         public List<string> vaccines { get; set; } = new List<string>();
@@ -35,6 +35,24 @@ namespace users
         public int emergencyContactPhone { get; set; } = 0;
         public string emergencyContactRelation { get; set; } = string.Empty;
 
+
+        public static Patient dataToClass(Dictionary<string, string> data)
+        {
+            Patient patient= new Patient();
+            patient.ID = data["ID"];
+            patient.username = data["username"];
+            patient.password = data["password"];
+            patient.firstName = data["firstName"];
+            patient.lastName = data["lastName"];
+            patient.DOB = data["DOB"];
+            patient.gender = data["gender"];
+            patient.phone = data["phone"];
+            patient.email = data["email"];
+            patient.address = data["address"];
+
+            return patient;
+
+        } 
 
         public List<string> getVaccines(int permission)
         {
