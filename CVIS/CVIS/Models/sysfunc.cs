@@ -79,13 +79,13 @@ namespace SysFunc {
         }
     }
 
-    public class DATABASE
+    public class Database
     {
         public static Dictionary<string, List<string>> sendQuery(string query)
         {
             Dictionary<string, List<string>> result = new Dictionary<string, List<string>>();
 
-            string connectionString = "Data Source=C:\\Users\\Thomas\\Documents\\CVIS\\DATABASE\\CVIS-DATABASE.db";
+            string connectionString = "Data Source=CVIS-DATABASE.db";
             using (var connection = new SqliteConnection(connectionString))
             {
                 connection.Open();
