@@ -19,14 +19,12 @@ namespace CVIS
         private void login_button_Click(object sender, EventArgs e)
         {
 
-            //Debug.WriteLine(Database.getPatientVaccines("654321"));
-
-            var PATIENTS = Database.getPatients();
             if (username_input.Text.Length <= 0 && password_input.Text.Length <= 0)
             {
                 return;
             }
 
+            var PATIENTS = Database.getPatients();
             foreach (var p in PATIENTS.Keys)
             {
                 if (username_input.Text == PATIENTS[p]["username"] && password_input.Text == PATIENTS[p]["password"])
@@ -36,9 +34,12 @@ namespace CVIS
             }
 
             var STAFFS = Database.getStaffs();
-            foreach (var staff in STAFFS)
+            foreach (var s in STAFFS.Keys)
             {
-
+                if (username_input.Text == STAFFS[s]["username"] && password_input.Text == STAFFS[s]["password"])
+                {
+                    Sys.loadPage(_page_display, new Staff_Main(_page_display, Staff.dataToClass(STAFFS[s])));
+                }
             }
 
         }

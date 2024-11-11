@@ -130,15 +130,55 @@ namespace users
 
     public class Staff
     {
-        public string username { get; set; } = string.Empty;
-        public string passwd { get; set; } = string.Empty;
-        public string FirstName { get; set; } = string.Empty;
-        public string LastName { get; set; } = string.Empty;
-        public int Age { get; set; } = 0;
         public string ID { get; set; } = string.Empty;
-        public int Phone { get; set; } = 0;
-        public string Email { get; set; } = string.Empty;
-        public string Address { get; set; } = string.Empty;
+        public string username { get; set; } = string.Empty;
+        public string password { get; set; } = string.Empty;
+        public string firstName { get; set; } = string.Empty;
+        public string lastName { get; set; } = string.Empty;
+        public string email { get; set; } = string.Empty;
+        public string position { get; set; } = string.Empty;
+        public string hospitalDepartment { get; set; } = string.Empty;
+        public string medicalLicense { get; set; } = string.Empty;
+        public string licenseExp { get; set; } = string.Empty;
+        public string specialization { get; set; } = string.Empty;
+        public string phone { get; set; } = string.Empty;
+        public string address { get; set; } = string.Empty;
+        public string rolePermission { get; set; } = string.Empty;
+
+
+        public static Staff dataToClass(Dictionary<string,string> data)
+        {
+
+            // THIS FUNCTION IS NOT FINISHED YET!
+            // DO NOT CALL IT!
+            // or fix it before
+
+
+            Staff staff = new Staff();
+
+            // Init basics information.
+            staff.ID = data["ID"];
+            staff.username = data["username"];
+            staff.password = data["password"];
+            staff.firstName = data["firstName"];
+            staff.lastName = data["lastName"];
+            staff.email = data["email"];
+            staff.position = data["position"];
+            staff.hospitalDepartment = data["hospitalDepartment"];
+
+
+            // Init advanced information.
+            staff.medicalLicense = data["medicalLicense"];
+            staff.licenseExp = data["licenseExp"];
+            staff.specialization = data["specialization"];
+            staff.phone = data["phone"];
+            staff.address = data["address"];
+            staff.rolePermission = data["rolePermission"];
+
+
+            return staff;
+
+        } 
 
     }
 

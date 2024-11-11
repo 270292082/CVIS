@@ -22,8 +22,8 @@ namespace CVIS
             _display= display;
 
             welcome_text.Text = "Welcome, ";
-            welcome_text.Text += staff.FirstName + " ";
-            welcome_text.Text += staff.LastName + "!";
+            welcome_text.Text += staff.firstName + " ";
+            welcome_text.Text += staff.lastName + "!";
 
             daily_report_info.Text = "Date: ";
             daily_report_info.Text += "" + "\n"; // Insert the data.

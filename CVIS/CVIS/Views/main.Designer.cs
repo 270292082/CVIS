@@ -50,7 +50,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "main";
-            this.Text = " ";
+            this.Text = " CVIS";
             this.Load += new System.EventHandler(this.main_Load);
             this.ResumeLayout(false);
 
