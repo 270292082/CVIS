@@ -33,7 +33,7 @@ namespace users
         public List<string> vaccines_doctor { get; set; } = new List<string>();
         public string emergencyContactFirstName { get; set; } = string.Empty;
         public string emergencyContactLastName { get; set; } = string.Empty;
-        public int emergencyContactPhone { get; set; } = 0;
+        public string emergencyContactPhone { get; set; } = string.Empty;
         public string emergencyContactRelation { get; set; } = string.Empty;
 
 

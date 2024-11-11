@@ -1,3 +1,4 @@
+
 --- Patients table ---
 create table Patients (
 	ID varchar(30) primary key unique not null,
@@ -16,17 +17,18 @@ create table Patients (
 create table Patients_Vaccines (
 	ID varchar(30) references patients(ID)on delete cascade,
 	vaccine_Date Date not null,
-	vaccine_Type varchar(50),
-	vaccine_Lot varchar(50),
-	vaccine_Doctor varchar(100)
+	vaccine_Type varchar(50) not null,
+	vaccine_Lot varchar(50) not null,
+	vaccine_Doctor varchar(100) not null
 );
 	
 --- Patients Emergency Contact ---
 create table Patients_Emergency_Contacts (
 	ID varchar(30) references patients(ID) on delete cascade,
-	contactName varchar(50) not null,
-	contactPhone varchar(20) not null,
-	contactRelation varchar(50)
+	firstName varchar(50) not null,
+	lastName varchar(50) not null,
+	phone varchar(20) not null,
+	relation varchar(50)
 );
 	
 	
@@ -68,10 +70,10 @@ values
 ('654321','2022-06-24','mRNA','C8922A','Dr. Shaman');
 
 --- Emergency contact table data insert ---
-insert into Patients_Emergency_Contacts (ID, contactName, contactPhone, contactRelation)
+insert into Patients_Emergency_Contacts (ID, firstName, lastName, phone, relation)
 values
-('123456','Florence Marshall','122365','Flatmate'),
-('654321','Martin Blanchard','876832','Brother');
+('123456','Florence', 'Marshall','122365','Flatmate'),
+('654321','Martin', 'Blanchard','876832','Brother');
 	
 	
 --- Staffs table data insert ----
