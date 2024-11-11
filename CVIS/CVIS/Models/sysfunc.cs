@@ -96,14 +96,14 @@ namespace SysFunc {
             
         }
 
-        public static Dictionary<string, Dictionary<string, string>> getPatientEmergencyContact(string ID) 
+        public static Dictionary<string, string> getPatientEmergencyContact(string ID) 
         {
-            Dictionary<string, Dictionary<string, string>> VACCINES = new Dictionary<string, Dictionary<string, string>>();
+            Dictionary<string, Dictionary<string, string>> emergency = new Dictionary<string, Dictionary<string, string>>();
             string query = "SELECT * FROM Patients_Emergency_Contacts as PB WHERE PB.patient_ID == \"" + ID + "\";";
 
-            VACCINES = sendQuery(query, "patient_ID");
+            emergency = sendQuery(query, "patient_ID");
 
-            return VACCINES;
+            return emergency[ID];
             
         }
 
@@ -119,6 +119,16 @@ namespace SysFunc {
 
             return STAFFS;
 
+        }
+
+        public static Dictionary<string, string> getStaffInfo(string ID)
+        {
+            Dictionary<string, Dictionary<string, string>> info = new Dictionary<string, Dictionary<string, string>>();
+
+            string query = "SELECT * FROM Staffs_Info WHERE ID == \"" + ID + "\";";
+            info = sendQuery(query);
+
+            return info[ID];
         }
 
         public static Dictionary<string, Dictionary<string, string>> getUsers()

@@ -66,11 +66,11 @@ namespace users
             
 
             //// Init Emergency Contacts information.
-            Dictionary<string, Dictionary<string, string>> emergencies = Database.getPatientEmergencyContact(patient.ID);
-            patient.emergencyContactFirstName = emergencies[patient.ID]["firstName"];
-            patient.emergencyContactLastName = emergencies[patient.ID]["lastName"];
-            patient.emergencyContactPhone = emergencies[patient.ID]["phone"];
-            patient.emergencyContactRelation = emergencies[patient.ID]["relation"];
+            Dictionary<string, string> emergency = Database.getPatientEmergencyContact(patient.ID);
+            patient.emergencyContactFirstName = emergency["firstName"];
+            patient.emergencyContactLastName = emergency["lastName"];
+            patient.emergencyContactPhone = emergency["phone"];
+            patient.emergencyContactRelation = emergency["relation"];
 
             return patient;
 
@@ -168,12 +168,13 @@ namespace users
 
 
             // Init advanced information.
-            staff.medicalLicense = data["medicalLicense"];
-            staff.licenseExp = data["licenseExp"];
-            staff.specialization = data["specialization"];
-            staff.phone = data["phone"];
-            staff.address = data["address"];
-            staff.rolePermission = data["rolePermission"];
+            Dictionary<string, string> adv_info = Database.getStaffInfo(staff.ID);
+            staff.medicalLicense = adv_info["medicalLicense"];
+            staff.licenseExp = adv_info["licenseExp"];
+            staff.specialization = adv_info["specialization"];
+            staff.phone = adv_info["phone"];
+            staff.address = adv_info["address"];
+            staff.rolePermission = adv_info["rolePermission"];
 
 
             return staff;
