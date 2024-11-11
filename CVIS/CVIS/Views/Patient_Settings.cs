@@ -48,7 +48,7 @@ namespace CVIS
             Sys.loadPage(display_nav, new Navigation_Patient(_page_display, qrcode_display, display_nav, patient));
 
             // Set the position and size for the qrcode display panel.
-            qrcode_display.Visible = true;
+            qrcode_display.Visible = false;
             qrcode_display.Size = new Size(249, 311);
             qrcode_display.Location = new Point(0, 1000);
             Sys.loadPage(qrcode_display, new QR_Code_Form(qrcode_display, patient));

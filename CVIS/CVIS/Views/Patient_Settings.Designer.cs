@@ -64,10 +64,12 @@
             this.email_input = new System.Windows.Forms.TextBox();
             this.dob_input = new System.Windows.Forms.TextBox();
             this.address_input = new System.Windows.Forms.TextBox();
+            this.padding = new System.Windows.Forms.PictureBox();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profile_button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.padding)).BeginInit();
             this.SuspendLayout();
             // 
             // banner
@@ -124,7 +126,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.display_nav.Location = new System.Drawing.Point(0, 0);
             this.display_nav.Name = "display_nav";
-            this.display_nav.Size = new System.Drawing.Size(5, 728);
+            this.display_nav.Size = new System.Drawing.Size(5, 744);
             this.display_nav.TabIndex = 10;
             // 
             // qrcode_display
@@ -380,6 +382,14 @@
             this.address_input.Size = new System.Drawing.Size(140, 23);
             this.address_input.TabIndex = 40;
             // 
+            // padding
+            // 
+            this.padding.Location = new System.Drawing.Point(145, 709);
+            this.padding.Name = "padding";
+            this.padding.Size = new System.Drawing.Size(420, 23);
+            this.padding.TabIndex = 41;
+            this.padding.TabStop = false;
+            // 
             // Patient_Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -387,7 +397,9 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(654, 728);
+            this.ClientSize = new System.Drawing.Size(654, 744);
+            this.Controls.Add(this.padding);
+            this.Controls.Add(this.qrcode_display);
             this.Controls.Add(this.display_nav);
             this.Controls.Add(this.address_input);
             this.Controls.Add(this.lastname_input);
@@ -409,7 +421,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.qrcode_display);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.phone_input);
             this.Controls.Add(this.password_input);
@@ -426,6 +437,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.profile_button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.padding)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -468,5 +480,6 @@
         private TextBox email_input;
         private TextBox dob_input;
         private TextBox address_input;
+        private PictureBox padding;
     }
 }

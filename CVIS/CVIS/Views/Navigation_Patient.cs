@@ -60,6 +60,7 @@ namespace CVIS
         }
         private void qrcode_button1_Click(object sender, EventArgs e)
         {
+            _qrcode_display.Visible = true;
             _qrcode_display.Location = new Point(202, 25);
         }
 

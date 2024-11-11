@@ -37,6 +37,7 @@ namespace CVIS
         }
         private void cross_button_Click(object sender, EventArgs e)
         {
+            _display.Visible = false;
             _display.Location = new Point(0, 1000);
         }
     }
