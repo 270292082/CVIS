@@ -388,6 +388,7 @@
             this.BackColor = System.Drawing.Color.LightCyan;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(654, 728);
+            this.Controls.Add(this.display_nav);
             this.Controls.Add(this.address_input);
             this.Controls.Add(this.lastname_input);
             this.Controls.Add(this.firstname_input);
@@ -409,7 +410,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.qrcode_display);
-            this.Controls.Add(this.display_nav);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.phone_input);
             this.Controls.Add(this.password_input);

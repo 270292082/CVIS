@@ -19,7 +19,7 @@ namespace CVIS
         private void login_button_Click(object sender, EventArgs e)
         {
 
-            Debug.WriteLine(Database.getPatientVaccines("654321"));
+            //Debug.WriteLine(Database.getPatientVaccines("654321"));
 
             var PATIENTS = Database.getPatients();
             if (username_input.Text.Length <= 0 && password_input.Text.Length <= 0)

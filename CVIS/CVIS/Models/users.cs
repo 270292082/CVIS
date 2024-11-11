@@ -55,22 +55,22 @@ namespace users
 
 
             // Init Vaccines informatinos.
-            Dictionary<string, Dictionary<string, string>> vaccines = Database.getPatientVaccines(data["ID"]);
-            foreach (var lot in data.Keys)
+            Dictionary<string, Dictionary<string, string>> vaccines = Database.getPatientVaccines(patient.ID);
+            foreach (var nb in vaccines.Keys)
             {
-                patient.vaccines_date.Add(vaccines[lot]["vaccines_date"]);
-                patient.vaccines_type.Add(vaccines[lot]["vaccines_date"]);
-                patient.vaccines_lot.Add(vaccines[lot]["vaccines_date"]);
-                patient.vaccines_doctor.Add(vaccines[lot]["vaccines_date"]);
+                patient.vaccines_date.Add(vaccines[nb]["date"]);
+                patient.vaccines_type.Add(vaccines[nb]["type"]);
+                patient.vaccines_lot.Add(vaccines[nb]["lot"]);
+                patient.vaccines_doctor.Add(vaccines[nb]["doctor"]);
             }
+            
 
-
-            // Init Emergency Contacts information.
-            Dictionary<string, Dictionary<string, string>> emergencies = Database.getPatientEmergencyContact(data["ID"]);
-            patient.emergencyContactFirstName = emergencies[data["ID"]]["firstName"];
-            patient.emergencyContactLastName = emergencies[data["ID"]]["lastName"];
-            patient.emergencyContactPhone = emergencies[data["ID"]]["phone"];
-            patient.emergencyContactRelation = emergencies[data["ID"]]["relation"];
+            //// Init Emergency Contacts information.
+            Dictionary<string, Dictionary<string, string>> emergencies = Database.getPatientEmergencyContact(patient.ID);
+            patient.emergencyContactFirstName = emergencies[patient.ID]["firstName"];
+            patient.emergencyContactLastName = emergencies[patient.ID]["lastName"];
+            patient.emergencyContactPhone = emergencies[patient.ID]["phone"];
+            patient.emergencyContactRelation = emergencies[patient.ID]["relation"];
 
             return patient;
 
