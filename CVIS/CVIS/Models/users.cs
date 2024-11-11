@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Immutable;
+using System.Diagnostics;
 using SysFunc;
 
 namespace users
@@ -26,7 +27,7 @@ namespace users
         public string phone { get; set; } = string.Empty;
         public string email { get; set; } = string.Empty;
         public string address { get; set; } = string.Empty;
-        public List<string> vaccines { get; set; } = new List<string>();
+        public List<string> vaccines_date { get; set; } = new List<string>();
         public List<string> vaccines_type { get; set; } = new List<string>();
         public List<string> vaccines_lot { get; set; } = new List<string>();
         public List<string> vaccines_doctor { get; set; } = new List<string>();
@@ -36,9 +37,11 @@ namespace users
         public string emergencyContactRelation { get; set; } = string.Empty;
 
 
-        public static Patient dataToClass(Dictionary<string, string> data)
+        public static Patient dataToClass(Dictionary<string,string> data)
         {
-            Patient patient= new Patient();
+            Patient patient = new Patient();
+
+            // Init basics information.
             patient.ID = data["ID"];
             patient.username = data["username"];
             patient.password = data["password"];
@@ -50,6 +53,25 @@ namespace users
             patient.email = data["email"];
             patient.address = data["address"];
 
+
+            // Init Vaccines informatinos.
+            Dictionary<string, Dictionary<string, string>> vaccines = Database.getPatientVaccines(data["ID"]);
+            foreach (var lot in data.Keys)
+            {
+                patient.vaccines_date.Add(vaccines[lot]["vaccines_date"]);
+                patient.vaccines_type.Add(vaccines[lot]["vaccines_date"]);
+                patient.vaccines_lot.Add(vaccines[lot]["vaccines_date"]);
+                patient.vaccines_doctor.Add(vaccines[lot]["vaccines_date"]);
+            }
+
+
+            // Init Emergency Contacts information.
+            Dictionary<string, Dictionary<string, string>> emergencies = Database.getPatientEmergencyContact(data["ID"]);
+            patient.emergencyContactFirstName = emergencies[data["ID"]]["firstName"];
+            patient.emergencyContactLastName = emergencies[data["ID"]]["lastName"];
+            patient.emergencyContactPhone = emergencies[data["ID"]]["phone"];
+            patient.emergencyContactRelation = emergencies[data["ID"]]["relation"];
+
             return patient;
 
         } 
@@ -57,7 +79,7 @@ namespace users
         public List<string> getVaccines(int permission)
         {
             if (permission > 3) { return new List<string> { "ERR-403" }; }
-            return vaccines;
+            return vaccines_date;
         }
 
         public string getStatus(int permission)
@@ -67,9 +89,9 @@ namespace users
                 Console.WriteLine("Error : Access Denied.");
                 return "";
             }
-            if (vaccines.Count == 0 ) { return "Non-Vaccinated"; }
-            if (vaccines.Count == 1 ) { return "Partially"; }
-            if (vaccines.Count == 2 ) { return "Vaccinated"; }
+            if (vaccines_date.Count == 0 ) { return "Non-Vaccinated"; }
+            if (vaccines_date.Count == 1 ) { return "Partially"; }
+            if (vaccines_date.Count == 2 ) { return "Vaccinated"; }
             return "";
         }
         public async Task<string> getStatusQR()
@@ -78,16 +100,16 @@ namespace users
             {
                 string msg = string.Empty;
                 msg += firstName + "_" + lastName + "-";
-                foreach (string v in vaccines )
+                foreach (string v in vaccines_date )
                 {
                     msg += v + "_";
                 }
                 msg += "-";
 
                 // Specifies the message we want on the QR code.
-                if (vaccines.Count == 0) { msg += "Non-Vaccinated"; }
-                if (vaccines.Count == 1) { msg += "Partially"; }
-                if (vaccines.Count == 2) { msg += "Vaccinated"; }
+                if (vaccines_date.Count == 0) { msg += "Non-Vaccinated"; }
+                if (vaccines_date.Count == 1) { msg += "Partially"; }
+                if (vaccines_date.Count == 2) { msg += "Vaccinated"; }
 
                 string qrcode = await QR.Gen(msg);
 

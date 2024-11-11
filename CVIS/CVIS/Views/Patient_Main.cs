@@ -40,7 +40,7 @@ namespace CVIS
                 vac_data.Rows[i].Cells[0].Value = (i+1) + " Dose";
                 vac_data.Rows[i].Cells[1].Value = patient.vaccines_type[i];
                 vac_data.Rows[i].Cells[2].Value = patient.vaccines_lot[i];
-                vac_data.Rows[i].Cells[3].Value = patient.vaccines[i];
+                vac_data.Rows[i].Cells[3].Value = patient.vaccines_date[i];
                 vac_data.Rows[i].Cells[4].Value = patient.vaccines_doctor[i];
             }
 

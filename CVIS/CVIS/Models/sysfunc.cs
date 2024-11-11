@@ -35,7 +35,7 @@ namespace SysFunc {
 
     public class Database
     {
-        public static Dictionary<string, Dictionary<string, string>> sendQuery(string query)
+        public static Dictionary<string, Dictionary<string, string>> sendQuery(string query, string key="ID")
         {
             Dictionary<string, Dictionary<string, string>> result = new Dictionary<string, Dictionary<string, string>>();
 
@@ -52,15 +52,16 @@ namespace SysFunc {
 
                     while (output.Read())
                     {
-                        Dictionary<string, string> patient_info = new Dictionary<string, string>();
+
+                        Dictionary<string, string> infos = new Dictionary<string, string>();
 
                         for (int i = 0; i < output.FieldCount; i++)
                         {
-                            patient_info.Add(output.GetName(i), output.GetString(i));
+                            infos.Add(output.GetName(i), output.GetString(i));
                         }
 
-                        // Store the patient info in the dictionary with it's ID as a key.
-                        result.Add(patient_info["ID"], patient_info);
+                        // Store the infos in the dictionary with the ID of the users as a key for it's info.
+                        result.Add(infos[key], infos);
                     }
 
                 }
@@ -70,18 +71,29 @@ namespace SysFunc {
             return result;
 
         }
+
         public static Dictionary<string, Dictionary<string, string>> getPatients()
         {
+            // This functions gets every patients informations and their vaccines.
             Dictionary<string, Dictionary<string, string>> PATIENTS = new Dictionary<string, Dictionary<string, string>>();
 
             // Some code here to get request from SQL database.
             string query = "SELECT * FROM Patients";
             PATIENTS = sendQuery(query);
 
-
-
             return PATIENTS;
 
+        }
+
+        public static Dictionary<string, Dictionary<string, string>> getPatientVaccines(string ID) 
+        {
+            Dictionary<string, Dictionary<string, string>> VACCINES = new Dictionary<string, Dictionary<string, string>>();
+            string query = "SELECT * FROM Patients_Vaccines as PB WHERE PB.ID == \"" + ID + "\";";
+
+            VACCINES = sendQuery(query, "vaccine_Lot"); 
+
+            return VACCINES;
+            
         }
 
         public static Dictionary<string, Dictionary<string, string>> getStaffs()
