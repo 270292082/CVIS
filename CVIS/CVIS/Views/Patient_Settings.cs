@@ -25,7 +25,20 @@ namespace CVIS
 
             username_input.Text = patient.username;
             password_input.Text = patient.password;
-            phone_input.Text = patient.phone.ToString();
+
+            firstname_input.Text = patient.firstName;
+            lastname_input.Text = patient.lastName;
+            dob_input.Text = patient.DOB;
+            email_input.Text = patient.email;
+            address_input.Text = patient.address;
+            phone_input.Text = patient.phone;
+
+            efirstname_input.Text = patient.emergencyContactFirstName;
+            elastname_input.Text = patient.emergencyContactLastName;
+            ephone_input.Text = patient.emergencyContactPhone;
+            erelation_input.Text = patient.emergencyContactRelation;
+
+
 
 
             // Set the position and size for the navigation panel.

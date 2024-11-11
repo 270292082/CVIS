@@ -56,7 +56,7 @@
             this.ephone_input = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.erelation = new System.Windows.Forms.TextBox();
+            this.erelation_input = new System.Windows.Forms.TextBox();
             this.elastname_input = new System.Windows.Forms.TextBox();
             this.efirstname_input = new System.Windows.Forms.TextBox();
             this.lastname_input = new System.Windows.Forms.TextBox();
@@ -324,12 +324,12 @@
             this.label15.TabIndex = 32;
             this.label15.Text = "Relation";
             // 
-            // erelation
+            // erelation_input
             // 
-            this.erelation.Location = new System.Drawing.Point(296, 645);
-            this.erelation.Name = "erelation";
-            this.erelation.Size = new System.Drawing.Size(140, 23);
-            this.erelation.TabIndex = 33;
+            this.erelation_input.Location = new System.Drawing.Point(296, 645);
+            this.erelation_input.Name = "erelation_input";
+            this.erelation_input.Size = new System.Drawing.Size(140, 23);
+            this.erelation_input.TabIndex = 33;
             // 
             // elastname_input
             // 
@@ -396,7 +396,7 @@
             this.Controls.Add(this.dob_input);
             this.Controls.Add(this.elastname_input);
             this.Controls.Add(this.efirstname_input);
-            this.Controls.Add(this.erelation);
+            this.Controls.Add(this.erelation_input);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.ephone_input);
             this.Controls.Add(this.label14);
@@ -460,7 +460,7 @@
         private TextBox ephone_input;
         private Label label14;
         private Label label15;
-        private TextBox erelation;
+        private TextBox erelation_input;
         private TextBox elastname_input;
         private TextBox efirstname_input;
         private TextBox lastname_input;
