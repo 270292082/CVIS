@@ -36,7 +36,7 @@
             this.profile = new System.Windows.Forms.PictureBox();
             this.tabMenu = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridHome = new System.Windows.Forms.DataGridView();
             this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usernameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,12 +57,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.scan_qr_button = new System.Windows.Forms.Button();
             this.tabVaccinationManagement = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dOBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabVaccinationReports = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridVaccines2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -93,19 +89,33 @@
             this.tabBtn3 = new System.Windows.Forms.Button();
             this.tabBtn2 = new System.Windows.Forms.Button();
             this.tabBtn1 = new System.Windows.Forms.Button();
+            this.dataGridVaccines1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profile)).BeginInit();
             this.tabMenu.SuspendLayout();
             this.tabHome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabVaccinationManagement.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabVaccinationReports.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVaccines2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -113,6 +123,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVaccines1)).BeginInit();
             this.SuspendLayout();
             // 
             // banner
@@ -182,7 +193,7 @@
             // tabHome
             // 
             this.tabHome.BackColor = System.Drawing.Color.LightCyan;
-            this.tabHome.Controls.Add(this.dataGridView3);
+            this.tabHome.Controls.Add(this.dataGridHome);
             this.tabHome.Controls.Add(this.textBox1);
             this.tabHome.Controls.Add(this.welcome_text);
             this.tabHome.Controls.Add(this.pictureBox2);
@@ -195,13 +206,13 @@
             this.tabHome.Text = "Home";
             this.tabHome.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // dataGridView3
+            // dataGridHome
             // 
-            this.dataGridView3.AutoGenerateColumns = false;
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.LightCyan;
-            this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridHome.AutoGenerateColumns = false;
+            this.dataGridHome.BackgroundColor = System.Drawing.Color.LightCyan;
+            this.dataGridHome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridHome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridHome.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDDataGridViewTextBoxColumn1,
             this.usernameDataGridViewTextBoxColumn1,
             this.passwordDataGridViewTextBoxColumn,
@@ -216,13 +227,13 @@
             this.emergencyContactLastNameDataGridViewTextBoxColumn,
             this.emergencyContactPhoneDataGridViewTextBoxColumn,
             this.emergencyContactRelationDataGridViewTextBoxColumn});
-            this.dataGridView3.DataSource = this.patientBindingSource;
-            this.dataGridView3.Location = new System.Drawing.Point(7, 127);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowTemplate.Height = 25;
-            this.dataGridView3.Size = new System.Drawing.Size(639, 117);
-            this.dataGridView3.TabIndex = 20;
-            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
+            this.dataGridHome.DataSource = this.patientBindingSource;
+            this.dataGridHome.Location = new System.Drawing.Point(7, 127);
+            this.dataGridHome.Name = "dataGridHome";
+            this.dataGridHome.RowTemplate.Height = 25;
+            this.dataGridHome.Size = new System.Drawing.Size(639, 117);
+            this.dataGridHome.TabIndex = 20;
+            this.dataGridHome.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
             // iDDataGridViewTextBoxColumn1
             // 
@@ -358,50 +369,17 @@
             // tabVaccinationManagement
             // 
             this.tabVaccinationManagement.BackColor = System.Drawing.Color.LightCyan;
-            this.tabVaccinationManagement.Controls.Add(this.dataGridView1);
+            this.tabVaccinationManagement.Controls.Add(this.dataGridVaccines1);
             this.tabVaccinationManagement.Location = new System.Drawing.Point(4, 29);
             this.tabVaccinationManagement.Name = "tabVaccinationManagement";
             this.tabVaccinationManagement.Size = new System.Drawing.Size(653, 256);
             this.tabVaccinationManagement.TabIndex = 2;
             this.tabVaccinationManagement.Text = "Vaccination Management";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.usernameDataGridViewTextBoxColumn,
-            this.dOBDataGridViewTextBoxColumn,
-            this.iDDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.patientBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 116);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(617, 131);
-            this.dataGridView1.TabIndex = 4;
-            // 
-            // usernameDataGridViewTextBoxColumn
-            // 
-            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
-            this.usernameDataGridViewTextBoxColumn.HeaderText = "username";
-            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
-            // 
-            // dOBDataGridViewTextBoxColumn
-            // 
-            this.dOBDataGridViewTextBoxColumn.DataPropertyName = "DOB";
-            this.dOBDataGridViewTextBoxColumn.HeaderText = "DOB";
-            this.dOBDataGridViewTextBoxColumn.Name = "dOBDataGridViewTextBoxColumn";
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            // 
             // tabVaccinationReports
             // 
             this.tabVaccinationReports.BackColor = System.Drawing.Color.LightCyan;
-            this.tabVaccinationReports.Controls.Add(this.dataGridView2);
+            this.tabVaccinationReports.Controls.Add(this.dataGridVaccines2);
             this.tabVaccinationReports.Controls.Add(this.yearly_report_info);
             this.tabVaccinationReports.Controls.Add(this.montly_report_info);
             this.tabVaccinationReports.Controls.Add(this.daily_report_info);
@@ -421,13 +399,13 @@
             this.tabVaccinationReports.TabIndex = 3;
             this.tabVaccinationReports.Text = "Vaccination Reports";
             // 
-            // dataGridView2
+            // dataGridVaccines2
             // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.LightCyan;
-            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridVaccines2.AutoGenerateColumns = false;
+            this.dataGridVaccines2.BackgroundColor = System.Drawing.Color.LightCyan;
+            this.dataGridVaccines2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridVaccines2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridVaccines2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
@@ -442,12 +420,12 @@
             this.dataGridViewTextBoxColumn12,
             this.dataGridViewTextBoxColumn13,
             this.dataGridViewTextBoxColumn14});
-            this.dataGridView2.DataSource = this.patientBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(7, 127);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(639, 117);
-            this.dataGridView2.TabIndex = 21;
+            this.dataGridVaccines2.DataSource = this.patientBindingSource;
+            this.dataGridVaccines2.Location = new System.Drawing.Point(7, 127);
+            this.dataGridVaccines2.Name = "dataGridVaccines2";
+            this.dataGridVaccines2.RowTemplate.Height = 25;
+            this.dataGridVaccines2.Size = new System.Drawing.Size(639, 117);
+            this.dataGridVaccines2.TabIndex = 21;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -715,6 +693,119 @@
             this.tabBtn1.UseVisualStyleBackColor = false;
             this.tabBtn1.Click += new System.EventHandler(this.tabBtn1_Click);
             // 
+            // dataGridVaccines1
+            // 
+            this.dataGridVaccines1.AutoGenerateColumns = false;
+            this.dataGridVaccines1.BackgroundColor = System.Drawing.Color.LightCyan;
+            this.dataGridVaccines1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridVaccines1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridVaccines1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewTextBoxColumn20,
+            this.dataGridViewTextBoxColumn21,
+            this.dataGridViewTextBoxColumn22,
+            this.dataGridViewTextBoxColumn23,
+            this.dataGridViewTextBoxColumn24,
+            this.dataGridViewTextBoxColumn25,
+            this.dataGridViewTextBoxColumn26,
+            this.dataGridViewTextBoxColumn27,
+            this.dataGridViewTextBoxColumn28});
+            this.dataGridVaccines1.DataSource = this.patientBindingSource;
+            this.dataGridVaccines1.Location = new System.Drawing.Point(7, 127);
+            this.dataGridVaccines1.Name = "dataGridVaccines1";
+            this.dataGridVaccines1.RowTemplate.Height = 25;
+            this.dataGridVaccines1.Size = new System.Drawing.Size(639, 117);
+            this.dataGridVaccines1.TabIndex = 21;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn15.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "username";
+            this.dataGridViewTextBoxColumn16.HeaderText = "username";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "password";
+            this.dataGridViewTextBoxColumn17.HeaderText = "password";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "firstName";
+            this.dataGridViewTextBoxColumn18.HeaderText = "firstName";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "lastName";
+            this.dataGridViewTextBoxColumn19.HeaderText = "lastName";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "DOB";
+            this.dataGridViewTextBoxColumn20.HeaderText = "DOB";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "gender";
+            this.dataGridViewTextBoxColumn21.HeaderText = "gender";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "phone";
+            this.dataGridViewTextBoxColumn22.HeaderText = "phone";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "email";
+            this.dataGridViewTextBoxColumn23.HeaderText = "email";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "address";
+            this.dataGridViewTextBoxColumn24.HeaderText = "address";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "emergencyContactFirstName";
+            this.dataGridViewTextBoxColumn25.HeaderText = "emergencyContactFirstName";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "emergencyContactLastName";
+            this.dataGridViewTextBoxColumn26.HeaderText = "emergencyContactLastName";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "emergencyContactPhone";
+            this.dataGridViewTextBoxColumn27.HeaderText = "emergencyContactPhone";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "emergencyContactRelation";
+            this.dataGridViewTextBoxColumn28.HeaderText = "emergencyContactRelation";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            // 
             // Staff_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -730,6 +821,7 @@
             this.Name = "Staff_Main";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Staff_Main";
+            this.Load += new System.EventHandler(this.Staff_Main_Load);
             this.banner.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_button)).EndInit();
@@ -737,14 +829,13 @@
             this.tabMenu.ResumeLayout(false);
             this.tabHome.ResumeLayout(false);
             this.tabHome.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabVaccinationManagement.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabVaccinationReports.ResumeLayout(false);
             this.tabVaccinationReports.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVaccines2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -752,6 +843,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVaccines1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -768,11 +860,7 @@
         private TabPage tabVaccinationReports;
         private PictureBox pictureBox1;
         private Label daily_report_info;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn passwdDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn dOBDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn emergencyContactNameDataGridViewTextBoxColumn;
         private BindingSource patientBindingSource;
         private PictureBox pictureBox5;
@@ -790,7 +878,7 @@
         private Label welcome_text;
         private PictureBox pictureBox2;
         private TextBox textBox1;
-        private DataGridView dataGridView3;
+        private DataGridView dataGridHome;
         private DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
@@ -808,7 +896,7 @@
         private Button tabBtn3;
         private Button tabBtn2;
         private Button tabBtn1;
-        private DataGridView dataGridView2;
+        private DataGridView dataGridVaccines2;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -823,5 +911,20 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private DataGridView dataGridVaccines1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
     }
 }

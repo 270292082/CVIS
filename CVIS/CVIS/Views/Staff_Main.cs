@@ -109,5 +109,10 @@ namespace CVIS
         {
 
         }
+
+        private void Staff_Main_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

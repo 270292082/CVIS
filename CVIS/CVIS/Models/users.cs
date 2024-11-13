@@ -17,62 +17,58 @@ namespace users
         // ! Permission breach !
         //   Needs of fixing, but I don't know yet how to switch them to private without breaking the code
         //   (public functions amongst the Patient class don't have the permission to read for some reasons.)
-        public string ID { get; set; } = string.Empty;
-        public string username { get; set; } = string.Empty;
-        public string password { get; set; } = string.Empty;
-        public string firstName { get; set; } = string.Empty;
-        public string lastName { get; set; } = string.Empty;
-        public string DOB { get; set; } = string.Empty;
-        public string gender { get; set; } = string.Empty;
-        public string phone { get; set; } = string.Empty;
-        public string email { get; set; } = string.Empty;
-        public string address { get; set; } = string.Empty;
-        public List<string> vaccines_date { get; set; } = new List<string>();
-        public List<string> vaccines_type { get; set; } = new List<string>();
-        public List<string> vaccines_lot { get; set; } = new List<string>();
-        public List<string> vaccines_doctor { get; set; } = new List<string>();
-        public string emergencyContactFirstName { get; set; } = string.Empty;
-        public string emergencyContactLastName { get; set; } = string.Empty;
-        public string emergencyContactPhone { get; set; } = string.Empty;
-        public string emergencyContactRelation { get; set; } = string.Empty;
+        public string ID = string.Empty;
+        public string username = string.Empty;
+        public string password = string.Empty;
+        public string firstName = string.Empty;
+        public string lastName = string.Empty;
+        public string DOB = string.Empty;
+        public string gender = string.Empty;
+        public string phone = string.Empty;
+        public string email = string.Empty;
+        public string address = string.Empty;
+        public List<string> vaccines_date = new List<string>();
+        public List<string> vaccines_type = new List<string>();
+        public List<string> vaccines_lot = new List<string>();
+        public List<string> vaccines_doctor = new List<string>();
+        public string emergencyContactFirstName = string.Empty;
+        public string emergencyContactLastName = string.Empty;
+        public string emergencyContactPhone = string.Empty;
+        public string emergencyContactRelation = string.Empty;
 
 
-        public static Patient dataToClass(Dictionary<string,string> data)
+        public void dataToClass(Dictionary<string,string> data)
         {
-            Patient patient = new Patient();
-
             // Init basics information.
-            patient.ID = data["ID"];
-            patient.username = data["username"];
-            patient.password = data["password"];
-            patient.firstName = data["firstName"];
-            patient.lastName = data["lastName"];
-            patient.DOB = data["DOB"];
-            patient.gender = data["gender"];
-            patient.phone = data["phone"];
-            patient.email = data["email"];
-            patient.address = data["address"];
+            ID = data["ID"];
+            username = data["username"];
+            password = data["password"];
+            firstName = data["firstName"];
+            lastName = data["lastName"];
+            DOB = data["DOB"];
+            gender = data["gender"];
+            phone = data["phone"];
+            email = data["email"];
+            address = data["address"];
 
 
             // Init Vaccines informatinos.
-            Dictionary<string, Dictionary<string, string>> vaccines = Database.getPatientVaccines(patient.ID);
+            Dictionary<string, Dictionary<string, string>> vaccines = Database.getPatientVaccines(ID);
             foreach (var nb in vaccines.Keys)
             {
-                patient.vaccines_date.Add(vaccines[nb]["date"]);
-                patient.vaccines_type.Add(vaccines[nb]["type"]);
-                patient.vaccines_lot.Add(vaccines[nb]["lot"]);
-                patient.vaccines_doctor.Add(vaccines[nb]["doctor"]);
+                vaccines_date.Add(vaccines[nb]["date"]);
+                vaccines_type.Add(vaccines[nb]["type"]);
+                vaccines_lot.Add(vaccines[nb]["lot"]);
+                vaccines_doctor.Add(vaccines[nb]["doctor"]);
             }
             
 
             //// Init Emergency Contacts information.
-            Dictionary<string, string> emergency = Database.getPatientEmergencyContact(patient.ID);
-            patient.emergencyContactFirstName = emergency["firstName"];
-            patient.emergencyContactLastName = emergency["lastName"];
-            patient.emergencyContactPhone = emergency["phone"];
-            patient.emergencyContactRelation = emergency["relation"];
-
-            return patient;
+            Dictionary<string, string> emergency = Database.getPatientEmergencyContact(ID);
+            emergencyContactFirstName = emergency["firstName"];
+            emergencyContactLastName = emergency["lastName"];
+            emergencyContactPhone = emergency["phone"];
+            emergencyContactRelation = emergency["relation"];
 
         } 
 

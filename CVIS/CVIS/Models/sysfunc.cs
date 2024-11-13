@@ -7,6 +7,7 @@ using users;
 
 using Microsoft.Data.Sqlite;
 using System.Security;
+using SQLitePCL;
 
 namespace SysFunc {
 
@@ -72,16 +73,26 @@ namespace SysFunc {
 
         }
 
-        public static Dictionary<string, Dictionary<string, string>> getPatients()
+        public static Dictionary<string, Patient> getPatients()
         {
             // This functions gets every patients informations and their vaccines.
-            Dictionary<string, Dictionary<string, string>> PATIENTS = new Dictionary<string, Dictionary<string, string>>();
+            Dictionary<string, Patient> patients = new Dictionary<string, Patient>();
+            Dictionary<string, Dictionary<string, string>> raw = new Dictionary<string, Dictionary<string, string>>();
 
             // Some code here to get request from SQL database.
             string query = "SELECT * FROM Patients";
-            PATIENTS = sendQuery(query);
+            raw = sendQuery(query);
 
-            return PATIENTS;
+
+            // Convert the raw data into Patient objects.
+            foreach (var patient_info in raw.Values)
+            {
+                Patient patient = new Patient();
+                patient.dataToClass(patient_info);
+                patients.Add(patient.ID, patient);
+            }
+
+            return patients;
 
         }
 

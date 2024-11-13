@@ -24,12 +24,12 @@ namespace CVIS
                 return;
             }
 
-            var PATIENTS = Database.getPatients();
-            foreach (var p in PATIENTS.Keys)
+            Dictionary<string, Patient> Patients = Database.getPatients();
+            foreach (var patient in Patients.Values)
             {
-                if (username_input.Text == PATIENTS[p]["username"] && password_input.Text == PATIENTS[p]["password"])
+                if (username_input.Text == patient.username && password_input.Text == patient.password)
                 {
-                    Sys.loadPage(_page_display, new Patient_Main(_page_display, Patient.dataToClass(PATIENTS[p])));
+                    Sys.loadPage(_page_display, new Patient_Main(_page_display, patient));
                 }
             }
 
