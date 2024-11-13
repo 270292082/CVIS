@@ -433,6 +433,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Patient_Settings";
             this.Text = "Patient_Settings";
+            this.Load += new System.EventHandler(this.Patient_Settings_Load);
             this.banner.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();

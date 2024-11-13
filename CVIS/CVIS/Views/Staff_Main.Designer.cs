@@ -34,10 +34,11 @@
             this.menu_button = new System.Windows.Forms.PictureBox();
             this.logo_button = new System.Windows.Forms.PictureBox();
             this.profile = new System.Windows.Forms.PictureBox();
-            this.welcome_text = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.welcome_text = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.scan_qr_button = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,7 +63,6 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.scan_qr_button = new System.Windows.Forms.Button();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_button)).BeginInit();
@@ -132,19 +132,6 @@
             this.profile.TabIndex = 1;
             this.profile.TabStop = false;
             // 
-            // welcome_text
-            // 
-            this.welcome_text.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.welcome_text.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.welcome_text.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.welcome_text.Location = new System.Drawing.Point(6, 8);
-            this.welcome_text.Name = "welcome_text";
-            this.welcome_text.Size = new System.Drawing.Size(611, 23);
-            this.welcome_text.TabIndex = 13;
-            this.welcome_text.Text = "Welcome [USER]!";
-            this.welcome_text.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // tabControl1
             // 
             this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
@@ -162,10 +149,10 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(172)))), ((int)(((byte)(235)))));
-            this.tabPage1.Controls.Add(this.scan_qr_button);
+            this.tabPage1.BackColor = System.Drawing.Color.Transparent;
             this.tabPage1.Controls.Add(this.welcome_text);
             this.tabPage1.Controls.Add(this.pictureBox2);
+            this.tabPage1.Controls.Add(this.scan_qr_button);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -173,16 +160,35 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Home";
             // 
+            // welcome_text
+            // 
+            this.welcome_text.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.welcome_text.Location = new System.Drawing.Point(320, 11);
+            this.welcome_text.Name = "welcome_text";
+            this.welcome_text.Size = new System.Drawing.Size(297, 89);
+            this.welcome_text.TabIndex = 18;
+            this.welcome_text.Text = "Welcome back, [user]!";
+            this.welcome_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(172)))), ((int)(((byte)(235)))));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(6, 14);
+            this.pictureBox2.Image = global::CVIS.Properties.Resources.logo_white;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 11);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(611, 231);
+            this.pictureBox2.Size = new System.Drawing.Size(308, 89);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
+            // 
+            // scan_qr_button
+            // 
+            this.scan_qr_button.Location = new System.Drawing.Point(57, 136);
+            this.scan_qr_button.Name = "scan_qr_button";
+            this.scan_qr_button.Size = new System.Drawing.Size(120, 85);
+            this.scan_qr_button.TabIndex = 17;
+            this.scan_qr_button.Text = "Scan QR Code";
+            this.scan_qr_button.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
@@ -427,15 +433,6 @@
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-            // scan_qr_button
-            // 
-            this.scan_qr_button.Location = new System.Drawing.Point(23, 34);
-            this.scan_qr_button.Name = "scan_qr_button";
-            this.scan_qr_button.Size = new System.Drawing.Size(120, 85);
-            this.scan_qr_button.TabIndex = 17;
-            this.scan_qr_button.Text = "Scan QR Code";
-            this.scan_qr_button.UseVisualStyleBackColor = true;
-            // 
             // Staff_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -478,7 +475,6 @@
         private PictureBox menu_button;
         private PictureBox logo_button;
         private PictureBox profile;
-        private Label welcome_text;
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TabPage tabPage3;
@@ -500,7 +496,6 @@
         private DataGridViewTextBoxColumn emergencyContactPhoneDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn emergencyContactRelationDataGridViewTextBoxColumn;
         private BindingSource patientBindingSource;
-        private PictureBox pictureBox2;
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
@@ -527,5 +522,7 @@
         private Label yearly_report_info;
         private Label montly_report_info;
         private Button scan_qr_button;
+        private Label welcome_text;
+        private PictureBox pictureBox2;
     }
 }

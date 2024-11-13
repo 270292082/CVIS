@@ -47,8 +47,8 @@ create table Staffs (
 --- Staffs Info Table ---
 create table Staffs_Info (
 	ID varchar(30) references Staffs(ID) on delete cascade,
-	medicalLicense varchar(30) unique not null,
-	licenseExp Date not null,
+	medicalLicense varchar(30) unique,
+	licenseExp Date,
 	specialization varchar(50),
 	phone varchar(20),
 	address Text,
@@ -79,12 +79,18 @@ values
 --- Staffs table data insert ----
 insert into Staffs (ID, username, password, firstName, lastName, email, position, hospitalDepartment)
 values
-('AD123456','luciux','whitehead','Lucius', 'Snape', 'lucius.snape@gmail.com','Nurse','Auckland City Hospital');
+('AD123456','serverix','whitehead','Severus', 'Snape', 'severus.snape@gmail.com','Nurse','Auckland City Hospital'),
+('AD654321','willy','micheal123','William', 'Afton', 'william.afton@gmail.com','Doctor','Auckland City Hospital'),
+('AD872911','yun0','heisminebitch','Yuno', 'Gasai', 'yuno.gasai341@gmail.com','Nurse','Auckland City Hospital'),
+('AD666666','hisoka','gonfreecss','Hisoka', 'Morow', 'hisoka@gmail.com','Admin','Auckland City Hospital');
 	
 --- Staffs Info table data insert
 insert into Staffs_Info (ID, medicalLicense, licenseExp, specialization, phone, address, rolePermission)
 values
-('AD123456','NRS123456','2030-05-30','ER Nurse','0213334445','58 Symonds Street, Grafton, Auckland 1010','Staff');
+('AD123456','NRS123456','2030-05-30','ER Nurse','0213334445','58 Symonds Street, Grafton, Auckland 1010','Staff'),
+('AD654321','NRS654321','2032-02-23','ER Doctor','0213212321','15 Whitty Place, Grafton, Auckland 1010','Staff'),
+('AD872911','NRS872911','2030-08-20','ER Nurse','0218189883','12 Rodeo Street, Grafton, Auckland 1010','Staff'),
+('AD666666','','','Admin','0216719237','23 Toki Doki Place, Somewhere, Auckland 1010','Admin');
 
 	
 select * from Patients;

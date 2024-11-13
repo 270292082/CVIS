@@ -23,7 +23,8 @@ namespace CVIS
 
             welcome_text.Text = "Welcome, ";
             welcome_text.Text += staff.firstName + " ";
-            welcome_text.Text += staff.lastName + "!";
+            welcome_text.Text += staff.lastName + "!\n";
+            welcome_text.Text += "CVIS / Helix Corp";
 
             daily_report_info.Text = "Date: ";
             daily_report_info.Text += "" + "\n"; // Insert the data.

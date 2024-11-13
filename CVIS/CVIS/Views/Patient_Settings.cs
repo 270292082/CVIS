@@ -59,5 +59,10 @@ namespace CVIS
         {
             Sys.toggleNav(display_nav, 1);
         }
+
+        private void Patient_Settings_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
