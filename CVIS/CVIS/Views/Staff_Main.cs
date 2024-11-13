@@ -21,8 +21,8 @@ namespace CVIS
             InitializeComponent();
             _display= display;
 
-            tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed;
-            tabControl1.Region = new Region(new RectangleF(tabPage1.Left, tabPage1.Top, tabPage1.Width, tabPage1.Height));
+            tabMenu.DrawMode = TabDrawMode.OwnerDrawFixed;
+            tabMenu.Region = new Region(new RectangleF(tabHome.Left, tabHome.Top, tabHome.Width, tabHome.Height));
 
             welcome_text.Text = "Welcome, ";
             welcome_text.Text += staff.firstName + " ";
@@ -70,6 +70,42 @@ namespace CVIS
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabBtn1_Click(object sender, EventArgs e)
+        {
+            tabMenu.SelectTab(tabHome);
+            tabBtn1.BackColor = Color.LightCyan;
+            tabBtn2.BackColor = Color.FromArgb(178, 223, 220);
+            tabBtn3.BackColor = Color.FromArgb(178, 223, 220);
+        }
+
+        private void tabBtn2_Click(object sender, EventArgs e)
+        {
+            tabMenu.SelectTab(tabVaccinationManagement);
+            tabBtn1.BackColor = Color.FromArgb(178, 223, 220);
+            tabBtn2.BackColor = Color.LightCyan;
+            tabBtn3.BackColor = Color.FromArgb(178, 223, 220);
+
+        }
+
+        private void tabBtn3_Click(object sender, EventArgs e)
+        {
+            tabMenu.SelectTab(tabVaccinationReports);
+            tabBtn1.BackColor = Color.FromArgb(178, 223, 220);
+            tabBtn2.BackColor = Color.FromArgb(178, 223, 220);
+            tabBtn3.BackColor = Color.LightCyan;
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
 
         }
