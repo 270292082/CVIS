@@ -21,6 +21,9 @@ namespace CVIS
             InitializeComponent();
             _display= display;
 
+            tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed;
+            tabControl1.Region = new Region(new RectangleF(tabPage1.Left, tabPage1.Top, tabPage1.Width, tabPage1.Height));
+
             welcome_text.Text = "Welcome, ";
             welcome_text.Text += staff.firstName + " ";
             welcome_text.Text += staff.lastName + "!\n";
@@ -59,6 +62,16 @@ namespace CVIS
         private void menu_button_Click(object sender, EventArgs e)
         {
             //Sys.toggleNav(display_nav, 1);
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

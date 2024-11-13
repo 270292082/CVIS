@@ -36,6 +36,26 @@
             this.profile = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usernameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dOBDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emergencyContactFirstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emergencyContactLastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emergencyContactPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emergencyContactRelationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.welcome_text = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.scan_qr_button = new System.Windows.Forms.Button();
@@ -44,7 +64,6 @@
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dOBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.yearly_report_info = new System.Windows.Forms.Label();
             this.montly_report_info = new System.Windows.Forms.Label();
@@ -69,10 +88,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.profile)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -140,32 +160,200 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tabControl1.ItemSize = new System.Drawing.Size(54, 25);
-            this.tabControl1.Location = new System.Drawing.Point(11, 65);
+            this.tabControl1.Location = new System.Drawing.Point(-4, 31);
+            this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(49, 3);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(631, 284);
+            this.tabControl1.Size = new System.Drawing.Size(661, 330);
             this.tabControl1.TabIndex = 14;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage1.BackColor = System.Drawing.Color.LightCyan;
+            this.tabPage1.Controls.Add(this.button3);
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.dataGridView3);
+            this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.welcome_text);
             this.tabPage1.Controls.Add(this.pictureBox2);
             this.tabPage1.Controls.Add(this.scan_qr_button);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(623, 251);
+            this.tabPage1.Size = new System.Drawing.Size(653, 297);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Home";
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(220)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(439, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(215, 35);
+            this.button3.TabIndex = 23;
+            this.button3.Text = "Vaccination Reports";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(220)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(218, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(215, 35);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "Vaccination Management";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightCyan;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(-3, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(215, 35);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Home";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.LightCyan;
+            this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn1,
+            this.usernameDataGridViewTextBoxColumn1,
+            this.passwordDataGridViewTextBoxColumn,
+            this.firstNameDataGridViewTextBoxColumn,
+            this.lastNameDataGridViewTextBoxColumn,
+            this.dOBDataGridViewTextBoxColumn1,
+            this.genderDataGridViewTextBoxColumn,
+            this.phoneDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.addressDataGridViewTextBoxColumn,
+            this.emergencyContactFirstNameDataGridViewTextBoxColumn,
+            this.emergencyContactLastNameDataGridViewTextBoxColumn,
+            this.emergencyContactPhoneDataGridViewTextBoxColumn,
+            this.emergencyContactRelationDataGridViewTextBoxColumn});
+            this.dataGridView3.DataSource = this.patientBindingSource;
+            this.dataGridView3.Location = new System.Drawing.Point(6, 165);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowTemplate.Height = 25;
+            this.dataGridView3.Size = new System.Drawing.Size(637, 125);
+            this.dataGridView3.TabIndex = 20;
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
+            // 
+            // iDDataGridViewTextBoxColumn1
+            // 
+            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
+            this.iDDataGridViewTextBoxColumn1.Width = 80;
+            // 
+            // usernameDataGridViewTextBoxColumn1
+            // 
+            this.usernameDataGridViewTextBoxColumn1.DataPropertyName = "username";
+            this.usernameDataGridViewTextBoxColumn1.HeaderText = "username";
+            this.usernameDataGridViewTextBoxColumn1.Name = "usernameDataGridViewTextBoxColumn1";
+            // 
+            // passwordDataGridViewTextBoxColumn
+            // 
+            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "password";
+            this.passwordDataGridViewTextBoxColumn.HeaderText = "password";
+            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "firstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "firstName";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "lastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "lastName";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            // 
+            // dOBDataGridViewTextBoxColumn1
+            // 
+            this.dOBDataGridViewTextBoxColumn1.DataPropertyName = "DOB";
+            this.dOBDataGridViewTextBoxColumn1.HeaderText = "DOB";
+            this.dOBDataGridViewTextBoxColumn1.Name = "dOBDataGridViewTextBoxColumn1";
+            // 
+            // genderDataGridViewTextBoxColumn
+            // 
+            this.genderDataGridViewTextBoxColumn.DataPropertyName = "gender";
+            this.genderDataGridViewTextBoxColumn.HeaderText = "gender";
+            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
+            // 
+            // phoneDataGridViewTextBoxColumn
+            // 
+            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "phone";
+            this.phoneDataGridViewTextBoxColumn.HeaderText = "phone";
+            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // emergencyContactFirstNameDataGridViewTextBoxColumn
+            // 
+            this.emergencyContactFirstNameDataGridViewTextBoxColumn.DataPropertyName = "emergencyContactFirstName";
+            this.emergencyContactFirstNameDataGridViewTextBoxColumn.HeaderText = "emergencyContactFirstName";
+            this.emergencyContactFirstNameDataGridViewTextBoxColumn.Name = "emergencyContactFirstNameDataGridViewTextBoxColumn";
+            // 
+            // emergencyContactLastNameDataGridViewTextBoxColumn
+            // 
+            this.emergencyContactLastNameDataGridViewTextBoxColumn.DataPropertyName = "emergencyContactLastName";
+            this.emergencyContactLastNameDataGridViewTextBoxColumn.HeaderText = "emergencyContactLastName";
+            this.emergencyContactLastNameDataGridViewTextBoxColumn.Name = "emergencyContactLastNameDataGridViewTextBoxColumn";
+            // 
+            // emergencyContactPhoneDataGridViewTextBoxColumn
+            // 
+            this.emergencyContactPhoneDataGridViewTextBoxColumn.DataPropertyName = "emergencyContactPhone";
+            this.emergencyContactPhoneDataGridViewTextBoxColumn.HeaderText = "emergencyContactPhone";
+            this.emergencyContactPhoneDataGridViewTextBoxColumn.Name = "emergencyContactPhoneDataGridViewTextBoxColumn";
+            // 
+            // emergencyContactRelationDataGridViewTextBoxColumn
+            // 
+            this.emergencyContactRelationDataGridViewTextBoxColumn.DataPropertyName = "emergencyContactRelation";
+            this.emergencyContactRelationDataGridViewTextBoxColumn.HeaderText = "emergencyContactRelation";
+            this.emergencyContactRelationDataGridViewTextBoxColumn.Name = "emergencyContactRelationDataGridViewTextBoxColumn";
+            // 
+            // patientBindingSource
+            // 
+            this.patientBindingSource.DataSource = typeof(users.Patient);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 134);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(549, 25);
+            this.textBox1.TabIndex = 19;
             // 
             // welcome_text
             // 
             this.welcome_text.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.welcome_text.Location = new System.Drawing.Point(320, 11);
+            this.welcome_text.Location = new System.Drawing.Point(329, 40);
             this.welcome_text.Name = "welcome_text";
-            this.welcome_text.Size = new System.Drawing.Size(297, 89);
+            this.welcome_text.Size = new System.Drawing.Size(309, 89);
             this.welcome_text.TabIndex = 18;
             this.welcome_text.Text = "Welcome back, [user]!";
             this.welcome_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -173,21 +361,26 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::CVIS.Properties.Resources.logo_white;
-            this.pictureBox2.Location = new System.Drawing.Point(6, 11);
+            this.pictureBox2.Location = new System.Drawing.Point(6, 40);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(308, 89);
+            this.pictureBox2.Size = new System.Drawing.Size(317, 89);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
             // scan_qr_button
             // 
-            this.scan_qr_button.Location = new System.Drawing.Point(57, 136);
+            this.scan_qr_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("scan_qr_button.BackgroundImage")));
+            this.scan_qr_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.scan_qr_button.FlatAppearance.BorderSize = 0;
+            this.scan_qr_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.scan_qr_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.scan_qr_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.scan_qr_button.Location = new System.Drawing.Point(561, 129);
             this.scan_qr_button.Name = "scan_qr_button";
-            this.scan_qr_button.Size = new System.Drawing.Size(120, 85);
+            this.scan_qr_button.Size = new System.Drawing.Size(82, 32);
             this.scan_qr_button.TabIndex = 17;
-            this.scan_qr_button.Text = "Scan QR Code";
             this.scan_qr_button.UseVisualStyleBackColor = true;
             // 
             // tabPage3
@@ -196,7 +389,7 @@
             this.tabPage3.Controls.Add(this.dataGridView1);
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(623, 251);
+            this.tabPage3.Size = new System.Drawing.Size(653, 297);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Vaccination Management";
             // 
@@ -233,10 +426,6 @@
             this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
             // 
-            // patientBindingSource
-            // 
-            this.patientBindingSource.DataSource = typeof(users.Patient);
-            // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.LightCyan;
@@ -256,7 +445,7 @@
             this.tabPage4.Controls.Add(this.pictureBox3);
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(623, 251);
+            this.tabPage4.Size = new System.Drawing.Size(653, 297);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Vaccination Reports";
             // 
@@ -451,10 +640,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.profile)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -484,17 +675,9 @@
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn passwdDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn dOBDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn emergencyContactNameDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn emergencyContactPhoneDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn emergencyContactRelationDataGridViewTextBoxColumn;
         private BindingSource patientBindingSource;
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;
@@ -524,5 +707,24 @@
         private Button scan_qr_button;
         private Label welcome_text;
         private PictureBox pictureBox2;
+        private TextBox textBox1;
+        private DataGridView dataGridView3;
+        private DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn dOBDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn emergencyContactFirstNameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn emergencyContactLastNameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn emergencyContactPhoneDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn emergencyContactRelationDataGridViewTextBoxColumn;
+        private Button button3;
+        private Button button2;
+        private Button button1;
     }
 }
