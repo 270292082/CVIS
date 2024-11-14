@@ -92,12 +92,6 @@ values
 ('AD872911','NRS872911','2030-08-20','ER Nurse','0218189883','12 Rodeo Street, Grafton, Auckland 1010','Staff'),
 ('AD666666','','','Admin','0216719237','23 Toki Doki Place, Somewhere, Auckland 1010','Admin');
 
-	
-select * from Patients;
-select * from Patients_Vaccines;
-select * from Patients_Emergency_Contacts;
-select * from Staffs;
-select * from Staffs_Info;
 
 -- join three databases ---
 select * from Patients
@@ -105,7 +99,7 @@ join Patients_Vaccines on Patients.ID = Patients_Vaccines.patient_ID
 join Patients_Emergency_Contacts on Patients.ID = Patients_Emergency_Contacts.patient_ID
 where Patients.ID = '654321';
 
---- join teo databases ---
+--- join two databases ---
 select * from Staffs
 join Staffs_Info
 on Staffs.ID = Staffs_Info.ID

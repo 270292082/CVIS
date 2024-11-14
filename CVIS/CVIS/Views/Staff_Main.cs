@@ -10,12 +10,14 @@ using System.Windows.Forms;
 
 using users;
 using SysFunc;
+using System.Diagnostics;
 
 namespace CVIS
 {
     public partial class Staff_Main : Form
     {
         private Panel _display;
+        private Dictionary<string, Patient> _patients = Database.getPatients();
         public Staff_Main(Panel display, Staff staff)
         {
             InitializeComponent();
@@ -62,16 +64,6 @@ namespace CVIS
         private void menu_button_Click(object sender, EventArgs e)
         {
             //Sys.toggleNav(display_nav, 1);
-        }
-
-        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void tabBtn1_Click(object sender, EventArgs e)
@@ -136,7 +128,64 @@ namespace CVIS
                 dataGridHome.Rows[nb].Cells[13].Value = patient.emergencyContactRelation;
                 nb++;
             }
+
+            infoInit(null);            
+
+        }
+
+        private void infoInit(Patient patient)
+        {
+            if (patient == null)
+            {
+                info1.Text = string.Empty;
+                info1.Text += "User ID     :\n";
+                info1.Text += "First Name  :\n";
+                info1.Text += "LastName    :\n";
+                info1.Text += "DOB         :\n";
+                info1.Text += "Gender      :\n";
+
+                info2.Text = string.Empty;
+                info2.Text += "Username     :\n";
+                info2.Text += "Email        :\n";
+                info2.Text += "Mobile       :\n";
+                info2.Text += "Address      :\n";
+
+                return;
+            }
+
+            info1.Text = string.Empty;
+            info1.Text += "Users ID    : " + patient.ID + "\n";
+            info1.Text += "First Name  : " + patient.firstName + "\n";
+            info1.Text += "Last Name   : " + patient.lastName + "\n";
+            info1.Text += "DOB         : " + patient.DOB + "\n";
+            info1.Text += "Gender      : " + patient.gender + "\n";
+
+            info2.Text = string.Empty;
+            info2.Text += "Username     : " + patient.username + "\n";
+            info2.Text += "Email        : " + patient.email + "\n";
+            info2.Text += "Mobile       : " + patient.phone + "\n";
+            info2.Text += "Address      : \n" + patient.address + "\n";
+
+        }
+
+        private void search_TextChanged(object sender, EventArgs e)
+        {
             
+        }
+
+        private void search_btn_Click(object sender, EventArgs e)
+        {
+            foreach (var patient in _patients)
+            {
+                if (search.Text != patient.Key.ToString())
+                {
+                    infoInit(null);
+                    continue;
+                }
+
+                infoInit(patient.Value);
+                return;
+            }
         }
     }
 }
