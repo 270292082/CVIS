@@ -29,539 +29,551 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff_Main));
-            this.banner = new System.Windows.Forms.Panel();
-            this.menu_button = new System.Windows.Forms.PictureBox();
-            this.logo_button = new System.Windows.Forms.PictureBox();
-            this.profile = new System.Windows.Forms.PictureBox();
-            this.tabMenu = new System.Windows.Forms.TabControl();
-            this.tabHome = new System.Windows.Forms.TabPage();
-            this.dataGridHome = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.welcome_text = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.scan_qr_button = new System.Windows.Forms.Button();
-            this.tabVaccinationManagement = new System.Windows.Forms.TabPage();
-            this.dataGridVaccines1 = new System.Windows.Forms.DataGridView();
-            this.tabVaccinationReports = new System.Windows.Forms.TabPage();
-            this.dataGridVaccines2 = new System.Windows.Forms.DataGridView();
-            this.yearly_report_info = new System.Windows.Forms.Label();
-            this.montly_report_info = new System.Windows.Forms.Label();
-            this.daily_report_info = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.tabBtn3 = new System.Windows.Forms.Button();
-            this.tabBtn2 = new System.Windows.Forms.Button();
-            this.tabBtn1 = new System.Windows.Forms.Button();
-            this.patient_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_username = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_firstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_lastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_dob = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.banner.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_button)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.profile)).BeginInit();
-            this.tabMenu.SuspendLayout();
-            this.tabHome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridHome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.tabVaccinationManagement.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVaccines1)).BeginInit();
-            this.tabVaccinationReports.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVaccines2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.SuspendLayout();
+            banner = new Panel();
+            menu_button = new PictureBox();
+            logo_button = new PictureBox();
+            profile = new PictureBox();
+            tabMenu = new TabControl();
+            tabHome = new TabPage();
+            dataGridHome = new DataGridView();
+            textBox1 = new TextBox();
+            welcome_text = new Label();
+            pictureBox2 = new PictureBox();
+            scan_qr_button = new Button();
+            tabVaccinationManagement = new TabPage();
+            dataGridVaccines1 = new DataGridView();
+            tabVaccinationReports = new TabPage();
+            dataGridVaccines2 = new DataGridView();
+            yearly_report_info = new Label();
+            montly_report_info = new Label();
+            daily_report_info = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            pictureBox8 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            tabBtn3 = new Button();
+            tabBtn2 = new Button();
+            tabBtn1 = new Button();
+            patient_ID = new DataGridViewTextBoxColumn();
+            patient_username = new DataGridViewTextBoxColumn();
+            patient_password = new DataGridViewTextBoxColumn();
+            patient_firstName = new DataGridViewTextBoxColumn();
+            patient_lastName = new DataGridViewTextBoxColumn();
+            patient_dob = new DataGridViewTextBoxColumn();
+            patient_gender = new DataGridViewTextBoxColumn();
+            patient_phone = new DataGridViewTextBoxColumn();
+            patient_email = new DataGridViewTextBoxColumn();
+            patient_address = new DataGridViewTextBoxColumn();
+            patient_emergencyFirstName = new DataGridViewTextBoxColumn();
+            patient_emergencyLastName = new DataGridViewTextBoxColumn();
+            patient_emergencyPhone = new DataGridViewTextBoxColumn();
+            patient_emergencyRelation = new DataGridViewTextBoxColumn();
+            banner.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)menu_button).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)logo_button).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)profile).BeginInit();
+            tabMenu.SuspendLayout();
+            tabHome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridHome).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            tabVaccinationManagement.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridVaccines1).BeginInit();
+            tabVaccinationReports.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridVaccines2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            SuspendLayout();
             // 
             // banner
             // 
-            this.banner.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.banner.AutoSize = true;
-            this.banner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(136)))));
-            this.banner.Controls.Add(this.menu_button);
-            this.banner.Controls.Add(this.logo_button);
-            this.banner.Controls.Add(this.profile);
-            this.banner.Location = new System.Drawing.Point(0, 0);
-            this.banner.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.banner.Name = "banner";
-            this.banner.Size = new System.Drawing.Size(654, 60);
-            this.banner.TabIndex = 10;
+            banner.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            banner.AutoSize = true;
+            banner.BackColor = Color.FromArgb(0, 151, 136);
+            banner.Controls.Add(menu_button);
+            banner.Controls.Add(logo_button);
+            banner.Controls.Add(profile);
+            banner.Location = new Point(0, 0);
+            banner.Margin = new Padding(3, 2, 3, 2);
+            banner.Name = "banner";
+            banner.Size = new Size(654, 60);
+            banner.TabIndex = 10;
             // 
             // menu_button
             // 
-            this.menu_button.Image = ((System.Drawing.Image)(resources.GetObject("menu_button.Image")));
-            this.menu_button.Location = new System.Drawing.Point(12, 10);
-            this.menu_button.Name = "menu_button";
-            this.menu_button.Size = new System.Drawing.Size(20, 40);
-            this.menu_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu_button.TabIndex = 8;
-            this.menu_button.TabStop = false;
-            this.menu_button.Click += new System.EventHandler(this.menu_button_Click);
+            menu_button.Image = (Image)resources.GetObject("menu_button.Image");
+            menu_button.Location = new Point(12, 10);
+            menu_button.Name = "menu_button";
+            menu_button.Size = new Size(20, 40);
+            menu_button.SizeMode = PictureBoxSizeMode.Zoom;
+            menu_button.TabIndex = 8;
+            menu_button.TabStop = false;
+            menu_button.Click += menu_button_Click;
             // 
             // logo_button
             // 
-            this.logo_button.Image = global::CVIS.Properties.Resources.logo_white;
-            this.logo_button.Location = new System.Drawing.Point(38, 10);
-            this.logo_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.logo_button.Name = "logo_button";
-            this.logo_button.Size = new System.Drawing.Size(105, 40);
-            this.logo_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logo_button.TabIndex = 0;
-            this.logo_button.TabStop = false;
+            logo_button.Image = Properties.Resources.logo_white;
+            logo_button.Location = new Point(38, 10);
+            logo_button.Margin = new Padding(3, 2, 3, 2);
+            logo_button.Name = "logo_button";
+            logo_button.Size = new Size(105, 40);
+            logo_button.SizeMode = PictureBoxSizeMode.Zoom;
+            logo_button.TabIndex = 0;
+            logo_button.TabStop = false;
             // 
             // profile
             // 
-            this.profile.Image = global::CVIS.Properties.Resources.profile_placeholder;
-            this.profile.Location = new System.Drawing.Point(570, 9);
-            this.profile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.profile.Name = "profile";
-            this.profile.Size = new System.Drawing.Size(72, 42);
-            this.profile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.profile.TabIndex = 1;
-            this.profile.TabStop = false;
+            profile.Image = Properties.Resources.profile_placeholder;
+            profile.Location = new Point(570, 9);
+            profile.Margin = new Padding(3, 2, 3, 2);
+            profile.Name = "profile";
+            profile.Size = new Size(72, 42);
+            profile.SizeMode = PictureBoxSizeMode.Zoom;
+            profile.TabIndex = 1;
+            profile.TabStop = false;
             // 
             // tabMenu
             // 
-            this.tabMenu.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
-            this.tabMenu.Controls.Add(this.tabHome);
-            this.tabMenu.Controls.Add(this.tabVaccinationManagement);
-            this.tabMenu.Controls.Add(this.tabVaccinationReports);
-            this.tabMenu.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tabMenu.ItemSize = new System.Drawing.Size(54, 25);
-            this.tabMenu.Location = new System.Drawing.Point(-4, 76);
-            this.tabMenu.Multiline = true;
-            this.tabMenu.Name = "tabMenu";
-            this.tabMenu.Padding = new System.Drawing.Point(49, 3);
-            this.tabMenu.SelectedIndex = 0;
-            this.tabMenu.Size = new System.Drawing.Size(661, 289);
-            this.tabMenu.TabIndex = 14;
+            tabMenu.Appearance = TabAppearance.FlatButtons;
+            tabMenu.Controls.Add(tabHome);
+            tabMenu.Controls.Add(tabVaccinationManagement);
+            tabMenu.Controls.Add(tabVaccinationReports);
+            tabMenu.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            tabMenu.ItemSize = new Size(54, 25);
+            tabMenu.Location = new Point(-4, 76);
+            tabMenu.Multiline = true;
+            tabMenu.Name = "tabMenu";
+            tabMenu.Padding = new Point(49, 3);
+            tabMenu.SelectedIndex = 0;
+            tabMenu.Size = new Size(661, 289);
+            tabMenu.TabIndex = 14;
             // 
             // tabHome
             // 
-            this.tabHome.BackColor = System.Drawing.Color.LightCyan;
-            this.tabHome.Controls.Add(this.dataGridHome);
-            this.tabHome.Controls.Add(this.textBox1);
-            this.tabHome.Controls.Add(this.welcome_text);
-            this.tabHome.Controls.Add(this.pictureBox2);
-            this.tabHome.Controls.Add(this.scan_qr_button);
-            this.tabHome.Location = new System.Drawing.Point(4, 29);
-            this.tabHome.Name = "tabHome";
-            this.tabHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHome.Size = new System.Drawing.Size(653, 256);
-            this.tabHome.TabIndex = 0;
-            this.tabHome.Text = "Home";
-            this.tabHome.Click += new System.EventHandler(this.tabPage1_Click);
+            tabHome.BackColor = Color.LightCyan;
+            tabHome.Controls.Add(dataGridHome);
+            tabHome.Controls.Add(textBox1);
+            tabHome.Controls.Add(welcome_text);
+            tabHome.Controls.Add(pictureBox2);
+            tabHome.Controls.Add(scan_qr_button);
+            tabHome.Location = new Point(4, 29);
+            tabHome.Name = "tabHome";
+            tabHome.Padding = new Padding(3);
+            tabHome.Size = new Size(653, 256);
+            tabHome.TabIndex = 0;
+            tabHome.Text = "Home";
+            tabHome.Click += tabPage1_Click;
             // 
             // dataGridHome
             // 
-            this.dataGridHome.BackgroundColor = System.Drawing.Color.LightCyan;
-            this.dataGridHome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridHome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridHome.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.patient_ID,
-            this.patient_username,
-            this.patient_password,
-            this.patient_firstName,
-            this.patient_lastName,
-            this.patient_dob,
-            this.patient_gender,
-            this.patient_phone,
-            this.patient_email,
-            this.patient_address});
-            this.dataGridHome.Location = new System.Drawing.Point(7, 127);
-            this.dataGridHome.Name = "dataGridHome";
-            this.dataGridHome.RowTemplate.Height = 25;
-            this.dataGridHome.Size = new System.Drawing.Size(639, 117);
-            this.dataGridHome.TabIndex = 20;
-            this.dataGridHome.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
+            dataGridHome.BackgroundColor = Color.LightCyan;
+            dataGridHome.BorderStyle = BorderStyle.None;
+            dataGridHome.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridHome.Columns.AddRange(new DataGridViewColumn[] { patient_ID, patient_username, patient_password, patient_firstName, patient_lastName, patient_dob, patient_gender, patient_phone, patient_email, patient_address, patient_emergencyFirstName, patient_emergencyLastName, patient_emergencyPhone, patient_emergencyRelation });
+            dataGridHome.Location = new Point(7, 127);
+            dataGridHome.Name = "dataGridHome";
+            dataGridHome.RowTemplate.Height = 25;
+            dataGridHome.Size = new Size(639, 117);
+            dataGridHome.TabIndex = 20;
+            dataGridHome.CellContentClick += dataGridView3_CellContentClick;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 94);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(549, 25);
-            this.textBox1.TabIndex = 19;
+            textBox1.Location = new Point(6, 94);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(549, 25);
+            textBox1.TabIndex = 19;
             // 
             // welcome_text
             // 
-            this.welcome_text.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.welcome_text.Location = new System.Drawing.Point(329, 2);
-            this.welcome_text.Name = "welcome_text";
-            this.welcome_text.Size = new System.Drawing.Size(309, 87);
-            this.welcome_text.TabIndex = 18;
-            this.welcome_text.Text = "Welcome back, [user]!";
-            this.welcome_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            welcome_text.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            welcome_text.Location = new Point(329, 2);
+            welcome_text.Name = "welcome_text";
+            welcome_text.Size = new Size(309, 87);
+            welcome_text.TabIndex = 18;
+            welcome_text.Text = "Welcome back, [user]!";
+            welcome_text.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::CVIS.Properties.Resources.logo_white;
-            this.pictureBox2.Location = new System.Drawing.Point(6, 2);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(317, 87);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.Image = Properties.Resources.logo_white;
+            pictureBox2.Location = new Point(6, 2);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(317, 87);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 9;
+            pictureBox2.TabStop = false;
             // 
             // scan_qr_button
             // 
-            this.scan_qr_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("scan_qr_button.BackgroundImage")));
-            this.scan_qr_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.scan_qr_button.FlatAppearance.BorderSize = 0;
-            this.scan_qr_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.scan_qr_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.scan_qr_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.scan_qr_button.Location = new System.Drawing.Point(561, 89);
-            this.scan_qr_button.Name = "scan_qr_button";
-            this.scan_qr_button.Size = new System.Drawing.Size(82, 32);
-            this.scan_qr_button.TabIndex = 17;
-            this.scan_qr_button.UseVisualStyleBackColor = true;
+            scan_qr_button.BackgroundImage = (Image)resources.GetObject("scan_qr_button.BackgroundImage");
+            scan_qr_button.BackgroundImageLayout = ImageLayout.Zoom;
+            scan_qr_button.FlatAppearance.BorderSize = 0;
+            scan_qr_button.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            scan_qr_button.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            scan_qr_button.FlatStyle = FlatStyle.Flat;
+            scan_qr_button.Location = new Point(561, 89);
+            scan_qr_button.Name = "scan_qr_button";
+            scan_qr_button.Size = new Size(82, 32);
+            scan_qr_button.TabIndex = 17;
+            scan_qr_button.UseVisualStyleBackColor = true;
             // 
             // tabVaccinationManagement
             // 
-            this.tabVaccinationManagement.BackColor = System.Drawing.Color.LightCyan;
-            this.tabVaccinationManagement.Controls.Add(this.dataGridVaccines1);
-            this.tabVaccinationManagement.Location = new System.Drawing.Point(4, 29);
-            this.tabVaccinationManagement.Name = "tabVaccinationManagement";
-            this.tabVaccinationManagement.Size = new System.Drawing.Size(653, 256);
-            this.tabVaccinationManagement.TabIndex = 2;
-            this.tabVaccinationManagement.Text = "Vaccination Management";
+            tabVaccinationManagement.BackColor = Color.LightCyan;
+            tabVaccinationManagement.Controls.Add(dataGridVaccines1);
+            tabVaccinationManagement.Location = new Point(4, 29);
+            tabVaccinationManagement.Name = "tabVaccinationManagement";
+            tabVaccinationManagement.Size = new Size(653, 256);
+            tabVaccinationManagement.TabIndex = 2;
+            tabVaccinationManagement.Text = "Vaccination Management";
             // 
             // dataGridVaccines1
             // 
-            this.dataGridVaccines1.BackgroundColor = System.Drawing.Color.LightCyan;
-            this.dataGridVaccines1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridVaccines1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridVaccines1.Location = new System.Drawing.Point(7, 127);
-            this.dataGridVaccines1.Name = "dataGridVaccines1";
-            this.dataGridVaccines1.RowTemplate.Height = 25;
-            this.dataGridVaccines1.Size = new System.Drawing.Size(639, 117);
-            this.dataGridVaccines1.TabIndex = 21;
+            dataGridVaccines1.BackgroundColor = Color.LightCyan;
+            dataGridVaccines1.BorderStyle = BorderStyle.None;
+            dataGridVaccines1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridVaccines1.Location = new Point(7, 127);
+            dataGridVaccines1.Name = "dataGridVaccines1";
+            dataGridVaccines1.RowTemplate.Height = 25;
+            dataGridVaccines1.Size = new Size(639, 117);
+            dataGridVaccines1.TabIndex = 21;
             // 
             // tabVaccinationReports
             // 
-            this.tabVaccinationReports.BackColor = System.Drawing.Color.LightCyan;
-            this.tabVaccinationReports.Controls.Add(this.dataGridVaccines2);
-            this.tabVaccinationReports.Controls.Add(this.yearly_report_info);
-            this.tabVaccinationReports.Controls.Add(this.montly_report_info);
-            this.tabVaccinationReports.Controls.Add(this.daily_report_info);
-            this.tabVaccinationReports.Controls.Add(this.label4);
-            this.tabVaccinationReports.Controls.Add(this.label3);
-            this.tabVaccinationReports.Controls.Add(this.label2);
-            this.tabVaccinationReports.Controls.Add(this.pictureBox8);
-            this.tabVaccinationReports.Controls.Add(this.pictureBox1);
-            this.tabVaccinationReports.Controls.Add(this.pictureBox7);
-            this.tabVaccinationReports.Controls.Add(this.pictureBox6);
-            this.tabVaccinationReports.Controls.Add(this.pictureBox5);
-            this.tabVaccinationReports.Controls.Add(this.pictureBox4);
-            this.tabVaccinationReports.Controls.Add(this.pictureBox3);
-            this.tabVaccinationReports.Location = new System.Drawing.Point(4, 29);
-            this.tabVaccinationReports.Name = "tabVaccinationReports";
-            this.tabVaccinationReports.Size = new System.Drawing.Size(653, 256);
-            this.tabVaccinationReports.TabIndex = 3;
-            this.tabVaccinationReports.Text = "Vaccination Reports";
+            tabVaccinationReports.BackColor = Color.LightCyan;
+            tabVaccinationReports.Controls.Add(dataGridVaccines2);
+            tabVaccinationReports.Controls.Add(yearly_report_info);
+            tabVaccinationReports.Controls.Add(montly_report_info);
+            tabVaccinationReports.Controls.Add(daily_report_info);
+            tabVaccinationReports.Controls.Add(label4);
+            tabVaccinationReports.Controls.Add(label3);
+            tabVaccinationReports.Controls.Add(label2);
+            tabVaccinationReports.Controls.Add(pictureBox8);
+            tabVaccinationReports.Controls.Add(pictureBox1);
+            tabVaccinationReports.Controls.Add(pictureBox7);
+            tabVaccinationReports.Controls.Add(pictureBox6);
+            tabVaccinationReports.Controls.Add(pictureBox5);
+            tabVaccinationReports.Controls.Add(pictureBox4);
+            tabVaccinationReports.Controls.Add(pictureBox3);
+            tabVaccinationReports.Location = new Point(4, 29);
+            tabVaccinationReports.Name = "tabVaccinationReports";
+            tabVaccinationReports.Size = new Size(653, 256);
+            tabVaccinationReports.TabIndex = 3;
+            tabVaccinationReports.Text = "Vaccination Reports";
             // 
             // dataGridVaccines2
             // 
-            this.dataGridVaccines2.BackgroundColor = System.Drawing.Color.LightCyan;
-            this.dataGridVaccines2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridVaccines2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridVaccines2.Location = new System.Drawing.Point(7, 127);
-            this.dataGridVaccines2.Name = "dataGridVaccines2";
-            this.dataGridVaccines2.RowTemplate.Height = 25;
-            this.dataGridVaccines2.Size = new System.Drawing.Size(639, 117);
-            this.dataGridVaccines2.TabIndex = 21;
+            dataGridVaccines2.BackgroundColor = Color.LightCyan;
+            dataGridVaccines2.BorderStyle = BorderStyle.None;
+            dataGridVaccines2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridVaccines2.Location = new Point(7, 127);
+            dataGridVaccines2.Name = "dataGridVaccines2";
+            dataGridVaccines2.RowTemplate.Height = 25;
+            dataGridVaccines2.Size = new Size(639, 117);
+            dataGridVaccines2.TabIndex = 21;
             // 
             // yearly_report_info
             // 
-            this.yearly_report_info.AutoSize = true;
-            this.yearly_report_info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
-            this.yearly_report_info.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.yearly_report_info.Location = new System.Drawing.Point(453, 53);
-            this.yearly_report_info.Name = "yearly_report_info";
-            this.yearly_report_info.Size = new System.Drawing.Size(44, 17);
-            this.yearly_report_info.TabIndex = 15;
-            this.yearly_report_info.Text = "Year : ";
+            yearly_report_info.AutoSize = true;
+            yearly_report_info.BackColor = Color.FromArgb(178, 223, 219);
+            yearly_report_info.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            yearly_report_info.Location = new Point(453, 53);
+            yearly_report_info.Name = "yearly_report_info";
+            yearly_report_info.Size = new Size(44, 17);
+            yearly_report_info.TabIndex = 15;
+            yearly_report_info.Text = "Year : ";
             // 
             // montly_report_info
             // 
-            this.montly_report_info.AutoSize = true;
-            this.montly_report_info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
-            this.montly_report_info.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.montly_report_info.Location = new System.Drawing.Point(236, 53);
-            this.montly_report_info.Name = "montly_report_info";
-            this.montly_report_info.Size = new System.Drawing.Size(57, 17);
-            this.montly_report_info.TabIndex = 14;
-            this.montly_report_info.Text = "Month : ";
+            montly_report_info.AutoSize = true;
+            montly_report_info.BackColor = Color.FromArgb(178, 223, 219);
+            montly_report_info.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            montly_report_info.Location = new Point(236, 53);
+            montly_report_info.Name = "montly_report_info";
+            montly_report_info.Size = new Size(57, 17);
+            montly_report_info.TabIndex = 14;
+            montly_report_info.Text = "Month : ";
             // 
             // daily_report_info
             // 
-            this.daily_report_info.AutoSize = true;
-            this.daily_report_info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
-            this.daily_report_info.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.daily_report_info.Location = new System.Drawing.Point(24, 53);
-            this.daily_report_info.Name = "daily_report_info";
-            this.daily_report_info.Size = new System.Drawing.Size(46, 17);
-            this.daily_report_info.TabIndex = 13;
-            this.daily_report_info.Text = "Date : ";
+            daily_report_info.AutoSize = true;
+            daily_report_info.BackColor = Color.FromArgb(178, 223, 219);
+            daily_report_info.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            daily_report_info.Location = new Point(24, 53);
+            daily_report_info.Name = "daily_report_info";
+            daily_report_info.Size = new Size(46, 17);
+            daily_report_info.TabIndex = 13;
+            daily_report_info.Text = "Date : ";
             // 
             // label4
             // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(461, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(161, 24);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Yearly Report";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            label4.BackColor = Color.FromArgb(0, 150, 136);
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.WhiteSmoke;
+            label4.Location = new Point(461, 13);
+            label4.Name = "label4";
+            label4.Size = new Size(161, 24);
+            label4.TabIndex = 12;
+            label4.Text = "Yearly Report";
+            label4.TextAlign = ContentAlignment.TopCenter;
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(244, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 24);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Monthly Report";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            label3.BackColor = Color.FromArgb(0, 150, 136);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.WhiteSmoke;
+            label3.Location = new Point(244, 12);
+            label3.Name = "label3";
+            label3.Size = new Size(161, 24);
+            label3.TabIndex = 11;
+            label3.Text = "Monthly Report";
+            label3.TextAlign = ContentAlignment.TopCenter;
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(32, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 24);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Daily Report";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            label2.BackColor = Color.FromArgb(0, 150, 136);
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.WhiteSmoke;
+            label2.Location = new Point(32, 12);
+            label2.Name = "label2";
+            label2.Size = new Size(161, 24);
+            label2.TabIndex = 10;
+            label2.Text = "Daily Report";
+            label2.TextAlign = ContentAlignment.TopCenter;
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(453, 9);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(178, 31);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 9;
-            this.pictureBox8.TabStop = false;
+            pictureBox8.BackColor = Color.FromArgb(178, 223, 219);
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(453, 9);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(178, 31);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 9;
+            pictureBox8.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(236, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(178, 31);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackColor = Color.FromArgb(178, 223, 219);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(236, 8);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(178, 31);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(24, 8);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(178, 31);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 7;
-            this.pictureBox7.TabStop = false;
+            pictureBox7.BackColor = Color.FromArgb(178, 223, 219);
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(24, 8);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(178, 31);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 7;
+            pictureBox7.TabStop = false;
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(610, 97);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(8, 8);
-            this.pictureBox6.TabIndex = 6;
-            this.pictureBox6.TabStop = false;
+            pictureBox6.Location = new Point(610, 97);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(8, 8);
+            pictureBox6.TabIndex = 6;
+            pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(436, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(210, 117);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(436, 2);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(210, 117);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 2;
+            pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(220, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(210, 117);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(220, 2);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(210, 117);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 1;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(7, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(210, 117);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(7, 2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(210, 117);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
             // 
             // tabBtn3
             // 
-            this.tabBtn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(220)))));
-            this.tabBtn3.FlatAppearance.BorderSize = 0;
-            this.tabBtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tabBtn3.Location = new System.Drawing.Point(440, 60);
-            this.tabBtn3.Name = "tabBtn3";
-            this.tabBtn3.Size = new System.Drawing.Size(215, 35);
-            this.tabBtn3.TabIndex = 23;
-            this.tabBtn3.Text = "Vaccination Reports";
-            this.tabBtn3.UseVisualStyleBackColor = false;
-            this.tabBtn3.Click += new System.EventHandler(this.tabBtn3_Click);
+            tabBtn3.BackColor = Color.FromArgb(178, 223, 220);
+            tabBtn3.FlatAppearance.BorderSize = 0;
+            tabBtn3.FlatStyle = FlatStyle.Flat;
+            tabBtn3.Location = new Point(440, 60);
+            tabBtn3.Name = "tabBtn3";
+            tabBtn3.Size = new Size(215, 35);
+            tabBtn3.TabIndex = 23;
+            tabBtn3.Text = "Vaccination Reports";
+            tabBtn3.UseVisualStyleBackColor = false;
+            tabBtn3.Click += tabBtn3_Click;
             // 
             // tabBtn2
             // 
-            this.tabBtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(220)))));
-            this.tabBtn2.FlatAppearance.BorderSize = 0;
-            this.tabBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tabBtn2.Location = new System.Drawing.Point(219, 60);
-            this.tabBtn2.Name = "tabBtn2";
-            this.tabBtn2.Size = new System.Drawing.Size(215, 35);
-            this.tabBtn2.TabIndex = 22;
-            this.tabBtn2.Text = "Vaccination Management";
-            this.tabBtn2.UseVisualStyleBackColor = false;
-            this.tabBtn2.Click += new System.EventHandler(this.tabBtn2_Click);
+            tabBtn2.BackColor = Color.FromArgb(178, 223, 220);
+            tabBtn2.FlatAppearance.BorderSize = 0;
+            tabBtn2.FlatStyle = FlatStyle.Flat;
+            tabBtn2.Location = new Point(219, 60);
+            tabBtn2.Name = "tabBtn2";
+            tabBtn2.Size = new Size(215, 35);
+            tabBtn2.TabIndex = 22;
+            tabBtn2.Text = "Vaccination Management";
+            tabBtn2.UseVisualStyleBackColor = false;
+            tabBtn2.Click += tabBtn2_Click;
             // 
             // tabBtn1
             // 
-            this.tabBtn1.BackColor = System.Drawing.Color.LightCyan;
-            this.tabBtn1.FlatAppearance.BorderSize = 0;
-            this.tabBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tabBtn1.Location = new System.Drawing.Point(-2, 60);
-            this.tabBtn1.Name = "tabBtn1";
-            this.tabBtn1.Size = new System.Drawing.Size(215, 35);
-            this.tabBtn1.TabIndex = 21;
-            this.tabBtn1.Text = "Home";
-            this.tabBtn1.UseVisualStyleBackColor = false;
-            this.tabBtn1.Click += new System.EventHandler(this.tabBtn1_Click);
+            tabBtn1.BackColor = Color.LightCyan;
+            tabBtn1.FlatAppearance.BorderSize = 0;
+            tabBtn1.FlatStyle = FlatStyle.Flat;
+            tabBtn1.Location = new Point(-2, 60);
+            tabBtn1.Name = "tabBtn1";
+            tabBtn1.Size = new Size(215, 35);
+            tabBtn1.TabIndex = 21;
+            tabBtn1.Text = "Home";
+            tabBtn1.UseVisualStyleBackColor = false;
+            tabBtn1.Click += tabBtn1_Click;
             // 
             // patient_ID
             // 
-            this.patient_ID.HeaderText = "ID";
-            this.patient_ID.Name = "patient_ID";
+            patient_ID.HeaderText = "ID";
+            patient_ID.Name = "patient_ID";
             // 
             // patient_username
             // 
-            this.patient_username.HeaderText = "Username";
-            this.patient_username.Name = "patient_username";
+            patient_username.HeaderText = "Username";
+            patient_username.Name = "patient_username";
             // 
             // patient_password
             // 
-            this.patient_password.HeaderText = "Password";
-            this.patient_password.Name = "patient_password";
+            patient_password.HeaderText = "Password";
+            patient_password.Name = "patient_password";
             // 
             // patient_firstName
             // 
-            this.patient_firstName.HeaderText = "First Name";
-            this.patient_firstName.Name = "patient_firstName";
+            patient_firstName.HeaderText = "First Name";
+            patient_firstName.Name = "patient_firstName";
             // 
             // patient_lastName
             // 
-            this.patient_lastName.HeaderText = "Last Name";
-            this.patient_lastName.Name = "patient_lastName";
+            patient_lastName.HeaderText = "Last Name";
+            patient_lastName.Name = "patient_lastName";
             // 
             // patient_dob
             // 
-            this.patient_dob.HeaderText = "DOB";
-            this.patient_dob.Name = "patient_dob";
+            patient_dob.HeaderText = "DOB";
+            patient_dob.Name = "patient_dob";
             // 
             // patient_gender
             // 
-            this.patient_gender.HeaderText = "Gender";
-            this.patient_gender.Name = "patient_gender";
+            patient_gender.HeaderText = "Gender";
+            patient_gender.Name = "patient_gender";
             // 
             // patient_phone
             // 
-            this.patient_phone.HeaderText = "Phone";
-            this.patient_phone.Name = "patient_phone";
+            patient_phone.HeaderText = "Phone";
+            patient_phone.Name = "patient_phone";
             // 
             // patient_email
             // 
-            this.patient_email.HeaderText = "Email";
-            this.patient_email.Name = "patient_email";
+            patient_email.HeaderText = "Email";
+            patient_email.Name = "patient_email";
             // 
             // patient_address
             // 
-            this.patient_address.HeaderText = "Address";
-            this.patient_address.Name = "patient_address";
+            patient_address.HeaderText = "Address";
+            patient_address.Name = "patient_address";
+            // 
+            // patient_emergencyFirstName
+            // 
+            patient_emergencyFirstName.HeaderText = "Emergency First name";
+            patient_emergencyFirstName.Name = "patient_emergencyFirstName";
+            // 
+            // patient_emergencyLastName
+            // 
+            patient_emergencyLastName.HeaderText = "Emergency Last Name";
+            patient_emergencyLastName.Name = "patient_emergencyLastName";
+            // 
+            // patient_emergencyPhone
+            // 
+            patient_emergencyPhone.HeaderText = "Emergency Phone";
+            patient_emergencyPhone.Name = "patient_emergencyPhone";
+            // 
+            // patient_emergencyRelation
+            // 
+            patient_emergencyRelation.HeaderText = "Emergency Relation";
+            patient_emergencyRelation.Name = "patient_emergencyRelation";
             // 
             // Staff_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(654, 361);
-            this.Controls.Add(this.tabBtn1);
-            this.Controls.Add(this.tabBtn2);
-            this.Controls.Add(this.tabBtn3);
-            this.Controls.Add(this.tabMenu);
-            this.Controls.Add(this.banner);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Staff_Main";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "Staff_Main";
-            this.Load += new System.EventHandler(this.Staff_Main_Load);
-            this.banner.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.menu_button)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_button)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.profile)).EndInit();
-            this.tabMenu.ResumeLayout(false);
-            this.tabHome.ResumeLayout(false);
-            this.tabHome.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridHome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.tabVaccinationManagement.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVaccines1)).EndInit();
-            this.tabVaccinationReports.ResumeLayout(false);
-            this.tabVaccinationReports.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVaccines2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightCyan;
+            ClientSize = new Size(654, 361);
+            Controls.Add(tabBtn1);
+            Controls.Add(tabBtn2);
+            Controls.Add(tabBtn3);
+            Controls.Add(tabMenu);
+            Controls.Add(banner);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "Staff_Main";
+            RightToLeft = RightToLeft.No;
+            Text = "Staff_Main";
+            Load += Staff_Main_Load;
+            banner.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)menu_button).EndInit();
+            ((System.ComponentModel.ISupportInitialize)logo_button).EndInit();
+            ((System.ComponentModel.ISupportInitialize)profile).EndInit();
+            tabMenu.ResumeLayout(false);
+            tabHome.ResumeLayout(false);
+            tabHome.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridHome).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            tabVaccinationManagement.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridVaccines1).EndInit();
+            tabVaccinationReports.ResumeLayout(false);
+            tabVaccinationReports.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridVaccines2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -650,5 +662,9 @@
         private DataGridViewTextBoxColumn patient_phone;
         private DataGridViewTextBoxColumn patient_email;
         private DataGridViewTextBoxColumn patient_address;
+        private DataGridViewTextBoxColumn patient_emergencyFirstName;
+        private DataGridViewTextBoxColumn patient_emergencyLastName;
+        private DataGridViewTextBoxColumn patient_emergencyPhone;
+        private DataGridViewTextBoxColumn patient_emergencyRelation;
     }
 }
