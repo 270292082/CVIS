@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff_Main));
             this.banner = new System.Windows.Forms.Panel();
             this.menu_button = new System.Windows.Forms.PictureBox();
@@ -37,42 +36,14 @@
             this.tabMenu = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.dataGridHome = new System.Windows.Forms.DataGridView();
-            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usernameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dOBDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emergencyContactFirstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emergencyContactLastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emergencyContactPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emergencyContactRelationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.welcome_text = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.scan_qr_button = new System.Windows.Forms.Button();
             this.tabVaccinationManagement = new System.Windows.Forms.TabPage();
+            this.dataGridVaccines1 = new System.Windows.Forms.DataGridView();
             this.tabVaccinationReports = new System.Windows.Forms.TabPage();
             this.dataGridVaccines2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearly_report_info = new System.Windows.Forms.Label();
             this.montly_report_info = new System.Windows.Forms.Label();
             this.daily_report_info = new System.Windows.Forms.Label();
@@ -89,21 +60,16 @@
             this.tabBtn3 = new System.Windows.Forms.Button();
             this.tabBtn2 = new System.Windows.Forms.Button();
             this.tabBtn1 = new System.Windows.Forms.Button();
-            this.dataGridVaccines1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_firstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_lastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_dob = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_button)).BeginInit();
@@ -111,9 +77,9 @@
             this.tabMenu.SuspendLayout();
             this.tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridHome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabVaccinationManagement.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVaccines1)).BeginInit();
             this.tabVaccinationReports.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVaccines2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -123,7 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVaccines1)).BeginInit();
             this.SuspendLayout();
             // 
             // banner
@@ -208,121 +173,26 @@
             // 
             // dataGridHome
             // 
-            this.dataGridHome.AutoGenerateColumns = false;
             this.dataGridHome.BackgroundColor = System.Drawing.Color.LightCyan;
             this.dataGridHome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridHome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridHome.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn1,
-            this.usernameDataGridViewTextBoxColumn1,
-            this.passwordDataGridViewTextBoxColumn,
-            this.firstNameDataGridViewTextBoxColumn,
-            this.lastNameDataGridViewTextBoxColumn,
-            this.dOBDataGridViewTextBoxColumn1,
-            this.genderDataGridViewTextBoxColumn,
-            this.phoneDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn,
-            this.addressDataGridViewTextBoxColumn,
-            this.emergencyContactFirstNameDataGridViewTextBoxColumn,
-            this.emergencyContactLastNameDataGridViewTextBoxColumn,
-            this.emergencyContactPhoneDataGridViewTextBoxColumn,
-            this.emergencyContactRelationDataGridViewTextBoxColumn});
-            this.dataGridHome.DataSource = this.patientBindingSource;
+            this.patient_ID,
+            this.patient_username,
+            this.patient_password,
+            this.patient_firstName,
+            this.patient_lastName,
+            this.patient_dob,
+            this.patient_gender,
+            this.patient_phone,
+            this.patient_email,
+            this.patient_address});
             this.dataGridHome.Location = new System.Drawing.Point(7, 127);
             this.dataGridHome.Name = "dataGridHome";
             this.dataGridHome.RowTemplate.Height = 25;
             this.dataGridHome.Size = new System.Drawing.Size(639, 117);
             this.dataGridHome.TabIndex = 20;
             this.dataGridHome.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
-            // 
-            // iDDataGridViewTextBoxColumn1
-            // 
-            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
-            this.iDDataGridViewTextBoxColumn1.Width = 80;
-            // 
-            // usernameDataGridViewTextBoxColumn1
-            // 
-            this.usernameDataGridViewTextBoxColumn1.DataPropertyName = "username";
-            this.usernameDataGridViewTextBoxColumn1.HeaderText = "username";
-            this.usernameDataGridViewTextBoxColumn1.Name = "usernameDataGridViewTextBoxColumn1";
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "password";
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "firstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "firstName";
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "lastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "lastName";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            // 
-            // dOBDataGridViewTextBoxColumn1
-            // 
-            this.dOBDataGridViewTextBoxColumn1.DataPropertyName = "DOB";
-            this.dOBDataGridViewTextBoxColumn1.HeaderText = "DOB";
-            this.dOBDataGridViewTextBoxColumn1.Name = "dOBDataGridViewTextBoxColumn1";
-            // 
-            // genderDataGridViewTextBoxColumn
-            // 
-            this.genderDataGridViewTextBoxColumn.DataPropertyName = "gender";
-            this.genderDataGridViewTextBoxColumn.HeaderText = "gender";
-            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
-            // 
-            // phoneDataGridViewTextBoxColumn
-            // 
-            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "phone";
-            this.phoneDataGridViewTextBoxColumn.HeaderText = "phone";
-            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            // 
-            // emergencyContactFirstNameDataGridViewTextBoxColumn
-            // 
-            this.emergencyContactFirstNameDataGridViewTextBoxColumn.DataPropertyName = "emergencyContactFirstName";
-            this.emergencyContactFirstNameDataGridViewTextBoxColumn.HeaderText = "emergencyContactFirstName";
-            this.emergencyContactFirstNameDataGridViewTextBoxColumn.Name = "emergencyContactFirstNameDataGridViewTextBoxColumn";
-            // 
-            // emergencyContactLastNameDataGridViewTextBoxColumn
-            // 
-            this.emergencyContactLastNameDataGridViewTextBoxColumn.DataPropertyName = "emergencyContactLastName";
-            this.emergencyContactLastNameDataGridViewTextBoxColumn.HeaderText = "emergencyContactLastName";
-            this.emergencyContactLastNameDataGridViewTextBoxColumn.Name = "emergencyContactLastNameDataGridViewTextBoxColumn";
-            // 
-            // emergencyContactPhoneDataGridViewTextBoxColumn
-            // 
-            this.emergencyContactPhoneDataGridViewTextBoxColumn.DataPropertyName = "emergencyContactPhone";
-            this.emergencyContactPhoneDataGridViewTextBoxColumn.HeaderText = "emergencyContactPhone";
-            this.emergencyContactPhoneDataGridViewTextBoxColumn.Name = "emergencyContactPhoneDataGridViewTextBoxColumn";
-            // 
-            // emergencyContactRelationDataGridViewTextBoxColumn
-            // 
-            this.emergencyContactRelationDataGridViewTextBoxColumn.DataPropertyName = "emergencyContactRelation";
-            this.emergencyContactRelationDataGridViewTextBoxColumn.HeaderText = "emergencyContactRelation";
-            this.emergencyContactRelationDataGridViewTextBoxColumn.Name = "emergencyContactRelationDataGridViewTextBoxColumn";
-            // 
-            // patientBindingSource
-            // 
-            this.patientBindingSource.DataSource = typeof(users.Patient);
             // 
             // textBox1
             // 
@@ -376,6 +246,17 @@
             this.tabVaccinationManagement.TabIndex = 2;
             this.tabVaccinationManagement.Text = "Vaccination Management";
             // 
+            // dataGridVaccines1
+            // 
+            this.dataGridVaccines1.BackgroundColor = System.Drawing.Color.LightCyan;
+            this.dataGridVaccines1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridVaccines1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridVaccines1.Location = new System.Drawing.Point(7, 127);
+            this.dataGridVaccines1.Name = "dataGridVaccines1";
+            this.dataGridVaccines1.RowTemplate.Height = 25;
+            this.dataGridVaccines1.Size = new System.Drawing.Size(639, 117);
+            this.dataGridVaccines1.TabIndex = 21;
+            // 
             // tabVaccinationReports
             // 
             this.tabVaccinationReports.BackColor = System.Drawing.Color.LightCyan;
@@ -401,116 +282,14 @@
             // 
             // dataGridVaccines2
             // 
-            this.dataGridVaccines2.AutoGenerateColumns = false;
             this.dataGridVaccines2.BackgroundColor = System.Drawing.Color.LightCyan;
             this.dataGridVaccines2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridVaccines2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridVaccines2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14});
-            this.dataGridVaccines2.DataSource = this.patientBindingSource;
             this.dataGridVaccines2.Location = new System.Drawing.Point(7, 127);
             this.dataGridVaccines2.Name = "dataGridVaccines2";
             this.dataGridVaccines2.RowTemplate.Height = 25;
             this.dataGridVaccines2.Size = new System.Drawing.Size(639, 117);
             this.dataGridVaccines2.TabIndex = 21;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "username";
-            this.dataGridViewTextBoxColumn2.HeaderText = "username";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "password";
-            this.dataGridViewTextBoxColumn3.HeaderText = "password";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "firstName";
-            this.dataGridViewTextBoxColumn4.HeaderText = "firstName";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "lastName";
-            this.dataGridViewTextBoxColumn5.HeaderText = "lastName";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "DOB";
-            this.dataGridViewTextBoxColumn6.HeaderText = "DOB";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "gender";
-            this.dataGridViewTextBoxColumn7.HeaderText = "gender";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "phone";
-            this.dataGridViewTextBoxColumn8.HeaderText = "phone";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "email";
-            this.dataGridViewTextBoxColumn9.HeaderText = "email";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "address";
-            this.dataGridViewTextBoxColumn10.HeaderText = "address";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "emergencyContactFirstName";
-            this.dataGridViewTextBoxColumn11.HeaderText = "emergencyContactFirstName";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "emergencyContactLastName";
-            this.dataGridViewTextBoxColumn12.HeaderText = "emergencyContactLastName";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "emergencyContactPhone";
-            this.dataGridViewTextBoxColumn13.HeaderText = "emergencyContactPhone";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "emergencyContactRelation";
-            this.dataGridViewTextBoxColumn14.HeaderText = "emergencyContactRelation";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
             // 
             // yearly_report_info
             // 
@@ -693,118 +472,55 @@
             this.tabBtn1.UseVisualStyleBackColor = false;
             this.tabBtn1.Click += new System.EventHandler(this.tabBtn1_Click);
             // 
-            // dataGridVaccines1
+            // patient_ID
             // 
-            this.dataGridVaccines1.AutoGenerateColumns = false;
-            this.dataGridVaccines1.BackgroundColor = System.Drawing.Color.LightCyan;
-            this.dataGridVaccines1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridVaccines1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridVaccines1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn16,
-            this.dataGridViewTextBoxColumn17,
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn19,
-            this.dataGridViewTextBoxColumn20,
-            this.dataGridViewTextBoxColumn21,
-            this.dataGridViewTextBoxColumn22,
-            this.dataGridViewTextBoxColumn23,
-            this.dataGridViewTextBoxColumn24,
-            this.dataGridViewTextBoxColumn25,
-            this.dataGridViewTextBoxColumn26,
-            this.dataGridViewTextBoxColumn27,
-            this.dataGridViewTextBoxColumn28});
-            this.dataGridVaccines1.DataSource = this.patientBindingSource;
-            this.dataGridVaccines1.Location = new System.Drawing.Point(7, 127);
-            this.dataGridVaccines1.Name = "dataGridVaccines1";
-            this.dataGridVaccines1.RowTemplate.Height = 25;
-            this.dataGridVaccines1.Size = new System.Drawing.Size(639, 117);
-            this.dataGridVaccines1.TabIndex = 21;
+            this.patient_ID.HeaderText = "ID";
+            this.patient_ID.Name = "patient_ID";
             // 
-            // dataGridViewTextBoxColumn15
+            // patient_username
             // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "ID";
-            this.dataGridViewTextBoxColumn15.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 80;
+            this.patient_username.HeaderText = "Username";
+            this.patient_username.Name = "patient_username";
             // 
-            // dataGridViewTextBoxColumn16
+            // patient_password
             // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "username";
-            this.dataGridViewTextBoxColumn16.HeaderText = "username";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.patient_password.HeaderText = "Password";
+            this.patient_password.Name = "patient_password";
             // 
-            // dataGridViewTextBoxColumn17
+            // patient_firstName
             // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "password";
-            this.dataGridViewTextBoxColumn17.HeaderText = "password";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.patient_firstName.HeaderText = "First Name";
+            this.patient_firstName.Name = "patient_firstName";
             // 
-            // dataGridViewTextBoxColumn18
+            // patient_lastName
             // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "firstName";
-            this.dataGridViewTextBoxColumn18.HeaderText = "firstName";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.patient_lastName.HeaderText = "Last Name";
+            this.patient_lastName.Name = "patient_lastName";
             // 
-            // dataGridViewTextBoxColumn19
+            // patient_dob
             // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "lastName";
-            this.dataGridViewTextBoxColumn19.HeaderText = "lastName";
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.patient_dob.HeaderText = "DOB";
+            this.patient_dob.Name = "patient_dob";
             // 
-            // dataGridViewTextBoxColumn20
+            // patient_gender
             // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "DOB";
-            this.dataGridViewTextBoxColumn20.HeaderText = "DOB";
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.patient_gender.HeaderText = "Gender";
+            this.patient_gender.Name = "patient_gender";
             // 
-            // dataGridViewTextBoxColumn21
+            // patient_phone
             // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "gender";
-            this.dataGridViewTextBoxColumn21.HeaderText = "gender";
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.patient_phone.HeaderText = "Phone";
+            this.patient_phone.Name = "patient_phone";
             // 
-            // dataGridViewTextBoxColumn22
+            // patient_email
             // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "phone";
-            this.dataGridViewTextBoxColumn22.HeaderText = "phone";
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.patient_email.HeaderText = "Email";
+            this.patient_email.Name = "patient_email";
             // 
-            // dataGridViewTextBoxColumn23
+            // patient_address
             // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "email";
-            this.dataGridViewTextBoxColumn23.HeaderText = "email";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "address";
-            this.dataGridViewTextBoxColumn24.HeaderText = "address";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.DataPropertyName = "emergencyContactFirstName";
-            this.dataGridViewTextBoxColumn25.HeaderText = "emergencyContactFirstName";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "emergencyContactLastName";
-            this.dataGridViewTextBoxColumn26.HeaderText = "emergencyContactLastName";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "emergencyContactPhone";
-            this.dataGridViewTextBoxColumn27.HeaderText = "emergencyContactPhone";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "emergencyContactRelation";
-            this.dataGridViewTextBoxColumn28.HeaderText = "emergencyContactRelation";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.patient_address.HeaderText = "Address";
+            this.patient_address.Name = "patient_address";
             // 
             // Staff_Main
             // 
@@ -830,9 +546,9 @@
             this.tabHome.ResumeLayout(false);
             this.tabHome.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridHome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabVaccinationManagement.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridVaccines1)).EndInit();
             this.tabVaccinationReports.ResumeLayout(false);
             this.tabVaccinationReports.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVaccines2)).EndInit();
@@ -843,7 +559,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridVaccines1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -862,7 +577,6 @@
         private Label daily_report_info;
         private DataGridViewTextBoxColumn passwdDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn emergencyContactNameDataGridViewTextBoxColumn;
-        private BindingSource patientBindingSource;
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
@@ -926,5 +640,15 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
+        private DataGridViewTextBoxColumn patient_ID;
+        private DataGridViewTextBoxColumn patient_username;
+        private DataGridViewTextBoxColumn patient_password;
+        private DataGridViewTextBoxColumn patient_firstName;
+        private DataGridViewTextBoxColumn patient_lastName;
+        private DataGridViewTextBoxColumn patient_dob;
+        private DataGridViewTextBoxColumn patient_gender;
+        private DataGridViewTextBoxColumn patient_phone;
+        private DataGridViewTextBoxColumn patient_email;
+        private DataGridViewTextBoxColumn patient_address;
     }
 }

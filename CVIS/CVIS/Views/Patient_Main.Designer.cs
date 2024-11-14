@@ -46,6 +46,16 @@
             this.info_text = new System.Windows.Forms.Label();
             this.display_nav = new System.Windows.Forms.Panel();
             this.qrcode_display = new System.Windows.Forms.Panel();
+            this.patient_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_firstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_lastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_dob = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
@@ -126,7 +136,17 @@
             this.manufacturer,
             this.lot_number,
             this.dov,
-            this.vaccinator});
+            this.vaccinator,
+            this.patient_ID,
+            this.patient_username,
+            this.patient_password,
+            this.patient_firstName,
+            this.patient_lastName,
+            this.patient_dob,
+            this.patient_gender,
+            this.patient_phone,
+            this.patient_email,
+            this.patient_address});
             this.vac_data.Location = new System.Drawing.Point(0, 3);
             this.vac_data.Name = "vac_data";
             this.vac_data.RowTemplate.Height = 25;
@@ -216,6 +236,56 @@
             this.qrcode_display.Size = new System.Drawing.Size(11, 41);
             this.qrcode_display.TabIndex = 9;
             // 
+            // patient_ID
+            // 
+            this.patient_ID.HeaderText = "ID";
+            this.patient_ID.Name = "patient_ID";
+            // 
+            // patient_username
+            // 
+            this.patient_username.HeaderText = "Username";
+            this.patient_username.Name = "patient_username";
+            // 
+            // patient_password
+            // 
+            this.patient_password.HeaderText = "Password";
+            this.patient_password.Name = "patient_password";
+            // 
+            // patient_firstName
+            // 
+            this.patient_firstName.HeaderText = "First Name";
+            this.patient_firstName.Name = "patient_firstName";
+            // 
+            // patient_lastName
+            // 
+            this.patient_lastName.HeaderText = "Last Name";
+            this.patient_lastName.Name = "patient_lastName";
+            // 
+            // patient_dob
+            // 
+            this.patient_dob.HeaderText = "DOB";
+            this.patient_dob.Name = "patient_dob";
+            // 
+            // patient_gender
+            // 
+            this.patient_gender.HeaderText = "Gender";
+            this.patient_gender.Name = "patient_gender";
+            // 
+            // patient_phone
+            // 
+            this.patient_phone.HeaderText = "Phone";
+            this.patient_phone.Name = "patient_phone";
+            // 
+            // patient_email
+            // 
+            this.patient_email.HeaderText = "Email";
+            this.patient_email.Name = "patient_email";
+            // 
+            // patient_address
+            // 
+            this.patient_address.HeaderText = "Address";
+            this.patient_address.Name = "patient_address";
+            // 
             // Patient_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -266,5 +336,15 @@
         private Panel display_nav;
         private PictureBox menu_button;
         private Panel qrcode_display;
+        private DataGridViewTextBoxColumn patient_ID;
+        private DataGridViewTextBoxColumn patient_username;
+        private DataGridViewTextBoxColumn patient_password;
+        private DataGridViewTextBoxColumn patient_firstName;
+        private DataGridViewTextBoxColumn patient_lastName;
+        private DataGridViewTextBoxColumn patient_dob;
+        private DataGridViewTextBoxColumn patient_gender;
+        private DataGridViewTextBoxColumn patient_phone;
+        private DataGridViewTextBoxColumn patient_email;
+        private DataGridViewTextBoxColumn patient_address;
     }
 }

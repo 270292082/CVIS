@@ -112,6 +112,26 @@ namespace CVIS
 
         private void Staff_Main_Load(object sender, EventArgs e)
         {
+            dataGridHome.AllowUserToAddRows = false;
+
+            Dictionary<string, Patient> patients = Database.getPatients();
+
+            int nb = 0;
+            foreach (var patient in patients.Values)
+            {
+                dataGridHome.Rows.Add(nb, patient);
+                dataGridHome.Rows[nb].Cells[0].Value = patient.ID;
+                dataGridHome.Rows[nb].Cells[1].Value = patient.username;
+                dataGridHome.Rows[nb].Cells[2].Value = patient.password;
+                dataGridHome.Rows[nb].Cells[3].Value = patient.firstName;
+                dataGridHome.Rows[nb].Cells[4].Value = patient.lastName;
+                dataGridHome.Rows[nb].Cells[5].Value = patient.DOB;
+                dataGridHome.Rows[nb].Cells[6].Value = patient.gender;
+                dataGridHome.Rows[nb].Cells[7].Value = patient.phone;
+                dataGridHome.Rows[nb].Cells[8].Value = patient.email;
+                dataGridHome.Rows[nb].Cells[9].Value = patient.address;
+                nb++;
+            }
             
         }
     }
