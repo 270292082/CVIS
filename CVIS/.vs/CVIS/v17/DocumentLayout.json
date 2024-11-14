@@ -1,0 +1,162 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|c:\\users\\thomas\\documents\\cvis\\cvis\\cvis\\views\\staff_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|solutionrelative:cvis\\views\\staff_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\cvis\\views\\staff_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|solutionrelative:cvis\\views\\staff_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\cvis\\views\\patient_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|solutionrelative:cvis\\views\\patient_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|c:\\users\\thomas\\documents\\cvis\\cvis\\cvis\\views\\patient_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|solutionrelative:cvis\\views\\patient_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|c:\\users\\thomas\\documents\\cvis\\cvis\\cvis\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|solutionrelative:cvis\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|c:\\users\\thomas\\documents\\cvis\\cvis\\cvis\\models\\sysfunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|solutionrelative:cvis\\models\\sysfunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|c:\\users\\thomas\\documents\\cvis\\cvis\\cvis\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|solutionrelative:cvis\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\cvis\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|solutionrelative:cvis\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|c:\\users\\thomas\\documents\\cvis\\cvis\\cvis\\models\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C5A2FF-8454-4D9B-834C-F95C7F6B587F}|CVIS\\CVIS.csproj|solutionrelative:cvis\\models\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Views\\Login.cs",
+              "RelativeDocumentMoniker": "CVIS\\Views\\Login.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Views\\Login.cs",
+              "RelativeToolTip": "CVIS\\Views\\Login.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwB8AAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T11:40:26.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Views\\Login.cs",
+              "RelativeDocumentMoniker": "CVIS\\Views\\Login.cs",
+              "ToolTip": "D:\\Users\\270292082\\OneDrive - UP Education\\Desktop\\CVIS\\CVIS\\CVIS\\Views\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-11-14T11:40:26.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Models\\Program.cs",
+              "RelativeDocumentMoniker": "CVIS\\Models\\Program.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Models\\Program.cs",
+              "RelativeToolTip": "CVIS\\Models\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T11:40:26.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Patient_Main.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Views\\Patient_Main.cs",
+              "RelativeDocumentMoniker": "CVIS\\Views\\Patient_Main.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Views\\Patient_Main.cs",
+              "RelativeToolTip": "CVIS\\Views\\Patient_Main.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwCcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T11:40:26.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Patient_Main.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Views\\Patient_Main.cs",
+              "RelativeDocumentMoniker": "CVIS\\Views\\Patient_Main.cs",
+              "ToolTip": "D:\\Users\\270292082\\OneDrive - UP Education\\Desktop\\CVIS\\CVIS\\CVIS\\Views\\Patient_Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-11-14T11:40:26.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "sysfunc.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Models\\sysfunc.cs",
+              "RelativeDocumentMoniker": "CVIS\\Models\\sysfunc.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Models\\sysfunc.cs",
+              "RelativeToolTip": "CVIS\\Models\\sysfunc.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAawF4AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T11:40:26.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "users.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Models\\users.cs",
+              "RelativeDocumentMoniker": "CVIS\\Models\\users.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Models\\users.cs",
+              "RelativeToolTip": "CVIS\\Models\\users.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAawEIAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T11:40:26.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Staff_Main.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Views\\Staff_Main.cs",
+              "RelativeDocumentMoniker": "CVIS\\Views\\Staff_Main.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Views\\Staff_Main.cs",
+              "RelativeToolTip": "CVIS\\Views\\Staff_Main.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAQwIwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T11:40:26.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Staff_Main.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Views\\Staff_Main.cs",
+              "RelativeDocumentMoniker": "CVIS\\Views\\Staff_Main.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Documents\\CVIS\\CVIS\\CVIS\\Views\\Staff_Main.cs [Design]",
+              "RelativeToolTip": "CVIS\\Views\\Staff_Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T11:40:26.962Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

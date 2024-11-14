@@ -130,6 +130,10 @@ namespace CVIS
                 dataGridHome.Rows[nb].Cells[7].Value = patient.phone;
                 dataGridHome.Rows[nb].Cells[8].Value = patient.email;
                 dataGridHome.Rows[nb].Cells[9].Value = patient.address;
+                dataGridHome.Rows[nb].Cells[10].Value = patient.emergencyContactFirstName;
+                dataGridHome.Rows[nb].Cells[11].Value = patient.emergencyContactLastName;
+                dataGridHome.Rows[nb].Cells[12].Value = patient.emergencyContactPhone;
+                dataGridHome.Rows[nb].Cells[13].Value = patient.emergencyContactRelation;
                 nb++;
             }
             
