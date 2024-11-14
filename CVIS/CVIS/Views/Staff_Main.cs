@@ -53,7 +53,8 @@ namespace CVIS
             // display_nav.Visible = true;
             //Sys.loadPage(display_nav, new Navigation_Staff(_display, display_nav));       Navigation_Staff needs to be defined!
 
-            dataGridVaccine.AllowUserToAddRows= false;
+            dataGridVaccine.AllowUserToAddRows = false;
+            dataGridVaccine.ReadOnly = false;
 
             
         }
@@ -201,11 +202,12 @@ namespace CVIS
             }
 
 
+            dataGridVaccine.Rows.Clear();
             for (int i = 0; i < patient.vaccines_date.Count(); i++)
             {
                 // Adding the rows for the vaccines.
                 dataGridVaccine.Rows.Add(i, patient);
-                dataGridVaccine.Rows[i].Cells[0].Value = i + " Dose";
+                dataGridVaccine.Rows[i].Cells[0].Value = i+1 + " Dose";
 
                 // Adding the datas
                 dataGridVaccine.Rows[i].Cells[1].Value = patient.vaccines_type[i];
