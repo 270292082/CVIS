@@ -36,20 +36,6 @@
             this.tabMenu = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.dataGridHome = new System.Windows.Forms.DataGridView();
-            this.patient_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_username = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_password = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_firstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_lastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_dob = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_emergencyFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_emergencyLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_emergencyPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patient_emergencyRelation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.welcome_text = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -85,6 +71,19 @@
             this.tabBtn3 = new System.Windows.Forms.Button();
             this.tabBtn2 = new System.Windows.Forms.Button();
             this.tabBtn1 = new System.Windows.Forms.Button();
+            this.patient_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_firstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_lastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_dob = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_emergencyFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_emergencyLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_emergencyPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_emergencyRelation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_button)).BeginInit();
@@ -194,7 +193,6 @@
             this.dataGridHome.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.patient_ID,
             this.patient_username,
-            this.patient_password,
             this.patient_firstName,
             this.patient_lastName,
             this.patient_dob,
@@ -212,90 +210,6 @@
             this.dataGridHome.RowTemplate.Height = 25;
             this.dataGridHome.Size = new System.Drawing.Size(639, 117);
             this.dataGridHome.TabIndex = 20;
-            // 
-            // patient_ID
-            // 
-            this.patient_ID.HeaderText = "ID";
-            this.patient_ID.Name = "patient_ID";
-            this.patient_ID.ReadOnly = true;
-            // 
-            // patient_username
-            // 
-            this.patient_username.HeaderText = "Username";
-            this.patient_username.Name = "patient_username";
-            this.patient_username.ReadOnly = true;
-            // 
-            // patient_password
-            // 
-            this.patient_password.HeaderText = "Password";
-            this.patient_password.Name = "patient_password";
-            this.patient_password.ReadOnly = true;
-            // 
-            // patient_firstName
-            // 
-            this.patient_firstName.HeaderText = "First Name";
-            this.patient_firstName.Name = "patient_firstName";
-            this.patient_firstName.ReadOnly = true;
-            // 
-            // patient_lastName
-            // 
-            this.patient_lastName.HeaderText = "Last Name";
-            this.patient_lastName.Name = "patient_lastName";
-            this.patient_lastName.ReadOnly = true;
-            // 
-            // patient_dob
-            // 
-            this.patient_dob.HeaderText = "DOB";
-            this.patient_dob.Name = "patient_dob";
-            this.patient_dob.ReadOnly = true;
-            // 
-            // patient_gender
-            // 
-            this.patient_gender.HeaderText = "Gender";
-            this.patient_gender.Name = "patient_gender";
-            this.patient_gender.ReadOnly = true;
-            // 
-            // patient_phone
-            // 
-            this.patient_phone.HeaderText = "Phone";
-            this.patient_phone.Name = "patient_phone";
-            this.patient_phone.ReadOnly = true;
-            // 
-            // patient_email
-            // 
-            this.patient_email.HeaderText = "Email";
-            this.patient_email.Name = "patient_email";
-            this.patient_email.ReadOnly = true;
-            // 
-            // patient_address
-            // 
-            this.patient_address.HeaderText = "Address";
-            this.patient_address.Name = "patient_address";
-            this.patient_address.ReadOnly = true;
-            // 
-            // patient_emergencyFirstName
-            // 
-            this.patient_emergencyFirstName.HeaderText = "Emergency First name";
-            this.patient_emergencyFirstName.Name = "patient_emergencyFirstName";
-            this.patient_emergencyFirstName.ReadOnly = true;
-            // 
-            // patient_emergencyLastName
-            // 
-            this.patient_emergencyLastName.HeaderText = "Emergency Last Name";
-            this.patient_emergencyLastName.Name = "patient_emergencyLastName";
-            this.patient_emergencyLastName.ReadOnly = true;
-            // 
-            // patient_emergencyPhone
-            // 
-            this.patient_emergencyPhone.HeaderText = "Emergency Phone";
-            this.patient_emergencyPhone.Name = "patient_emergencyPhone";
-            this.patient_emergencyPhone.ReadOnly = true;
-            // 
-            // patient_emergencyRelation
-            // 
-            this.patient_emergencyRelation.HeaderText = "Emergency Relation";
-            this.patient_emergencyRelation.Name = "patient_emergencyRelation";
-            this.patient_emergencyRelation.ReadOnly = true;
             // 
             // textBox1
             // 
@@ -678,6 +592,84 @@
             this.tabBtn1.UseVisualStyleBackColor = false;
             this.tabBtn1.Click += new System.EventHandler(this.tabBtn1_Click);
             // 
+            // patient_ID
+            // 
+            this.patient_ID.HeaderText = "ID";
+            this.patient_ID.Name = "patient_ID";
+            this.patient_ID.ReadOnly = true;
+            // 
+            // patient_username
+            // 
+            this.patient_username.HeaderText = "Username";
+            this.patient_username.Name = "patient_username";
+            this.patient_username.ReadOnly = true;
+            // 
+            // patient_firstName
+            // 
+            this.patient_firstName.HeaderText = "First Name";
+            this.patient_firstName.Name = "patient_firstName";
+            this.patient_firstName.ReadOnly = true;
+            // 
+            // patient_lastName
+            // 
+            this.patient_lastName.HeaderText = "Last Name";
+            this.patient_lastName.Name = "patient_lastName";
+            this.patient_lastName.ReadOnly = true;
+            // 
+            // patient_dob
+            // 
+            this.patient_dob.HeaderText = "DOB";
+            this.patient_dob.Name = "patient_dob";
+            this.patient_dob.ReadOnly = true;
+            // 
+            // patient_gender
+            // 
+            this.patient_gender.HeaderText = "Gender";
+            this.patient_gender.Name = "patient_gender";
+            this.patient_gender.ReadOnly = true;
+            // 
+            // patient_phone
+            // 
+            this.patient_phone.HeaderText = "Phone";
+            this.patient_phone.Name = "patient_phone";
+            this.patient_phone.ReadOnly = true;
+            // 
+            // patient_email
+            // 
+            this.patient_email.HeaderText = "Email";
+            this.patient_email.Name = "patient_email";
+            this.patient_email.ReadOnly = true;
+            // 
+            // patient_address
+            // 
+            this.patient_address.HeaderText = "Address";
+            this.patient_address.Name = "patient_address";
+            this.patient_address.ReadOnly = true;
+            // 
+            // patient_emergencyFirstName
+            // 
+            this.patient_emergencyFirstName.HeaderText = "Emergency First name";
+            this.patient_emergencyFirstName.Name = "patient_emergencyFirstName";
+            this.patient_emergencyFirstName.ReadOnly = true;
+            // 
+            // patient_emergencyLastName
+            // 
+            this.patient_emergencyLastName.HeaderText = "Emergency Last Name";
+            this.patient_emergencyLastName.Name = "patient_emergencyLastName";
+            this.patient_emergencyLastName.ReadOnly = true;
+            // 
+            // patient_emergencyPhone
+            // 
+            this.patient_emergencyPhone.HeaderText = "Emergency Phone";
+            this.patient_emergencyPhone.Name = "patient_emergencyPhone";
+            this.patient_emergencyPhone.ReadOnly = true;
+            // 
+            // patient_emergencyRelation
+            // 
+            this.patient_emergencyRelation.HeaderText = "Emergency Relation";
+            this.patient_emergencyRelation.Name = "patient_emergencyRelation";
+            this.patient_emergencyRelation.ReadOnly = true;
+            // 
             // Staff_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -796,20 +788,6 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
-        private DataGridViewTextBoxColumn patient_ID;
-        private DataGridViewTextBoxColumn patient_username;
-        private DataGridViewTextBoxColumn patient_password;
-        private DataGridViewTextBoxColumn patient_firstName;
-        private DataGridViewTextBoxColumn patient_lastName;
-        private DataGridViewTextBoxColumn patient_dob;
-        private DataGridViewTextBoxColumn patient_gender;
-        private DataGridViewTextBoxColumn patient_phone;
-        private DataGridViewTextBoxColumn patient_email;
-        private DataGridViewTextBoxColumn patient_address;
-        private DataGridViewTextBoxColumn patient_emergencyFirstName;
-        private DataGridViewTextBoxColumn patient_emergencyLastName;
-        private DataGridViewTextBoxColumn patient_emergencyPhone;
-        private DataGridViewTextBoxColumn patient_emergencyRelation;
         private DataGridView dataGridVaccine;
         private TextBox search;
         private Button search_btn;
@@ -822,5 +800,18 @@
         private DataGridViewTextBoxColumn vac_lot;
         private DataGridViewTextBoxColumn vac_dob;
         private DataGridViewTextBoxColumn vac_doctor;
+        private DataGridViewTextBoxColumn patient_ID;
+        private DataGridViewTextBoxColumn patient_username;
+        private DataGridViewTextBoxColumn patient_firstName;
+        private DataGridViewTextBoxColumn patient_lastName;
+        private DataGridViewTextBoxColumn patient_dob;
+        private DataGridViewTextBoxColumn patient_gender;
+        private DataGridViewTextBoxColumn patient_phone;
+        private DataGridViewTextBoxColumn patient_email;
+        private DataGridViewTextBoxColumn patient_address;
+        private DataGridViewTextBoxColumn patient_emergencyFirstName;
+        private DataGridViewTextBoxColumn patient_emergencyLastName;
+        private DataGridViewTextBoxColumn patient_emergencyPhone;
+        private DataGridViewTextBoxColumn patient_emergencyRelation;
     }
 }
