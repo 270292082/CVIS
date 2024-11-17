@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using users;
 using SysFunc;
 using System.Diagnostics;
+using System.CodeDom;
 
 namespace CVIS
 {
@@ -188,6 +189,7 @@ namespace CVIS
             }
         }
 
+
         private void vacInit(Patient patient)
         {
             if (patient == null) 
@@ -213,23 +215,34 @@ namespace CVIS
 
         }
 
-        private void dataGridVaccine_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        private void dataGridVaccine_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
+            
+        }
+
+        private void update_btn_Click(object sender, EventArgs e)
+        {
+            // !!! NEED TO FIX !!!
+            if (!_patients.ContainsKey(search.Text)) return;
+
             for (int i = 0; i < dataGridVaccine.Rows.Count; i++)
             {
+                if (search.Text == "") return;
                 // Update the local variables.
-                if (dataGridVaccine.Rows[i].Cells[1].Value != null) _patients[search.Text].vaccines_type[i] = dataGridVaccine.Rows[i].Cells[1].Value.ToString(); 
-                if (dataGridVaccine.Rows[i].Cells[2].Value != null) _patients[search.Text].vaccines_lot[i] = dataGridVaccine.Rows[i].Cells[2].Value.ToString();
-                if (dataGridVaccine.Rows[i].Cells[3].Value != null) _patients[search.Text].vaccines_date[i] = dataGridVaccine.Rows[i].Cells[3].Value.ToString();
-                if (dataGridVaccine.Rows[i].Cells[4].Value != null) _patients[search.Text].vaccines_doctor[i] = dataGridVaccine.Rows[i].Cells[4].Value.ToString();
-
-                List<string> info = new List<string>();
-                info.Add(_patients[search.Text].vaccines_type[i]);
-                info.Add(_patients[search.Text].vaccines_lot[i]);
-                info.Add(_patients[search.Text].vaccines_date[i]);
-                info.Add(_patients[search.Text].vaccines_doctor[i]);
+                if (dataGridVaccine.Rows[i].Cells[1].Value != null) _patients[search.Text].vaccines_type.Add(dataGridVaccine.Rows[i].Cells[1].Value.ToString());
+                if (dataGridVaccine.Rows[i].Cells[2].Value != null) _patients[search.Text].vaccines_lot.Add(dataGridVaccine.Rows[i].Cells[2].Value.ToString());
+                if (dataGridVaccine.Rows[i].Cells[3].Value != null) _patients[search.Text].vaccines_date.Add(dataGridVaccine.Rows[i].Cells[3].Value.ToString());
+                if (dataGridVaccine.Rows[i].Cells[4].Value != null) _patients[search.Text].vaccines_doctor.Add(dataGridVaccine.Rows[i].Cells[4].Value.ToString());
 
             }
+
+            Database.setVaccines(_patients[search.Text]);
+
+            infoInit(_patients[search.Text]);
+            vacInit(_patients[search.Text]);
+            return;
+
+
         }
     }
 }

@@ -55,12 +55,18 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.scan_qr_button = new System.Windows.Forms.Button();
             this.tabVaccinationManagement = new System.Windows.Forms.TabPage();
+            this.update_btn = new System.Windows.Forms.Button();
             this.info2 = new System.Windows.Forms.Label();
             this.info1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.search_btn = new System.Windows.Forms.Button();
             this.search = new System.Windows.Forms.TextBox();
             this.dataGridVaccine = new System.Windows.Forms.DataGridView();
+            this.vac_nb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vac_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vac_lot = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vac_dob = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vac_doctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabVaccinationReports = new System.Windows.Forms.TabPage();
             this.dataGridVaccines2 = new System.Windows.Forms.DataGridView();
             this.yearly_report_info = new System.Windows.Forms.Label();
@@ -79,11 +85,6 @@
             this.tabBtn3 = new System.Windows.Forms.Button();
             this.tabBtn2 = new System.Windows.Forms.Button();
             this.tabBtn1 = new System.Windows.Forms.Button();
-            this.vac_nb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vac_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vac_lot = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vac_dob = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vac_doctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_button)).BeginInit();
@@ -343,6 +344,7 @@
             // tabVaccinationManagement
             // 
             this.tabVaccinationManagement.BackColor = System.Drawing.Color.LightCyan;
+            this.tabVaccinationManagement.Controls.Add(this.update_btn);
             this.tabVaccinationManagement.Controls.Add(this.info2);
             this.tabVaccinationManagement.Controls.Add(this.info1);
             this.tabVaccinationManagement.Controls.Add(this.label1);
@@ -354,6 +356,16 @@
             this.tabVaccinationManagement.Size = new System.Drawing.Size(653, 256);
             this.tabVaccinationManagement.TabIndex = 2;
             this.tabVaccinationManagement.Text = "Vaccination Management";
+            // 
+            // update_btn
+            // 
+            this.update_btn.Location = new System.Drawing.Point(583, 143);
+            this.update_btn.Name = "update_btn";
+            this.update_btn.Size = new System.Drawing.Size(61, 101);
+            this.update_btn.TabIndex = 27;
+            this.update_btn.Text = "Update";
+            this.update_btn.UseVisualStyleBackColor = true;
+            this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
             // 
             // info2
             // 
@@ -419,9 +431,39 @@
             this.dataGridVaccine.Location = new System.Drawing.Point(12, 143);
             this.dataGridVaccine.Name = "dataGridVaccine";
             this.dataGridVaccine.RowTemplate.Height = 25;
-            this.dataGridVaccine.Size = new System.Drawing.Size(630, 101);
+            this.dataGridVaccine.Size = new System.Drawing.Size(571, 101);
             this.dataGridVaccine.TabIndex = 21;
-            this.dataGridVaccine.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVaccine_CellValueChanged);
+            this.dataGridVaccine.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVaccine_CellEnter);
+            // 
+            // vac_nb
+            // 
+            this.vac_nb.HeaderText = "Vaccination";
+            this.vac_nb.Name = "vac_nb";
+            this.vac_nb.Width = 105;
+            // 
+            // vac_type
+            // 
+            this.vac_type.HeaderText = "Manufacturer";
+            this.vac_type.Name = "vac_type";
+            this.vac_type.Width = 105;
+            // 
+            // vac_lot
+            // 
+            this.vac_lot.HeaderText = "Lot Number";
+            this.vac_lot.Name = "vac_lot";
+            this.vac_lot.Width = 105;
+            // 
+            // vac_dob
+            // 
+            this.vac_dob.HeaderText = "Date of Vaccination";
+            this.vac_dob.Name = "vac_dob";
+            this.vac_dob.Width = 105;
+            // 
+            // vac_doctor
+            // 
+            this.vac_doctor.HeaderText = "Vaccinator";
+            this.vac_doctor.Name = "vac_doctor";
+            this.vac_doctor.Width = 105;
             // 
             // tabVaccinationReports
             // 
@@ -636,36 +678,6 @@
             this.tabBtn1.UseVisualStyleBackColor = false;
             this.tabBtn1.Click += new System.EventHandler(this.tabBtn1_Click);
             // 
-            // vac_nb
-            // 
-            this.vac_nb.HeaderText = "Vaccination";
-            this.vac_nb.Name = "vac_nb";
-            this.vac_nb.Width = 115;
-            // 
-            // vac_type
-            // 
-            this.vac_type.HeaderText = "Manufacturer";
-            this.vac_type.Name = "vac_type";
-            this.vac_type.Width = 115;
-            // 
-            // vac_lot
-            // 
-            this.vac_lot.HeaderText = "Lot Number";
-            this.vac_lot.Name = "vac_lot";
-            this.vac_lot.Width = 115;
-            // 
-            // vac_dob
-            // 
-            this.vac_dob.HeaderText = "Date of Vaccination";
-            this.vac_dob.Name = "vac_dob";
-            this.vac_dob.Width = 120;
-            // 
-            // vac_doctor
-            // 
-            this.vac_doctor.HeaderText = "Vaccinator";
-            this.vac_doctor.Name = "vac_doctor";
-            this.vac_doctor.Width = 120;
-            // 
             // Staff_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -804,6 +816,7 @@
         private Label label1;
         private Label info1;
         private Label info2;
+        private Button update_btn;
         private DataGridViewTextBoxColumn vac_nb;
         private DataGridViewTextBoxColumn vac_type;
         private DataGridViewTextBoxColumn vac_lot;
