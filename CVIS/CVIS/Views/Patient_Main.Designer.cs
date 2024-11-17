@@ -40,12 +40,6 @@
             this.lot_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dov = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vaccinator = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.qrcode_text = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.info_text = new System.Windows.Forms.Label();
-            this.display_nav = new System.Windows.Forms.Panel();
-            this.qrcode_display = new System.Windows.Forms.Panel();
             this.patient_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patient_username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patient_password = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +50,12 @@
             this.patient_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patient_email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patient_address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.qrcode_text = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.info_text = new System.Windows.Forms.Label();
+            this.display_nav = new System.Windows.Forms.Panel();
+            this.qrcode_display = new System.Windows.Forms.Panel();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
@@ -127,6 +127,8 @@
             // 
             // vac_data
             // 
+            this.vac_data.AllowUserToAddRows = false;
+            this.vac_data.AllowUserToDeleteRows = false;
             this.vac_data.BackgroundColor = System.Drawing.Color.LightCyan;
             this.vac_data.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.vac_data.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
@@ -149,6 +151,7 @@
             this.patient_address});
             this.vac_data.Location = new System.Drawing.Point(0, 3);
             this.vac_data.Name = "vac_data";
+            this.vac_data.ReadOnly = true;
             this.vac_data.RowTemplate.Height = 25;
             this.vac_data.Size = new System.Drawing.Size(627, 142);
             this.vac_data.TabIndex = 0;
@@ -157,31 +160,96 @@
             // 
             this.vaccination.HeaderText = "Vaccination";
             this.vaccination.Name = "vaccination";
+            this.vaccination.ReadOnly = true;
             this.vaccination.Width = 120;
             // 
             // manufacturer
             // 
             this.manufacturer.HeaderText = "Manufacturer";
             this.manufacturer.Name = "manufacturer";
+            this.manufacturer.ReadOnly = true;
             this.manufacturer.Width = 120;
             // 
             // lot_number
             // 
             this.lot_number.HeaderText = "Lot Number";
             this.lot_number.Name = "lot_number";
+            this.lot_number.ReadOnly = true;
             this.lot_number.Width = 120;
             // 
             // dov
             // 
             this.dov.HeaderText = "Date of Vaccination";
             this.dov.Name = "dov";
+            this.dov.ReadOnly = true;
             this.dov.Width = 105;
             // 
             // vaccinator
             // 
             this.vaccinator.HeaderText = "Vaccinator";
             this.vaccinator.Name = "vaccinator";
+            this.vaccinator.ReadOnly = true;
             this.vaccinator.Width = 120;
+            // 
+            // patient_ID
+            // 
+            this.patient_ID.HeaderText = "ID";
+            this.patient_ID.Name = "patient_ID";
+            this.patient_ID.ReadOnly = true;
+            // 
+            // patient_username
+            // 
+            this.patient_username.HeaderText = "Username";
+            this.patient_username.Name = "patient_username";
+            this.patient_username.ReadOnly = true;
+            // 
+            // patient_password
+            // 
+            this.patient_password.HeaderText = "Password";
+            this.patient_password.Name = "patient_password";
+            this.patient_password.ReadOnly = true;
+            // 
+            // patient_firstName
+            // 
+            this.patient_firstName.HeaderText = "First Name";
+            this.patient_firstName.Name = "patient_firstName";
+            this.patient_firstName.ReadOnly = true;
+            // 
+            // patient_lastName
+            // 
+            this.patient_lastName.HeaderText = "Last Name";
+            this.patient_lastName.Name = "patient_lastName";
+            this.patient_lastName.ReadOnly = true;
+            // 
+            // patient_dob
+            // 
+            this.patient_dob.HeaderText = "DOB";
+            this.patient_dob.Name = "patient_dob";
+            this.patient_dob.ReadOnly = true;
+            // 
+            // patient_gender
+            // 
+            this.patient_gender.HeaderText = "Gender";
+            this.patient_gender.Name = "patient_gender";
+            this.patient_gender.ReadOnly = true;
+            // 
+            // patient_phone
+            // 
+            this.patient_phone.HeaderText = "Phone";
+            this.patient_phone.Name = "patient_phone";
+            this.patient_phone.ReadOnly = true;
+            // 
+            // patient_email
+            // 
+            this.patient_email.HeaderText = "Email";
+            this.patient_email.Name = "patient_email";
+            this.patient_email.ReadOnly = true;
+            // 
+            // patient_address
+            // 
+            this.patient_address.HeaderText = "Address";
+            this.patient_address.Name = "patient_address";
+            this.patient_address.ReadOnly = true;
             // 
             // panel3
             // 
@@ -235,56 +303,6 @@
             this.qrcode_display.Name = "qrcode_display";
             this.qrcode_display.Size = new System.Drawing.Size(11, 41);
             this.qrcode_display.TabIndex = 9;
-            // 
-            // patient_ID
-            // 
-            this.patient_ID.HeaderText = "ID";
-            this.patient_ID.Name = "patient_ID";
-            // 
-            // patient_username
-            // 
-            this.patient_username.HeaderText = "Username";
-            this.patient_username.Name = "patient_username";
-            // 
-            // patient_password
-            // 
-            this.patient_password.HeaderText = "Password";
-            this.patient_password.Name = "patient_password";
-            // 
-            // patient_firstName
-            // 
-            this.patient_firstName.HeaderText = "First Name";
-            this.patient_firstName.Name = "patient_firstName";
-            // 
-            // patient_lastName
-            // 
-            this.patient_lastName.HeaderText = "Last Name";
-            this.patient_lastName.Name = "patient_lastName";
-            // 
-            // patient_dob
-            // 
-            this.patient_dob.HeaderText = "DOB";
-            this.patient_dob.Name = "patient_dob";
-            // 
-            // patient_gender
-            // 
-            this.patient_gender.HeaderText = "Gender";
-            this.patient_gender.Name = "patient_gender";
-            // 
-            // patient_phone
-            // 
-            this.patient_phone.HeaderText = "Phone";
-            this.patient_phone.Name = "patient_phone";
-            // 
-            // patient_email
-            // 
-            this.patient_email.HeaderText = "Email";
-            this.patient_email.Name = "patient_email";
-            // 
-            // patient_address
-            // 
-            this.patient_address.HeaderText = "Address";
-            this.patient_address.Name = "patient_address";
             // 
             // Patient_Main
             // 

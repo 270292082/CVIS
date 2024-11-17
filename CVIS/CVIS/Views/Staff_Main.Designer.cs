@@ -185,6 +185,8 @@
             // 
             // dataGridHome
             // 
+            this.dataGridHome.AllowUserToAddRows = false;
+            this.dataGridHome.AllowUserToDeleteRows = false;
             this.dataGridHome.BackgroundColor = System.Drawing.Color.LightCyan;
             this.dataGridHome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridHome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -205,6 +207,7 @@
             this.patient_emergencyRelation});
             this.dataGridHome.Location = new System.Drawing.Point(7, 127);
             this.dataGridHome.Name = "dataGridHome";
+            this.dataGridHome.ReadOnly = true;
             this.dataGridHome.RowTemplate.Height = 25;
             this.dataGridHome.Size = new System.Drawing.Size(639, 117);
             this.dataGridHome.TabIndex = 20;
@@ -213,71 +216,85 @@
             // 
             this.patient_ID.HeaderText = "ID";
             this.patient_ID.Name = "patient_ID";
+            this.patient_ID.ReadOnly = true;
             // 
             // patient_username
             // 
             this.patient_username.HeaderText = "Username";
             this.patient_username.Name = "patient_username";
+            this.patient_username.ReadOnly = true;
             // 
             // patient_password
             // 
             this.patient_password.HeaderText = "Password";
             this.patient_password.Name = "patient_password";
+            this.patient_password.ReadOnly = true;
             // 
             // patient_firstName
             // 
             this.patient_firstName.HeaderText = "First Name";
             this.patient_firstName.Name = "patient_firstName";
+            this.patient_firstName.ReadOnly = true;
             // 
             // patient_lastName
             // 
             this.patient_lastName.HeaderText = "Last Name";
             this.patient_lastName.Name = "patient_lastName";
+            this.patient_lastName.ReadOnly = true;
             // 
             // patient_dob
             // 
             this.patient_dob.HeaderText = "DOB";
             this.patient_dob.Name = "patient_dob";
+            this.patient_dob.ReadOnly = true;
             // 
             // patient_gender
             // 
             this.patient_gender.HeaderText = "Gender";
             this.patient_gender.Name = "patient_gender";
+            this.patient_gender.ReadOnly = true;
             // 
             // patient_phone
             // 
             this.patient_phone.HeaderText = "Phone";
             this.patient_phone.Name = "patient_phone";
+            this.patient_phone.ReadOnly = true;
             // 
             // patient_email
             // 
             this.patient_email.HeaderText = "Email";
             this.patient_email.Name = "patient_email";
+            this.patient_email.ReadOnly = true;
             // 
             // patient_address
             // 
             this.patient_address.HeaderText = "Address";
             this.patient_address.Name = "patient_address";
+            this.patient_address.ReadOnly = true;
             // 
             // patient_emergencyFirstName
             // 
             this.patient_emergencyFirstName.HeaderText = "Emergency First name";
             this.patient_emergencyFirstName.Name = "patient_emergencyFirstName";
+            this.patient_emergencyFirstName.ReadOnly = true;
             // 
             // patient_emergencyLastName
             // 
             this.patient_emergencyLastName.HeaderText = "Emergency Last Name";
             this.patient_emergencyLastName.Name = "patient_emergencyLastName";
+            this.patient_emergencyLastName.ReadOnly = true;
             // 
             // patient_emergencyPhone
             // 
             this.patient_emergencyPhone.HeaderText = "Emergency Phone";
             this.patient_emergencyPhone.Name = "patient_emergencyPhone";
+            this.patient_emergencyPhone.ReadOnly = true;
             // 
             // patient_emergencyRelation
             // 
             this.patient_emergencyRelation.HeaderText = "Emergency Relation";
             this.patient_emergencyRelation.Name = "patient_emergencyRelation";
+            this.patient_emergencyRelation.ReadOnly = true;
             // 
             // textBox1
             // 
@@ -389,6 +406,7 @@
             // 
             // dataGridVaccine
             // 
+            this.dataGridVaccine.AllowUserToDeleteRows = false;
             this.dataGridVaccine.BackgroundColor = System.Drawing.Color.LightCyan;
             this.dataGridVaccine.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridVaccine.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -401,8 +419,9 @@
             this.dataGridVaccine.Location = new System.Drawing.Point(12, 143);
             this.dataGridVaccine.Name = "dataGridVaccine";
             this.dataGridVaccine.RowTemplate.Height = 25;
-            this.dataGridVaccine.Size = new System.Drawing.Size(542, 101);
+            this.dataGridVaccine.Size = new System.Drawing.Size(630, 101);
             this.dataGridVaccine.TabIndex = 21;
+            this.dataGridVaccine.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVaccine_CellValueChanged);
             // 
             // tabVaccinationReports
             // 
@@ -621,26 +640,31 @@
             // 
             this.vac_nb.HeaderText = "Vaccination";
             this.vac_nb.Name = "vac_nb";
+            this.vac_nb.Width = 115;
             // 
             // vac_type
             // 
             this.vac_type.HeaderText = "Manufacturer";
             this.vac_type.Name = "vac_type";
+            this.vac_type.Width = 115;
             // 
             // vac_lot
             // 
             this.vac_lot.HeaderText = "Lot Number";
             this.vac_lot.Name = "vac_lot";
+            this.vac_lot.Width = 115;
             // 
             // vac_dob
             // 
             this.vac_dob.HeaderText = "Date of Vaccination";
             this.vac_dob.Name = "vac_dob";
+            this.vac_dob.Width = 120;
             // 
             // vac_doctor
             // 
             this.vac_doctor.HeaderText = "Vaccinator";
             this.vac_doctor.Name = "vac_doctor";
+            this.vac_doctor.Width = 120;
             // 
             // Staff_Main
             // 

@@ -142,21 +142,13 @@ namespace SysFunc {
             return info[ID];
         }
 
-        public static Dictionary<string, Dictionary<string, string>> getUsers()
+        public static void addVaccine(string ID, List<string> info)
         {
-            Dictionary<string, Dictionary<string, string>> USERS = new Dictionary<string, Dictionary<string,string>>();
+            string query = "INSERT INTO Patients_Vaccines (date, patient_ID, type, lot, doctor) values ";
+            query += "('" + info[0] + "','" + info[1] + "'," + info[2] + "','" + info[3] + "','" + info[4] + "')";
 
-            // Request for Patients.
-            string query = "SELECT * FROM Patients";
-            USERS = sendQuery(query);
-
-
-            return USERS;
-
-
-
+            sendQuery(query);
         }
-        
 
     }
 

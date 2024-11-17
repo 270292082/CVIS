@@ -53,10 +53,6 @@ namespace CVIS
             // display_nav.Visible = true;
             //Sys.loadPage(display_nav, new Navigation_Staff(_display, display_nav));       Navigation_Staff needs to be defined!
 
-            dataGridVaccine.AllowUserToAddRows = false;
-            dataGridVaccine.ReadOnly = false;
-
-            
         }
 
         private void scan_qr_button_Click(object sender, EventArgs e)
@@ -107,7 +103,6 @@ namespace CVIS
 
         private void Staff_Main_Load(object sender, EventArgs e)
         {
-            dataGridHome.AllowUserToAddRows = false;
 
             Dictionary<string, Patient> patients = Database.getPatients();
 
@@ -216,6 +211,25 @@ namespace CVIS
                 dataGridVaccine.Rows[i].Cells[4].Value = patient.vaccines_doctor[i];
             }
 
+        }
+
+        private void dataGridVaccine_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            for (int i = 0; i < dataGridVaccine.Rows.Count; i++)
+            {
+                // Update the local variables.
+                if (dataGridVaccine.Rows[i].Cells[1].Value != null) _patients[search.Text].vaccines_type[i] = dataGridVaccine.Rows[i].Cells[1].Value.ToString(); 
+                if (dataGridVaccine.Rows[i].Cells[2].Value != null) _patients[search.Text].vaccines_lot[i] = dataGridVaccine.Rows[i].Cells[2].Value.ToString();
+                if (dataGridVaccine.Rows[i].Cells[3].Value != null) _patients[search.Text].vaccines_date[i] = dataGridVaccine.Rows[i].Cells[3].Value.ToString();
+                if (dataGridVaccine.Rows[i].Cells[4].Value != null) _patients[search.Text].vaccines_doctor[i] = dataGridVaccine.Rows[i].Cells[4].Value.ToString();
+
+                List<string> info = new List<string>();
+                info.Add(_patients[search.Text].vaccines_type[i]);
+                info.Add(_patients[search.Text].vaccines_lot[i]);
+                info.Add(_patients[search.Text].vaccines_date[i]);
+                info.Add(_patients[search.Text].vaccines_doctor[i]);
+
+            }
         }
     }
 }
