@@ -225,6 +225,11 @@ namespace CVIS
             // !!! NEED TO FIX !!!
             if (!_patients.ContainsKey(search.Text)) return;
 
+            _patients[search.Text].vaccines_type.Clear();
+            _patients[search.Text].vaccines_lot.Clear();
+            _patients[search.Text].vaccines_date.Clear();
+            _patients[search.Text].vaccines_doctor.Clear();
+
             for (int i = 0; i < dataGridVaccine.Rows.Count; i++)
             {
                 if (search.Text == "") return;

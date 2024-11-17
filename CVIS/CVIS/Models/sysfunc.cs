@@ -145,11 +145,13 @@ namespace SysFunc {
         public static void setVaccines(Patient patient)
         {
             string query1 = "DELETE FROM Patients_Vaccines WHERE Patients_Vaccines.patient_ID == " + patient.ID + ";";
+            sendQuery(query1);
 
             for (int i=0; i<patient.vaccines_date.Count; i++) 
             {
                 string query2 = "INSERT INTO Patients_Vaccines (date, patient_ID, type, lot, doctor) values ";
-                query2 += "('" + patient.vaccines_date[i] + "','" + patient.ID + "'," + patient.vaccines_type[i] + "','" + patient.vaccines_lot[i] + "','" + patient.vaccines_doctor[i] + "')";
+                query2 += "('" + patient.vaccines_date[i] + "','" + patient.ID + "','" + patient.vaccines_type[i] + "','" + patient.vaccines_lot[i] + "','" + patient.vaccines_doctor[i] + "')";
+                sendQuery(query2);
             }
             
             
