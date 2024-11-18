@@ -157,6 +157,47 @@ namespace SysFunc {
             
         }
 
+        // setting - database update function
+        public static void UpdatePatientInDatabase(Patient patient)
+        {
+            using (var connection = new SqliteConnection("Data Source = Data Source=CVIS-DATABASE.db"))
+            {
+                connection.Open();
+
+                string query = @"Update Patients SET
+                                    username = @username,
+                                    password = @password,
+                                    email = @email,
+                                    address = @address,
+                                    phone = @phone,
+                                    emergencyContactFirstName = @efirstName,
+                                    emergencyContactLastName = @elastName,
+                                    emergencyContactPhone = @ePhone,
+                                    emergencyContactRelation = @eRelation
+                                WHERE ID = @ID";
+
+                using (var command = new SqliteCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@username", patient.username);
+                    command.Parameters.AddWithValue("@password", patient.password);
+                    // command.Parameters.AddWithValue("@firstName", patient.firstName);
+                    // command.Parameters.AddWithValue("@lastName", patient.lastName);
+                    // command.Parameters.AddWithValue("@DOB", patient.DOB);
+                    command.Parameters.AddWithValue("@email", patient.email);
+                    command.Parameters.AddWithValue("@address", patient.address);
+                    command.Parameters.AddWithValue("@phone", patient.phone);
+                    command.Parameters.AddWithValue("@efirstName", patient.emergencyContactFirstName);
+                    command.Parameters.AddWithValue("@elastName", patient.emergencyContactLastName);
+                    command.Parameters.AddWithValue("@ePhone", patient.emergencyContactPhone);
+                    command.Parameters.AddWithValue("@eRelation", patient.emergencyContactRelation);
+                    command.Parameters.AddWithValue("@ID", patient.ID);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+
     }
 
     public class Sys
@@ -234,6 +275,7 @@ namespace SysFunc {
             display.Controls.Add(form);
             form.Show();
         }
-
     }
+
+    
 }

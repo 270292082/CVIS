@@ -38,7 +38,15 @@ namespace CVIS
             ephone_input.Text = patient.emergencyContactPhone;
             erelation_input.Text = patient.emergencyContactRelation;
 
+            // read only fields
+            firstname_input.ReadOnly = true;
+            lastname_input.ReadOnly = true;
+            dob_input.ReadOnly = true;
 
+            // user cannot tab
+            firstname_input.TabStop = false;
+            lastname_input.TabStop = false;
+            dob_input.TabStop = false;
 
 
             // Set the position and size for the navigation panel.
@@ -63,6 +71,48 @@ namespace CVIS
         private void Patient_Settings_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void apply_button_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(username_input.Text) ||
+                string.IsNullOrWhiteSpace(password_input.Text) ||
+                string.IsNullOrWhiteSpace(firstname_input.Text) ||
+                string.IsNullOrWhiteSpace(lastname_input.Text) ||
+                string.IsNullOrWhiteSpace(dob_input.Text) ||
+                string.IsNullOrWhiteSpace(email_input.Text) ||
+                string.IsNullOrWhiteSpace(address_input.Text) ||
+                string.IsNullOrWhiteSpace(phone_input.Text))
+            {
+                MessageBox.Show("Please fill in all required fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Stop further execution
+            }
+
+            if (string.IsNullOrWhiteSpace(efirstname_input.Text) ||
+        string.IsNullOrWhiteSpace(ephone_input.Text))
+            {
+                MessageBox.Show("Emergency contact's first name and phone number are required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            Patient updatedPatient = new Patient
+            {
+                ID = _patient.ID,
+                username = username_input.Text,
+                password = password_input.Text,
+
+                email = email_input.Text,
+                address = address_input.Text,
+                phone = phone_input.Text,
+
+                emergencyContactFirstName = efirstname_input.Text,
+                emergencyContactLastName = elastname_input.Text,
+                emergencyContactPhone = ephone_input.Text,
+                emergencyContactRelation = ephone_input.Text,
+            };
+
+            // call update function
+            Database.UpdatePatientInDatabase(updatedPatient);
         }
     }
 }
