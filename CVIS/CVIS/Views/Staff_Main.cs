@@ -104,7 +104,7 @@ namespace CVIS
 
         private void Staff_Main_Load(object sender, EventArgs e)
         {
-
+            // ! Should put the initialisation of the patient in an async function to not make the program freeze if there's a lot of patient to load. !
             Dictionary<string, Patient> patients = Database.getPatients();
 
             int nb = 0;
@@ -128,7 +128,7 @@ namespace CVIS
             }
 
             infoInit(null);            
-
+            dataGridVaccine.AllowUserToAddRows= false;
         }
 
         private void infoInit(Patient patient)
@@ -168,7 +168,7 @@ namespace CVIS
 
         private void search_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void search_btn_Click(object sender, EventArgs e)
@@ -221,7 +221,6 @@ namespace CVIS
 
         private void update_btn_Click(object sender, EventArgs e)
         {
-            // !!! NEED TO FIX !!!
             if (!_patients.ContainsKey(search.Text)) return;
 
             _patients[search.Text].vaccines_type.Clear();
