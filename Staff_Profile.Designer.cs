@@ -37,7 +37,6 @@
             hosdept_text = new Label();
             position_text = new Label();
             name_text = new Label();
-            qrcode_text = new Label();
             admin_ID_text = new Label();
             info = new Panel();
             label1 = new Label();
@@ -111,7 +110,6 @@
             content.Controls.Add(hosdept_text);
             content.Controls.Add(position_text);
             content.Controls.Add(name_text);
-            content.Controls.Add(qrcode_text);
             content.Controls.Add(admin_ID_text);
             content.Controls.Add(info);
             content.Controls.Add(user_status);
@@ -119,7 +117,7 @@
             content.Location = new Point(17, 108);
             content.Margin = new Padding(4, 5, 4, 5);
             content.Name = "content";
-            content.Size = new Size(900, 480);
+            content.Size = new Size(900, 568);
             content.TabIndex = 8;
             // 
             // hosdept_text
@@ -152,18 +150,6 @@
             name_text.TabIndex = 8;
             name_text.Text = "Name : ";
             // 
-            // qrcode_text
-            // 
-            qrcode_text.BackColor = Color.LightCyan;
-            qrcode_text.Font = new Font("Consolas", 2.25F, FontStyle.Bold, GraphicsUnit.Point);
-            qrcode_text.ForeColor = Color.DarkSlateGray;
-            qrcode_text.Location = new Point(771, 0);
-            qrcode_text.Margin = new Padding(4, 0, 4, 0);
-            qrcode_text.Name = "qrcode_text";
-            qrcode_text.Size = new Size(120, 140);
-            qrcode_text.TabIndex = 7;
-            qrcode_text.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // admin_ID_text
             // 
             admin_ID_text.AutoSize = true;
@@ -183,7 +169,7 @@
             info.Location = new Point(531, 157);
             info.Margin = new Padding(4, 5, 4, 5);
             info.Name = "info";
-            info.Size = new Size(364, 311);
+            info.Size = new Size(364, 323);
             info.TabIndex = 4;
             // 
             // label1
@@ -199,7 +185,7 @@
             // 
             // emergency_edit_button
             // 
-            emergency_edit_button.BackColor = Color.Yellow;
+            emergency_edit_button.BackColor = Color.FromArgb(178, 213, 229);
             emergency_edit_button.BackgroundImage = (Image)resources.GetObject("emergency_edit_button.BackgroundImage");
             emergency_edit_button.BackgroundImageLayout = ImageLayout.Stretch;
             emergency_edit_button.FlatAppearance.BorderColor = Color.FromArgb(178, 223, 219);
@@ -208,7 +194,7 @@
             emergency_edit_button.FlatAppearance.MouseOverBackColor = Color.FromArgb(178, 223, 219);
             emergency_edit_button.FlatStyle = FlatStyle.Flat;
             emergency_edit_button.ForeColor = Color.WhiteSmoke;
-            emergency_edit_button.Location = new Point(14, 239);
+            emergency_edit_button.Location = new Point(14, 254);
             emergency_edit_button.Margin = new Padding(4, 5, 4, 5);
             emergency_edit_button.Name = "emergency_edit_button";
             emergency_edit_button.Size = new Size(336, 48);
@@ -229,10 +215,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(4, 5);
+            pictureBox1.Location = new Point(4, 15);
             pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(356, 301);
+            pictureBox1.Size = new Size(356, 303);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -243,7 +229,7 @@
             user_status.Location = new Point(4, 157);
             user_status.Margin = new Padding(4, 5, 4, 5);
             user_status.Name = "user_status";
-            user_status.Size = new Size(519, 311);
+            user_status.Size = new Size(519, 381);
             user_status.TabIndex = 3;
             // 
             // info_text
@@ -251,7 +237,7 @@
             info_text.Location = new Point(14, 15);
             info_text.Margin = new Padding(4, 0, 4, 0);
             info_text.Name = "info_text";
-            info_text.Size = new Size(497, 293);
+            info_text.Size = new Size(497, 350);
             info_text.TabIndex = 7;
             info_text.Text = "[Info]";
             // 
@@ -271,7 +257,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCyan;
-            ClientSize = new Size(934, 602);
+            ClientSize = new Size(934, 650);
             Controls.Add(content);
             Controls.Add(Banner);
             FormBorderStyle = FormBorderStyle.None;
@@ -298,7 +284,6 @@
         private PictureBox profile;
         private Panel content;
         private Label name_text;
-        private Label qrcode_text;
         private Label admin_ID_text;
         private Panel info;
         private Label label1;

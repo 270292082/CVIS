@@ -1,4 +1,5 @@
-﻿using SysFunc;
+﻿using CVIS.Views;
+using SysFunc;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace CVIS
     {
         private Panel _page_display;
         private Staff _staff;
+        private Navigation_Staff _display_nav;
         public Staff_Profile(Panel page_display, Staff staff)
         {
             InitializeComponent();
@@ -36,6 +38,9 @@ namespace CVIS
             position_text.Text = "Position : " + staff.position;
             hosdept_text.Text = "Hospital / Department : " + staff.hospitalDepartment;
             info_text.Text = info_msg;
+
+            // Set the position and size for the navigation panel.
+            
         }
 
         private void logo_button_Click(object sender, EventArgs e)
@@ -46,6 +51,7 @@ namespace CVIS
         private void menu_button_Click(object sender, EventArgs e)
         {
             // navigation
+            
         }
     }
 }
