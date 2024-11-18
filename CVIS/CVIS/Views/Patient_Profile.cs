@@ -84,5 +84,14 @@ namespace CVIS
             Sys.toggleNav(display_nav, 1);
         }
 
+        private void banner_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void emergency_edit_button_Click(object sender, EventArgs e)
+        {
+            Sys.loadPage(_page_display, new Patient_Settings(_page_display, _patient));
+        }
     }
 }

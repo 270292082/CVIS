@@ -59,7 +59,6 @@ namespace CVIS
             // Set the position and size for the qrcode display panel.
             qrcode_display.Visible = false;
             qrcode_display.Size = new Size(249, 311);
-            qrcode_display.Location = new Point(0, 1000);
             Sys.loadPage(qrcode_display, new QR_Code_Form(qrcode_display, patient));
 
         }
@@ -114,6 +113,16 @@ namespace CVIS
 
             // call update function
             Database.UpdatePatientInDatabase(updatedPatient);
+        }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+            Sys.loadPage(_page_display, new Patient_Main(_page_display, _patient));
+        }
+
+        private void profile_button_Click(object sender, EventArgs e)
+        {
+            Sys.loadPage(_page_display, new Patient_Profile(_page_display, _patient));
         }
     }
 }

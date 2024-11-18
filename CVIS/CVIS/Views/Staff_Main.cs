@@ -176,7 +176,21 @@ namespace CVIS
 
         private void search_TextChanged(object sender, EventArgs e)
         {
+            foreach (var patient in _patients)
+            {
+                if (search.Text != patient.Key.ToString() && search.Text != patient.Value.username)
+                {
+                    dataGridVaccine.AllowUserToAddRows = false;
+                    infoInit(null);
+                    vacInit(null);
+                    continue;
+                }
 
+                dataGridVaccine.AllowUserToAddRows = true;
+                infoInit(patient.Value);
+                vacInit(patient.Value);
+                return;
+            }
         }
 
         private void search_btn_Click(object sender, EventArgs e)
@@ -185,11 +199,13 @@ namespace CVIS
             {
                 if (search.Text != patient.Key.ToString())
                 {
+                    dataGridVaccine.AllowUserToAddRows = false;
                     infoInit(null);
                     vacInit(null);
                     continue;
                 }
 
+                dataGridVaccine.AllowUserToAddRows = true;
                 infoInit(patient.Value);
                 vacInit(patient.Value);
                 return;
@@ -229,7 +245,10 @@ namespace CVIS
 
         private void update_btn_Click(object sender, EventArgs e)
         {
-            if (!_patients.ContainsKey(search.Text)) return;
+            if (!_patients.ContainsKey(search.Text))
+            {
+                return;
+            }
 
             _patients[search.Text].vaccines_type.Clear();
             _patients[search.Text].vaccines_lot.Clear();

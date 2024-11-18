@@ -310,8 +310,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(654, 361);
-            this.Controls.Add(this.display_nav);
             this.Controls.Add(this.qrcode_display);
+            this.Controls.Add(this.display_nav);
             this.Controls.Add(this.banner);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);

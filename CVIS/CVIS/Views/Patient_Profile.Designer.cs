@@ -90,6 +90,7 @@
             this.banner.Name = "banner";
             this.banner.Size = new System.Drawing.Size(654, 60);
             this.banner.TabIndex = 6;
+            this.banner.Paint += new System.Windows.Forms.PaintEventHandler(this.banner_Paint);
             // 
             // menu_button
             // 
@@ -213,7 +214,7 @@
             // 
             // emergency_edit_button
             // 
-            this.emergency_edit_button.BackColor = System.Drawing.Color.Yellow;
+            this.emergency_edit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
             this.emergency_edit_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("emergency_edit_button.BackgroundImage")));
             this.emergency_edit_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.emergency_edit_button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
@@ -228,6 +229,7 @@
             this.emergency_edit_button.TabIndex = 3;
             this.emergency_edit_button.Text = "Edit Emergency Contact";
             this.emergency_edit_button.UseVisualStyleBackColor = false;
+            this.emergency_edit_button.Click += new System.EventHandler(this.emergency_edit_button_Click);
             // 
             // emergency_contact_text
             // 

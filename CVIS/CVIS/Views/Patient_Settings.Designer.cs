@@ -108,6 +108,7 @@
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
+            this.logo.Click += new System.EventHandler(this.logo_Click);
             // 
             // profile_button
             // 
@@ -119,6 +120,7 @@
             this.profile_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.profile_button.TabIndex = 1;
             this.profile_button.TabStop = false;
+            this.profile_button.Click += new System.EventHandler(this.profile_button_Click);
             // 
             // display_nav
             // 

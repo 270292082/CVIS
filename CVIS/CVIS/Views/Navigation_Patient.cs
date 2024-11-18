@@ -66,6 +66,7 @@ namespace CVIS
 
         private void qrcode_button2_Click(object sender, EventArgs e)
         {
+            _qrcode_display.Visible = true;
             _qrcode_display.Location = new Point(202, 25);
         }
 
@@ -76,7 +77,7 @@ namespace CVIS
 
         private void settings_button2_Click(object sender, EventArgs e)
         {
-
+            Sys.loadPage(_page_display, new Patient_Settings(_page_display, _patient));
         }
 
     }
