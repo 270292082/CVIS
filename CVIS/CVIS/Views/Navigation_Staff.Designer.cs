@@ -29,154 +29,148 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Navigation_Staff));
-            panel1 = new Panel();
-            logout_button2 = new PictureBox();
-            logout_button1 = new Label();
-            profile_button2 = new PictureBox();
-            settings_button2 = new PictureBox();
-            settings_button1 = new Label();
-            profile_button1 = new Label();
-            logo_button = new PictureBox();
-            close_button = new PictureBox();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)logout_button2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)profile_button2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)settings_button2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)logo_button).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)close_button).BeginInit();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.logout_button2 = new System.Windows.Forms.PictureBox();
+            this.logout_button1 = new System.Windows.Forms.Label();
+            this.settings_button1 = new System.Windows.Forms.Label();
+            this.settings_button2 = new System.Windows.Forms.PictureBox();
+            this.profile_button2 = new System.Windows.Forms.PictureBox();
+            this.profile_button1 = new System.Windows.Forms.Label();
+            this.logo_button = new System.Windows.Forms.PictureBox();
+            this.close_button = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logout_button2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settings_button2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.profile_button2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close_button)).BeginInit();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(logout_button2);
-            panel1.Controls.Add(logout_button1);
-            panel1.Controls.Add(profile_button2);
-            panel1.Controls.Add(settings_button2);
-            panel1.Controls.Add(settings_button1);
-            panel1.Controls.Add(profile_button1);
-            panel1.Location = new Point(17, 137);
-            panel1.Margin = new Padding(4, 5, 4, 5);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(324, 445);
-            panel1.TabIndex = 4;
+            this.panel1.Controls.Add(this.logout_button2);
+            this.panel1.Controls.Add(this.logout_button1);
+            this.panel1.Controls.Add(this.settings_button1);
+            this.panel1.Controls.Add(this.settings_button2);
+            this.panel1.Controls.Add(this.profile_button2);
+            this.panel1.Controls.Add(this.profile_button1);
+            this.panel1.Location = new System.Drawing.Point(12, 82);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(227, 267);
+            this.panel1.TabIndex = 4;
             // 
             // logout_button2
             // 
-            logout_button2.Image = (Image)resources.GetObject("logout_button2.Image");
-            logout_button2.Location = new Point(16, 383);
-            logout_button2.Margin = new Padding(4, 5, 4, 5);
-            logout_button2.Name = "logout_button2";
-            logout_button2.Size = new Size(29, 33);
-            logout_button2.SizeMode = PictureBoxSizeMode.Zoom;
-            logout_button2.TabIndex = 9;
-            logout_button2.TabStop = false;
-            logout_button2.Click += logout_button2_Click;
+            this.logout_button2.Image = ((System.Drawing.Image)(resources.GetObject("logout_button2.Image")));
+            this.logout_button2.Location = new System.Drawing.Point(11, 230);
+            this.logout_button2.Name = "logout_button2";
+            this.logout_button2.Size = new System.Drawing.Size(20, 20);
+            this.logout_button2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logout_button2.TabIndex = 9;
+            this.logout_button2.TabStop = false;
+            this.logout_button2.Click += new System.EventHandler(this.logout_button1_Click);
             // 
             // logout_button1
             // 
-            logout_button1.AutoSize = true;
-            logout_button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            logout_button1.Location = new Point(53, 383);
-            logout_button1.Margin = new Padding(4, 0, 4, 0);
-            logout_button1.Name = "logout_button1";
-            logout_button1.Size = new Size(86, 31);
-            logout_button1.TabIndex = 8;
-            logout_button1.Text = "Logout";
-            logout_button1.Click += logout_button1_Click;
-            // 
-            // profile_button2
-            // 
-            profile_button2.Image = Properties.Resources.profile_placeholder;
-            profile_button2.Location = new Point(16, 20);
-            profile_button2.Margin = new Padding(4, 5, 4, 5);
-            profile_button2.Name = "profile_button2";
-            profile_button2.Size = new Size(29, 33);
-            profile_button2.SizeMode = PictureBoxSizeMode.Zoom;
-            profile_button2.TabIndex = 7;
-            profile_button2.TabStop = false;
-            profile_button2.Click += profile_button2_Click;
-            // 
-            // settings_button2
-            // 
-            settings_button2.Image = (Image)resources.GetObject("settings_button2.Image");
-            settings_button2.Location = new Point(16, 63);
-            settings_button2.Margin = new Padding(4, 5, 4, 5);
-            settings_button2.Name = "settings_button2";
-            settings_button2.Size = new Size(29, 33);
-            settings_button2.SizeMode = PictureBoxSizeMode.Zoom;
-            settings_button2.TabIndex = 6;
-            settings_button2.TabStop = false;
-            settings_button2.Click += settings_button2_Click;
+            this.logout_button1.AutoSize = true;
+            this.logout_button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.logout_button1.Location = new System.Drawing.Point(37, 230);
+            this.logout_button1.Name = "logout_button1";
+            this.logout_button1.Size = new System.Drawing.Size(56, 20);
+            this.logout_button1.TabIndex = 8;
+            this.logout_button1.Text = "Logout";
+            this.logout_button1.Click += new System.EventHandler(this.logout_button2_Click);
             // 
             // settings_button1
             // 
-            settings_button1.AutoSize = true;
-            settings_button1.BackColor = Color.Transparent;
-            settings_button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            settings_button1.Location = new Point(53, 65);
-            settings_button1.Margin = new Padding(4, 0, 4, 0);
-            settings_button1.Name = "settings_button1";
-            settings_button1.Size = new Size(97, 31);
-            settings_button1.TabIndex = 3;
-            settings_button1.Text = "Settings";
-            settings_button1.Click += settings_button1_Click;
+            this.settings_button1.AutoSize = true;
+            this.settings_button1.BackColor = System.Drawing.Color.Transparent;
+            this.settings_button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.settings_button1.Location = new System.Drawing.Point(37, 39);
+            this.settings_button1.Name = "settings_button1";
+            this.settings_button1.Size = new System.Drawing.Size(62, 20);
+            this.settings_button1.TabIndex = 3;
+            this.settings_button1.Text = "Settings";
+            this.settings_button1.Click += new System.EventHandler(this.settings_button2_Click);
+            // 
+            // settings_button2
+            // 
+            this.settings_button2.Image = ((System.Drawing.Image)(resources.GetObject("settings_button2.Image")));
+            this.settings_button2.Location = new System.Drawing.Point(11, 38);
+            this.settings_button2.Name = "settings_button2";
+            this.settings_button2.Size = new System.Drawing.Size(20, 20);
+            this.settings_button2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.settings_button2.TabIndex = 6;
+            this.settings_button2.TabStop = false;
+            this.settings_button2.Click += new System.EventHandler(this.settings_button1_Click);
+            // 
+            // profile_button2
+            // 
+            this.profile_button2.Image = global::CVIS.Properties.Resources.profile_placeholder;
+            this.profile_button2.Location = new System.Drawing.Point(11, 12);
+            this.profile_button2.Name = "profile_button2";
+            this.profile_button2.Size = new System.Drawing.Size(20, 20);
+            this.profile_button2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.profile_button2.TabIndex = 7;
+            this.profile_button2.TabStop = false;
+            this.profile_button2.Click += new System.EventHandler(this.profile_button1_Click);
             // 
             // profile_button1
             // 
-            profile_button1.AutoSize = true;
-            profile_button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            profile_button1.Location = new Point(53, 22);
-            profile_button1.Margin = new Padding(4, 0, 4, 0);
-            profile_button1.Name = "profile_button1";
-            profile_button1.Size = new Size(79, 31);
-            profile_button1.TabIndex = 1;
-            profile_button1.Text = "Profile";
-            profile_button1.Click += profile_button1_Click;
+            this.profile_button1.AutoSize = true;
+            this.profile_button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.profile_button1.Location = new System.Drawing.Point(37, 13);
+            this.profile_button1.Name = "profile_button1";
+            this.profile_button1.Size = new System.Drawing.Size(52, 20);
+            this.profile_button1.TabIndex = 1;
+            this.profile_button1.Text = "Profile";
+            this.profile_button1.Click += new System.EventHandler(this.profile_button2_Click);
             // 
             // logo_button
             // 
-            logo_button.Image = Properties.Resources.logo_white;
-            logo_button.Location = new Point(17, 20);
-            logo_button.Margin = new Padding(4, 5, 4, 5);
-            logo_button.Name = "logo_button";
-            logo_button.Size = new Size(221, 107);
-            logo_button.SizeMode = PictureBoxSizeMode.Zoom;
-            logo_button.TabIndex = 3;
-            logo_button.TabStop = false;
-            logo_button.Click += logo_button_Click;
+            this.logo_button.Image = global::CVIS.Properties.Resources.logo_white;
+            this.logo_button.Location = new System.Drawing.Point(12, 12);
+            this.logo_button.Name = "logo_button";
+            this.logo_button.Size = new System.Drawing.Size(155, 64);
+            this.logo_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logo_button.TabIndex = 3;
+            this.logo_button.TabStop = false;
+            this.logo_button.Click += new System.EventHandler(this.logo_button_Click);
             // 
             // close_button
             // 
-            close_button.Image = (Image)resources.GetObject("close_button.Image");
-            close_button.Location = new Point(306, 30);
-            close_button.Margin = new Padding(4, 5, 4, 5);
-            close_button.Name = "close_button";
-            close_button.Size = new Size(36, 42);
-            close_button.SizeMode = PictureBoxSizeMode.Zoom;
-            close_button.TabIndex = 5;
-            close_button.TabStop = false;
-            close_button.Click += close_button_Click;
+            this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
+            this.close_button.Location = new System.Drawing.Point(214, 18);
+            this.close_button.Name = "close_button";
+            this.close_button.Size = new System.Drawing.Size(25, 25);
+            this.close_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close_button.TabIndex = 5;
+            this.close_button.TabStop = false;
+            this.close_button.Click += new System.EventHandler(this.close_button_Click);
             // 
             // Navigation_Staff
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(224, 242, 241);
-            ClientSize = new Size(359, 602);
-            Controls.Add(panel1);
-            Controls.Add(logo_button);
-            Controls.Add(close_button);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Navigation_Staff";
-            Text = "Navigation_Staff";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)logout_button2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)profile_button2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)settings_button2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)logo_button).EndInit();
-            ((System.ComponentModel.ISupportInitialize)close_button).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(242)))), ((int)(((byte)(241)))));
+            this.ClientSize = new System.Drawing.Size(251, 361);
+            this.Controls.Add(this.close_button);
+            this.Controls.Add(this.logo_button);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "Navigation_Staff";
+            this.Text = "Navigation_Staff";
+            this.TopMost = true;
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logout_button2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settings_button2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.profile_button2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close_button)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

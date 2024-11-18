@@ -17,7 +17,6 @@ namespace CVIS
     {
         private Panel _page_display;
         private Staff _staff;
-        private Navigation_Staff _display_nav;
         public Staff_Profile(Panel page_display, Staff staff)
         {
             InitializeComponent();
@@ -40,7 +39,12 @@ namespace CVIS
             info_text.Text = info_msg;
 
             // Set the position and size for the navigation panel.
-            
+            display_nav.Size = new Size(251, 361);
+            display_nav.Location = new Point(-251, 0);
+            display_nav.Visible = true;
+            Sys.loadPage(display_nav, new Navigation_Staff(page_display, display_nav, staff));
+            display_nav.BringToFront();
+
         }
 
         private void logo_button_Click(object sender, EventArgs e)
@@ -51,7 +55,13 @@ namespace CVIS
         private void menu_button_Click(object sender, EventArgs e)
         {
             // navigation
+            Sys.toggleNav(display_nav, 1);
             
+        }
+
+        private void diplay_nav_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

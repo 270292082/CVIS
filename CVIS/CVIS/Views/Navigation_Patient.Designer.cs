@@ -58,6 +58,7 @@
             this.logo_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo_button.TabIndex = 0;
             this.logo_button.TabStop = false;
+            this.logo_button.Click += new System.EventHandler(this.logo_button_Click);
             // 
             // panel1
             // 
@@ -83,6 +84,7 @@
             this.logout_button2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logout_button2.TabIndex = 9;
             this.logout_button2.TabStop = false;
+            this.logout_button2.Click += new System.EventHandler(this.logout_button1_Click);
             // 
             // logout_button1
             // 
@@ -93,6 +95,7 @@
             this.logout_button1.Size = new System.Drawing.Size(56, 20);
             this.logout_button1.TabIndex = 8;
             this.logout_button1.Text = "Logout";
+            this.logout_button1.Click += new System.EventHandler(this.logout_button2_Click);
             // 
             // profile_button2
             // 
@@ -103,6 +106,7 @@
             this.profile_button2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.profile_button2.TabIndex = 7;
             this.profile_button2.TabStop = false;
+            this.profile_button2.Click += new System.EventHandler(this.profile_button1_Click);
             // 
             // settings_button2
             // 
@@ -113,6 +117,7 @@
             this.settings_button2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.settings_button2.TabIndex = 6;
             this.settings_button2.TabStop = false;
+            this.settings_button2.Click += new System.EventHandler(this.settings_button1_Click);
             // 
             // qrcode_button2
             // 
@@ -123,6 +128,7 @@
             this.qrcode_button2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.qrcode_button2.TabIndex = 4;
             this.qrcode_button2.TabStop = false;
+            this.qrcode_button2.Click += new System.EventHandler(this.qrcode_button1_Click);
             // 
             // settings_button1
             // 
@@ -134,6 +140,7 @@
             this.settings_button1.Size = new System.Drawing.Size(62, 20);
             this.settings_button1.TabIndex = 3;
             this.settings_button1.Text = "Settings";
+            this.settings_button1.Click += new System.EventHandler(this.settings_button2_Click);
             // 
             // profile_button1
             // 
@@ -144,6 +151,7 @@
             this.profile_button1.Size = new System.Drawing.Size(52, 20);
             this.profile_button1.TabIndex = 1;
             this.profile_button1.Text = "Profile";
+            this.profile_button1.Click += new System.EventHandler(this.profile_button2_Click);
             // 
             // qrcode_button1
             // 
@@ -154,6 +162,7 @@
             this.qrcode_button1.Size = new System.Drawing.Size(68, 20);
             this.qrcode_button1.TabIndex = 0;
             this.qrcode_button1.Text = "QR Code";
+            this.qrcode_button1.Click += new System.EventHandler(this.qrcode_button2_Click);
             // 
             // close_button
             // 
@@ -164,6 +173,7 @@
             this.close_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.close_button.TabIndex = 2;
             this.close_button.TabStop = false;
+            this.close_button.Click += new System.EventHandler(this.close_button_Click);
             // 
             // Navigation_Patient
             // 
@@ -177,6 +187,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Navigation_Patient";
             this.Text = "Navigation";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.logo_button)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

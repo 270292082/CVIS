@@ -33,6 +33,7 @@
             this.profile = new System.Windows.Forms.PictureBox();
             this.logo_button = new System.Windows.Forms.PictureBox();
             this.menu_button = new System.Windows.Forms.PictureBox();
+            this.display_nav = new System.Windows.Forms.Panel();
             this.content = new System.Windows.Forms.Panel();
             this.hosdept_text = new System.Windows.Forms.Label();
             this.position_text = new System.Windows.Forms.Label();
@@ -103,6 +104,14 @@
             this.menu_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menu_button.TabIndex = 0;
             this.menu_button.TabStop = false;
+            this.menu_button.Click += new System.EventHandler(this.menu_button_Click);
+            // 
+            // display_nav
+            // 
+            this.display_nav.Location = new System.Drawing.Point(0, 0);
+            this.display_nav.Name = "display_nav";
+            this.display_nav.Size = new System.Drawing.Size(5, 361);
+            this.display_nav.TabIndex = 9;
             // 
             // content
             // 
@@ -115,7 +124,7 @@
             this.content.Controls.Add(this.profile_picture);
             this.content.Location = new System.Drawing.Point(12, 65);
             this.content.Name = "content";
-            this.content.Size = new System.Drawing.Size(630, 341);
+            this.content.Size = new System.Drawing.Size(630, 296);
             this.content.TabIndex = 8;
             // 
             // hosdept_text
@@ -217,15 +226,15 @@
             this.user_status.Controls.Add(this.info_text);
             this.user_status.Location = new System.Drawing.Point(3, 94);
             this.user_status.Name = "user_status";
-            this.user_status.Size = new System.Drawing.Size(363, 229);
+            this.user_status.Size = new System.Drawing.Size(363, 194);
             this.user_status.TabIndex = 3;
             // 
             // info_text
             // 
             this.info_text.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.info_text.Location = new System.Drawing.Point(10, 9);
+            this.info_text.Location = new System.Drawing.Point(12, 9);
             this.info_text.Name = "info_text";
-            this.info_text.Size = new System.Drawing.Size(348, 210);
+            this.info_text.Size = new System.Drawing.Size(348, 172);
             this.info_text.TabIndex = 7;
             this.info_text.Text = "[Info]";
             // 
@@ -245,9 +254,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(654, 413);
-            this.Controls.Add(this.content);
+            this.ClientSize = new System.Drawing.Size(654, 361);
+            this.Controls.Add(this.display_nav);
             this.Controls.Add(this.Banner);
+            this.Controls.Add(this.content);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Staff_Profile";
@@ -285,5 +295,6 @@
         private PictureBox profile_picture;
         private Label position_text;
         private Label hosdept_text;
+        private Panel display_nav;
     }
 }
