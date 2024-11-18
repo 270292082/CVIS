@@ -34,5 +34,8 @@
     <Compile Update="Views\Staff_Profile.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\Staff_Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

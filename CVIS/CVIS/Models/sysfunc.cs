@@ -171,6 +171,8 @@ namespace SysFunc {
     public class Sys
     {
 
+        // !!!! NEED TO MAKE A TIMER TO READJUST THE NAVIGATION WHEN THE USER IS SCROLLING !!!!
+
         private static System.Timers.Timer _timer;
 
         public static void toggleNav(Panel display, int active=2)

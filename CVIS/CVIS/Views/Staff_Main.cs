@@ -67,7 +67,7 @@ namespace CVIS
 
         private void menu_button_Click(object sender, EventArgs e)
         {
-            //Sys.toggleNav(display_nav, 1);
+            Sys.toggleNav(display_nav, 1);
         }
 
         private void tabBtn1_Click(object sender, EventArgs e)
@@ -279,5 +279,6 @@ namespace CVIS
         {
             Sys.loadPage(_display, new Staff_Profile(_display, _staff));
         }
+
     }
 }

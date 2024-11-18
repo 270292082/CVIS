@@ -130,6 +130,7 @@
             this.menu_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.menu_button.TabIndex = 8;
             this.menu_button.TabStop = false;
+            this.menu_button.Click += new System.EventHandler(this.menu_button_Click);
             // 
             // logo_button
             // 

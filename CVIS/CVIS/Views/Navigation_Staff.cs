@@ -57,12 +57,12 @@ namespace CVIS.Views
 
         private void settings_button1_Click(object sender, EventArgs e)
         {
-            // setting to add
+            Sys.loadPage(_page_display, new Staff_Setting(_page_display, _staff));
         }
 
         private void settings_button2_Click(object sender, EventArgs e)
         {
-            // setting to add
+            Sys.loadPage(_page_display, new Staff_Setting(_page_display, _staff));
         }
 
     }
