@@ -36,7 +36,7 @@ namespace SysFunc {
 
     public class Database
     {
-        public static Dictionary<string, Dictionary<string, string>> sendQuery(string query, string key="ID")
+        public static Dictionary<string, Dictionary<string, string>> sendQuery(string query, string key = "ID")
         {
             Dictionary<string, Dictionary<string, string>> result = new Dictionary<string, Dictionary<string, string>>();
 
@@ -44,7 +44,7 @@ namespace SysFunc {
             using (var connection = new SqliteConnection(connectionString))
             {
                 connection.Open();
-                
+
                 var command = connection.CreateCommand();
                 command.CommandText = query;
 
@@ -96,7 +96,7 @@ namespace SysFunc {
 
         }
 
-        public static Dictionary<string, Dictionary<string, string>> getPatientVaccines(string ID) 
+        public static Dictionary<string, Dictionary<string, string>> getPatientVaccines(string ID)
         {
             Dictionary<string, Dictionary<string, string>> VACCINES = new Dictionary<string, Dictionary<string, string>>();
             string query = "SELECT * FROM Patients_Vaccines as PB WHERE PB.patient_ID == \"" + ID + "\";";
@@ -104,10 +104,10 @@ namespace SysFunc {
             VACCINES = sendQuery(query, "date");
 
             return VACCINES;
-            
+
         }
 
-        public static Dictionary<string, string> getPatientEmergencyContact(string ID) 
+        public static Dictionary<string, string> getPatientEmergencyContact(string ID)
         {
             Dictionary<string, Dictionary<string, string>> emergency = new Dictionary<string, Dictionary<string, string>>();
             string query = "SELECT * FROM Patients_Emergency_Contacts as PB WHERE PB.patient_ID == \"" + ID + "\";";
@@ -115,7 +115,7 @@ namespace SysFunc {
             emergency = sendQuery(query, "patient_ID");
 
             return emergency[ID];
-            
+
         }
 
         public static Dictionary<string, Dictionary<string, string>> getStaffs()
@@ -147,16 +147,25 @@ namespace SysFunc {
             string query1 = "DELETE FROM Patients_Vaccines WHERE Patients_Vaccines.patient_ID == " + patient.ID + ";";
             sendQuery(query1);
 
-            for (int i=0; i<patient.vaccines_date.Count; i++) 
+            for (int i = 0; i < patient.vaccines_date.Count; i++)
             {
                 string query2 = "INSERT INTO Patients_Vaccines (date, patient_ID, type, lot, doctor) values ";
                 query2 += "('" + patient.vaccines_date[i] + "','" + patient.ID + "','" + patient.vaccines_type[i] + "','" + patient.vaccines_lot[i] + "','" + patient.vaccines_doctor[i] + "')";
                 sendQuery(query2);
             }
-            
-            
-        }
 
+
+        }
+        public static void UpdatePatientInDatabase(Patient patient)
+        {
+
+            string query = "UPDATE Patients SET username = '" + patient.username + "', password = '" + patient.password + "', email = '" + patient.email + "', address = '" + patient.address + "', phone = '" + patient.phone + "' WHERE ID == " + patient.ID + ";";
+            string query2 = "UPDATE Patients_Emergency_Contacts SET firstName = '" + patient.emergencyContactFirstName + "', lastName = '" + patient.emergencyContactLastName + "', phone = '" + patient.emergencyContactPhone + "', relation = '" + patient.emergencyContactRelation + "' WHERE patient_ID = '" + patient.ID + "';";
+
+            sendQuery(query);
+            sendQuery(query2);
+
+        }
     }
 
     public class Sys

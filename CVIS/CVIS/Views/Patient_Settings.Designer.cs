@@ -42,7 +42,7 @@
             this.username_input = new System.Windows.Forms.TextBox();
             this.password_input = new System.Windows.Forms.TextBox();
             this.phone_input = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.apply_btn = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -199,22 +199,23 @@
             this.phone_input.Size = new System.Drawing.Size(140, 23);
             this.phone_input.TabIndex = 19;
             // 
-            // button1
+            // apply_btn
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(490, 683);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Apply";
-            this.button1.UseVisualStyleBackColor = false;
+            this.apply_btn.BackColor = System.Drawing.Color.Transparent;
+            this.apply_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("apply_btn.BackgroundImage")));
+            this.apply_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.apply_btn.FlatAppearance.BorderSize = 0;
+            this.apply_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.apply_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.apply_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.apply_btn.ForeColor = System.Drawing.Color.White;
+            this.apply_btn.Location = new System.Drawing.Point(490, 683);
+            this.apply_btn.Name = "apply_btn";
+            this.apply_btn.Size = new System.Drawing.Size(75, 23);
+            this.apply_btn.TabIndex = 20;
+            this.apply_btn.Text = "Apply";
+            this.apply_btn.UseVisualStyleBackColor = false;
+            this.apply_btn.Click += new System.EventHandler(this.apply_btn_Click);
             // 
             // label5
             // 
@@ -421,7 +422,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.apply_btn);
             this.Controls.Add(this.phone_input);
             this.Controls.Add(this.password_input);
             this.Controls.Add(this.username_input);
@@ -459,7 +460,7 @@
         private TextBox username_input;
         private TextBox password_input;
         private TextBox phone_input;
-        private Button button1;
+        private Button apply_btn;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Label label5;
         private Label label6;

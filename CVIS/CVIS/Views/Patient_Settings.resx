@@ -98,7 +98,7 @@
         AElFTkSuQmCC
 </value>
   </data>
-  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="apply_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHQAAAAxCAYAAAALD434AAABgmlDQ1BJQ0MgcHJvZmlsZQAAKM+VkU0o
         RFEcxX8ziDRSTJEs3gIrs0Gy1BApSmPUDBbee2PG1Lw303sjG0tlqyx8bHwtbKzZWtgqpXyUrC2siI30
