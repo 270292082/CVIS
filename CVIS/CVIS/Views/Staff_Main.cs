@@ -18,11 +18,13 @@ namespace CVIS
     public partial class Staff_Main : Form
     {
         private Panel _display;
+        private Staff _staff;
         private Dictionary<string, Patient> _patients = Database.getPatients();
         public Staff_Main(Panel display, Staff staff)
         {
             InitializeComponent();
             _display= display;
+            _staff= staff;
 
             tabMenu.DrawMode = TabDrawMode.OwnerDrawFixed;
             tabMenu.Region = new Region(new RectangleF(tabHome.Left, tabHome.Top, tabHome.Width, tabHome.Height));
@@ -246,6 +248,11 @@ namespace CVIS
             return;
 
 
+        }
+
+        private void profile_Click(object sender, EventArgs e)
+        {
+            Sys.loadPage(_display, new Staff_Profile(_display, _staff));
         }
     }
 }

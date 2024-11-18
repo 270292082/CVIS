@@ -132,3 +132,5 @@ D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\CVIS\obj\Debug\net6
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.pdb
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.genruntimeconfig.cache
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\CVIS\obj\Debug\net6.0-windows\ref\CVIS.dll
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Views.Navigation_Staff.resources
+D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Staff_Profile.resources
