@@ -84,6 +84,7 @@
             this.tabBtn3 = new System.Windows.Forms.Button();
             this.tabBtn2 = new System.Windows.Forms.Button();
             this.tabBtn1 = new System.Windows.Forms.Button();
+            this.display_nav = new System.Windows.Forms.Panel();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_button)).BeginInit();
@@ -671,12 +672,20 @@
             this.tabBtn1.UseVisualStyleBackColor = false;
             this.tabBtn1.Click += new System.EventHandler(this.tabBtn1_Click);
             // 
+            // display_nav
+            // 
+            this.display_nav.Location = new System.Drawing.Point(0, 0);
+            this.display_nav.Name = "display_nav";
+            this.display_nav.Size = new System.Drawing.Size(5, 361);
+            this.display_nav.TabIndex = 24;
+            // 
             // Staff_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(654, 361);
+            this.Controls.Add(this.display_nav);
             this.Controls.Add(this.tabBtn1);
             this.Controls.Add(this.tabBtn2);
             this.Controls.Add(this.tabBtn3);
@@ -814,5 +823,6 @@
         private DataGridViewTextBoxColumn patient_emergencyLastName;
         private DataGridViewTextBoxColumn patient_emergencyPhone;
         private DataGridViewTextBoxColumn patient_emergencyRelation;
+        private Panel display_nav;
     }
 }
