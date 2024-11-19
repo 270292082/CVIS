@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CVIS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+579f71e77e40d4e94cd1ec08e812e85693f285c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("CVIS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CVIS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

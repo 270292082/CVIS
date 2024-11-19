@@ -135,3 +135,6 @@ D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\CVIS\obj\Debug\net6
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Views.Navigation_Staff.resources
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Staff_Profile.resources
 D:\Users\270292082\OneDrive - UP Education\Desktop\CVIS\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Views.Staff_Setting.resources
+C:\Users\Thomas\Documents\CVIS\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Views.Navigation_Staff.resources
+C:\Users\Thomas\Documents\CVIS\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Staff_Profile.resources
+C:\Users\Thomas\Documents\CVIS\CVIS\CVIS\obj\Debug\net6.0-windows\CVIS.Views.Staff_Setting.resources
