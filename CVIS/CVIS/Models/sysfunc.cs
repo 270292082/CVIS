@@ -166,6 +166,17 @@ namespace SysFunc {
             sendQuery(query2);
 
         }
+
+        public static void UpdateStaffInDatabase(Staff staff)
+        {
+
+            string query = "UPDATE Staffs SET username = '" + staff.username + "', password = '" + staff.password + "', email = '" + staff.email + "' WHERE ID == '" + staff.ID + "';";
+            string query2 = "UPDATE Staffs_Info SET address = '" + staff.address + "', phone = '" + staff.phone + "', medicalLicense = '" + staff.medicalLicense + "', licenseExp = '" + staff.licenseExp + "' WHERE ID == '" + staff.ID + "';";
+
+            sendQuery(query);
+            sendQuery(query2);
+
+        }
     }
 
     public class Sys

@@ -35,14 +35,18 @@ namespace CVIS.Views
             password_input.Text = staff.password;
 
             firstname_input.Text = staff.firstName;
+            firstname_input.ReadOnly = true;
             lastname_input.Text = staff.lastName;
+            lastname_input.ReadOnly = true;
             role_input.Text = staff.rolePermission;
+            role_input.ReadOnly = true;
             email_input.Text = staff.email;
-            address_input.Text = staff.address; 
+            address_input.Text = staff.address;
             phone_input.Text = staff.phone;
 
             medlicense_input.Text = staff.medicalLicense;
             licenseexp_input.Text = staff.licenseExp;
+
         }
 
         private void profile_button_Click(object sender, EventArgs e)
@@ -58,6 +62,21 @@ namespace CVIS.Views
         private void menu_button_Click(object sender, EventArgs e)
         {
             Sys.toggleNav(display_nav, 1);
+        }
+
+        private void apply_btn_Click(object sender, EventArgs e)
+        {
+            _staff.username = username_input.Text;
+            _staff.password = password_input.Text;
+            
+            _staff.email = email_input.Text;
+            _staff.address = address_input.Text;
+            _staff.phone = phone_input.Text;
+
+            _staff.medicalLicense = medlicense_input.Text;
+            _staff.licenseExp= licenseexp_input.Text;
+
+            Database.UpdateStaffInDatabase(_staff); 
         }
     }
 }
