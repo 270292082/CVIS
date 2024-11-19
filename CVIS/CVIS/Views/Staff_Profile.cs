@@ -56,7 +56,7 @@ namespace CVIS
         {
             // navigation
             Sys.toggleNav(display_nav, 1);
-            
+
         }
 
         private void diplay_nav_Paint(object sender, PaintEventArgs e)
@@ -64,5 +64,9 @@ namespace CVIS
 
         }
 
+        private void emergency_edit_button_Click(object sender, EventArgs e)
+        {
+            Sys.loadPage(_page_display, new Staff_Setting(_page_display, _staff));
+        }
     }
 }

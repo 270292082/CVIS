@@ -29,252 +29,251 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff_Profile));
-            this.Banner = new System.Windows.Forms.Panel();
-            this.profile = new System.Windows.Forms.PictureBox();
-            this.logo_button = new System.Windows.Forms.PictureBox();
-            this.menu_button = new System.Windows.Forms.PictureBox();
-            this.display_nav = new System.Windows.Forms.Panel();
-            this.content = new System.Windows.Forms.Panel();
-            this.hosdept_text = new System.Windows.Forms.Label();
-            this.position_text = new System.Windows.Forms.Label();
-            this.name_text = new System.Windows.Forms.Label();
-            this.admin_ID_text = new System.Windows.Forms.Label();
-            this.info = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.emergency_edit_button = new System.Windows.Forms.Button();
-            this.emergency_contact_text = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.user_status = new System.Windows.Forms.Panel();
-            this.info_text = new System.Windows.Forms.Label();
-            this.profile_picture = new System.Windows.Forms.PictureBox();
-            this.Banner.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.profile)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_button)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
-            this.content.SuspendLayout();
-            this.info.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.user_status.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.profile_picture)).BeginInit();
-            this.SuspendLayout();
+            Banner = new Panel();
+            profile = new PictureBox();
+            logo_button = new PictureBox();
+            menu_button = new PictureBox();
+            display_nav = new Panel();
+            content = new Panel();
+            hosdept_text = new Label();
+            position_text = new Label();
+            name_text = new Label();
+            admin_ID_text = new Label();
+            info = new Panel();
+            label1 = new Label();
+            emergency_edit_button = new Button();
+            emergency_contact_text = new Label();
+            pictureBox1 = new PictureBox();
+            user_status = new Panel();
+            info_text = new Label();
+            profile_picture = new PictureBox();
+            Banner.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)profile).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)logo_button).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)menu_button).BeginInit();
+            content.SuspendLayout();
+            info.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            user_status.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)profile_picture).BeginInit();
+            SuspendLayout();
             // 
             // Banner
             // 
-            this.Banner.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Banner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(136)))));
-            this.Banner.Controls.Add(this.profile);
-            this.Banner.Controls.Add(this.logo_button);
-            this.Banner.Controls.Add(this.menu_button);
-            this.Banner.Location = new System.Drawing.Point(0, 0);
-            this.Banner.Margin = new System.Windows.Forms.Padding(2);
-            this.Banner.Name = "Banner";
-            this.Banner.Size = new System.Drawing.Size(669, 60);
-            this.Banner.TabIndex = 0;
+            Banner.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            Banner.BackColor = Color.FromArgb(0, 151, 136);
+            Banner.Controls.Add(profile);
+            Banner.Controls.Add(logo_button);
+            Banner.Controls.Add(menu_button);
+            Banner.Location = new Point(0, 0);
+            Banner.Margin = new Padding(2);
+            Banner.Name = "Banner";
+            Banner.Size = new Size(669, 60);
+            Banner.TabIndex = 0;
             // 
             // profile
             // 
-            this.profile.Image = global::CVIS.Properties.Resources.profile_placeholder;
-            this.profile.Location = new System.Drawing.Point(570, 9);
-            this.profile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.profile.Name = "profile";
-            this.profile.Size = new System.Drawing.Size(72, 42);
-            this.profile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.profile.TabIndex = 2;
-            this.profile.TabStop = false;
+            profile.Image = Properties.Resources.profile_placeholder;
+            profile.Location = new Point(570, 9);
+            profile.Margin = new Padding(3, 2, 3, 2);
+            profile.Name = "profile";
+            profile.Size = new Size(72, 42);
+            profile.SizeMode = PictureBoxSizeMode.Zoom;
+            profile.TabIndex = 2;
+            profile.TabStop = false;
             // 
             // logo_button
             // 
-            this.logo_button.Image = global::CVIS.Properties.Resources.logo_white;
-            this.logo_button.Location = new System.Drawing.Point(38, 10);
-            this.logo_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.logo_button.Name = "logo_button";
-            this.logo_button.Size = new System.Drawing.Size(105, 40);
-            this.logo_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logo_button.TabIndex = 1;
-            this.logo_button.TabStop = false;
-            this.logo_button.Click += new System.EventHandler(this.logo_button_Click);
+            logo_button.Image = Properties.Resources.logo_white;
+            logo_button.Location = new Point(38, 10);
+            logo_button.Margin = new Padding(3, 2, 3, 2);
+            logo_button.Name = "logo_button";
+            logo_button.Size = new Size(105, 40);
+            logo_button.SizeMode = PictureBoxSizeMode.Zoom;
+            logo_button.TabIndex = 1;
+            logo_button.TabStop = false;
+            logo_button.Click += logo_button_Click;
             // 
             // menu_button
             // 
-            this.menu_button.Image = ((System.Drawing.Image)(resources.GetObject("menu_button.Image")));
-            this.menu_button.ImageLocation = "";
-            this.menu_button.Location = new System.Drawing.Point(12, 10);
-            this.menu_button.Name = "menu_button";
-            this.menu_button.Size = new System.Drawing.Size(20, 40);
-            this.menu_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.menu_button.TabIndex = 0;
-            this.menu_button.TabStop = false;
-            this.menu_button.Click += new System.EventHandler(this.menu_button_Click);
+            menu_button.Image = (Image)resources.GetObject("menu_button.Image");
+            menu_button.ImageLocation = "";
+            menu_button.Location = new Point(12, 10);
+            menu_button.Name = "menu_button";
+            menu_button.Size = new Size(20, 40);
+            menu_button.SizeMode = PictureBoxSizeMode.Zoom;
+            menu_button.TabIndex = 0;
+            menu_button.TabStop = false;
+            menu_button.Click += menu_button_Click;
             // 
             // display_nav
             // 
-            this.display_nav.Location = new System.Drawing.Point(0, 0);
-            this.display_nav.Name = "display_nav";
-            this.display_nav.Size = new System.Drawing.Size(5, 361);
-            this.display_nav.TabIndex = 9;
+            display_nav.Location = new Point(0, 0);
+            display_nav.Name = "display_nav";
+            display_nav.Size = new Size(5, 361);
+            display_nav.TabIndex = 9;
             // 
             // content
             // 
-            this.content.Controls.Add(this.hosdept_text);
-            this.content.Controls.Add(this.position_text);
-            this.content.Controls.Add(this.name_text);
-            this.content.Controls.Add(this.admin_ID_text);
-            this.content.Controls.Add(this.info);
-            this.content.Controls.Add(this.user_status);
-            this.content.Controls.Add(this.profile_picture);
-            this.content.Location = new System.Drawing.Point(12, 65);
-            this.content.Name = "content";
-            this.content.Size = new System.Drawing.Size(630, 296);
-            this.content.TabIndex = 8;
+            content.Controls.Add(hosdept_text);
+            content.Controls.Add(position_text);
+            content.Controls.Add(name_text);
+            content.Controls.Add(admin_ID_text);
+            content.Controls.Add(info);
+            content.Controls.Add(user_status);
+            content.Controls.Add(profile_picture);
+            content.Location = new Point(12, 65);
+            content.Name = "content";
+            content.Size = new Size(630, 296);
+            content.TabIndex = 8;
             // 
             // hosdept_text
             // 
-            this.hosdept_text.AutoSize = true;
-            this.hosdept_text.Location = new System.Drawing.Point(104, 76);
-            this.hosdept_text.Name = "hosdept_text";
-            this.hosdept_text.Size = new System.Drawing.Size(134, 15);
-            this.hosdept_text.TabIndex = 10;
-            this.hosdept_text.Text = "Hospital / Department : ";
+            hosdept_text.AutoSize = true;
+            hosdept_text.Location = new Point(104, 76);
+            hosdept_text.Name = "hosdept_text";
+            hosdept_text.Size = new Size(134, 15);
+            hosdept_text.TabIndex = 10;
+            hosdept_text.Text = "Hospital / Department : ";
             // 
             // position_text
             // 
-            this.position_text.AutoSize = true;
-            this.position_text.Location = new System.Drawing.Point(104, 54);
-            this.position_text.Name = "position_text";
-            this.position_text.Size = new System.Drawing.Size(59, 15);
-            this.position_text.TabIndex = 9;
-            this.position_text.Text = "Position : ";
+            position_text.AutoSize = true;
+            position_text.Location = new Point(104, 54);
+            position_text.Name = "position_text";
+            position_text.Size = new Size(59, 15);
+            position_text.TabIndex = 9;
+            position_text.Text = "Position : ";
             // 
             // name_text
             // 
-            this.name_text.AutoSize = true;
-            this.name_text.Location = new System.Drawing.Point(104, 31);
-            this.name_text.Name = "name_text";
-            this.name_text.Size = new System.Drawing.Size(48, 15);
-            this.name_text.TabIndex = 8;
-            this.name_text.Text = "Name : ";
+            name_text.AutoSize = true;
+            name_text.Location = new Point(104, 31);
+            name_text.Name = "name_text";
+            name_text.Size = new Size(48, 15);
+            name_text.TabIndex = 8;
+            name_text.Text = "Name : ";
             // 
             // admin_ID_text
             // 
-            this.admin_ID_text.AutoSize = true;
-            this.admin_ID_text.Location = new System.Drawing.Point(104, 12);
-            this.admin_ID_text.Name = "admin_ID_text";
-            this.admin_ID_text.Size = new System.Drawing.Size(66, 15);
-            this.admin_ID_text.TabIndex = 6;
-            this.admin_ID_text.Text = "Admin ID : ";
+            admin_ID_text.AutoSize = true;
+            admin_ID_text.Location = new Point(104, 12);
+            admin_ID_text.Name = "admin_ID_text";
+            admin_ID_text.Size = new Size(66, 15);
+            admin_ID_text.TabIndex = 6;
+            admin_ID_text.Text = "Admin ID : ";
             // 
             // info
             // 
-            this.info.Controls.Add(this.label1);
-            this.info.Controls.Add(this.emergency_edit_button);
-            this.info.Controls.Add(this.emergency_contact_text);
-            this.info.Controls.Add(this.pictureBox1);
-            this.info.Location = new System.Drawing.Point(372, 94);
-            this.info.Name = "info";
-            this.info.Size = new System.Drawing.Size(255, 194);
-            this.info.TabIndex = 4;
+            info.Controls.Add(label1);
+            info.Controls.Add(emergency_edit_button);
+            info.Controls.Add(emergency_contact_text);
+            info.Controls.Add(pictureBox1);
+            info.Location = new Point(372, 94);
+            info.Name = "info";
+            info.Size = new Size(255, 194);
+            info.TabIndex = 4;
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(10, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(235, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Qualifications / Relevant Documents";
+            label1.BackColor = Color.FromArgb(178, 223, 219);
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(10, 16);
+            label1.Name = "label1";
+            label1.Size = new Size(235, 20);
+            label1.TabIndex = 4;
+            label1.Text = "Qualifications / Relevant Documents";
             // 
             // emergency_edit_button
             // 
-            this.emergency_edit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(213)))), ((int)(((byte)(229)))));
-            this.emergency_edit_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("emergency_edit_button.BackgroundImage")));
-            this.emergency_edit_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.emergency_edit_button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
-            this.emergency_edit_button.FlatAppearance.BorderSize = 0;
-            this.emergency_edit_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
-            this.emergency_edit_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
-            this.emergency_edit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.emergency_edit_button.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.emergency_edit_button.Location = new System.Drawing.Point(10, 152);
-            this.emergency_edit_button.Name = "emergency_edit_button";
-            this.emergency_edit_button.Size = new System.Drawing.Size(235, 29);
-            this.emergency_edit_button.TabIndex = 3;
-            this.emergency_edit_button.Text = "Edit Documents";
-            this.emergency_edit_button.UseVisualStyleBackColor = false;
+            emergency_edit_button.BackColor = Color.FromArgb(178, 213, 229);
+            emergency_edit_button.BackgroundImage = (Image)resources.GetObject("emergency_edit_button.BackgroundImage");
+            emergency_edit_button.BackgroundImageLayout = ImageLayout.Stretch;
+            emergency_edit_button.FlatAppearance.BorderColor = Color.FromArgb(178, 223, 219);
+            emergency_edit_button.FlatAppearance.BorderSize = 0;
+            emergency_edit_button.FlatAppearance.MouseDownBackColor = Color.FromArgb(178, 223, 219);
+            emergency_edit_button.FlatAppearance.MouseOverBackColor = Color.FromArgb(178, 223, 219);
+            emergency_edit_button.FlatStyle = FlatStyle.Flat;
+            emergency_edit_button.ForeColor = Color.WhiteSmoke;
+            emergency_edit_button.Location = new Point(10, 152);
+            emergency_edit_button.Name = "emergency_edit_button";
+            emergency_edit_button.Size = new Size(235, 29);
+            emergency_edit_button.TabIndex = 3;
+            emergency_edit_button.Text = "Edit Documents";
+            emergency_edit_button.UseVisualStyleBackColor = false;
+            emergency_edit_button.Click += emergency_edit_button_Click;
             // 
             // emergency_contact_text
             // 
-            this.emergency_contact_text.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
-            this.emergency_contact_text.Location = new System.Drawing.Point(10, 42);
-            this.emergency_contact_text.Name = "emergency_contact_text";
-            this.emergency_contact_text.Size = new System.Drawing.Size(235, 46);
-            this.emergency_contact_text.TabIndex = 2;
-            this.emergency_contact_text.Text = "None";
+            emergency_contact_text.BackColor = Color.FromArgb(178, 223, 219);
+            emergency_contact_text.Location = new Point(10, 42);
+            emergency_contact_text.Name = "emergency_contact_text";
+            emergency_contact_text.Size = new Size(235, 46);
+            emergency_contact_text.TabIndex = 2;
+            emergency_contact_text.Text = "None";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(249, 182);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(3, 9);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(249, 182);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // user_status
             // 
-            this.user_status.Controls.Add(this.info_text);
-            this.user_status.Location = new System.Drawing.Point(3, 94);
-            this.user_status.Name = "user_status";
-            this.user_status.Size = new System.Drawing.Size(363, 194);
-            this.user_status.TabIndex = 3;
+            user_status.Controls.Add(info_text);
+            user_status.Location = new Point(3, 94);
+            user_status.Name = "user_status";
+            user_status.Size = new Size(363, 194);
+            user_status.TabIndex = 3;
             // 
             // info_text
             // 
-            this.info_text.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.info_text.Location = new System.Drawing.Point(12, 9);
-            this.info_text.Name = "info_text";
-            this.info_text.Size = new System.Drawing.Size(348, 172);
-            this.info_text.TabIndex = 7;
-            this.info_text.Text = "[Info]";
+            info_text.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            info_text.Location = new Point(12, 9);
+            info_text.Name = "info_text";
+            info_text.Size = new Size(348, 172);
+            info_text.TabIndex = 7;
+            info_text.Text = "[Info]";
             // 
             // profile_picture
             // 
-            this.profile_picture.Image = global::CVIS.Properties.Resources.profile_placeholder;
-            this.profile_picture.Location = new System.Drawing.Point(13, 12);
-            this.profile_picture.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.profile_picture.Name = "profile_picture";
-            this.profile_picture.Size = new System.Drawing.Size(70, 72);
-            this.profile_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.profile_picture.TabIndex = 2;
-            this.profile_picture.TabStop = false;
+            profile_picture.Image = Properties.Resources.profile_placeholder;
+            profile_picture.Location = new Point(13, 12);
+            profile_picture.Margin = new Padding(3, 2, 3, 2);
+            profile_picture.Name = "profile_picture";
+            profile_picture.Size = new Size(70, 72);
+            profile_picture.SizeMode = PictureBoxSizeMode.Zoom;
+            profile_picture.TabIndex = 2;
+            profile_picture.TabStop = false;
             // 
             // Staff_Profile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(654, 361);
-            this.Controls.Add(this.display_nav);
-            this.Controls.Add(this.Banner);
-            this.Controls.Add(this.content);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Staff_Profile";
-            this.Text = "Staff_Profile";
-            this.Banner.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.profile)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_button)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.menu_button)).EndInit();
-            this.content.ResumeLayout(false);
-            this.content.PerformLayout();
-            this.info.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.user_status.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.profile_picture)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightCyan;
+            ClientSize = new Size(654, 361);
+            Controls.Add(display_nav);
+            Controls.Add(Banner);
+            Controls.Add(content);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2);
+            Name = "Staff_Profile";
+            Text = "Staff_Profile";
+            Banner.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)profile).EndInit();
+            ((System.ComponentModel.ISupportInitialize)logo_button).EndInit();
+            ((System.ComponentModel.ISupportInitialize)menu_button).EndInit();
+            content.ResumeLayout(false);
+            content.PerformLayout();
+            info.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            user_status.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)profile_picture).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
