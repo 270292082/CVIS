@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -30,6 +31,18 @@ namespace CVIS.Views
             Sys.loadPage(display_nav, new Navigation_Staff(_display, display_nav, staff));
             display_nav.BringToFront();
 
+            username_input.Text = staff.username;
+            password_input.Text = staff.password;
+
+            firstname_input.Text = staff.firstName;
+            lastname_input.Text = staff.lastName;
+            role_input.Text = staff.rolePermission;
+            email_input.Text = staff.email;
+            address_input.Text = staff.address; 
+            phone_input.Text = staff.phone;
+
+            medlicense_input.Text = staff.medicalLicense;
+            licenseexp_input.Text = staff.licenseExp;
         }
 
         private void profile_button_Click(object sender, EventArgs e)

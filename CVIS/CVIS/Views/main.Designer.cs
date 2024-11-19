@@ -28,33 +28,31 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
-            this.display = new System.Windows.Forms.Panel();
-            this.SuspendLayout();
+            display = new Panel();
+            SuspendLayout();
             // 
             // display
             // 
-            this.display.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.display.Location = new System.Drawing.Point(0, 0);
-            this.display.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(654, 361);
-            this.display.TabIndex = 0;
+            display.Dock = DockStyle.Fill;
+            display.Location = new Point(0, 0);
+            display.Margin = new Padding(3, 2, 3, 2);
+            display.Name = "display";
+            display.Size = new Size(654, 361);
+            display.TabIndex = 0;
             // 
             // main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(654, 361);
-            this.Controls.Add(this.display);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.Name = "main";
-            this.Text = " CVIS";
-            this.Load += new System.EventHandler(this.main_Load);
-            this.ResumeLayout(false);
-
+            AutoScaleMode = AutoScaleMode.Inherit;
+            BackColor = Color.LightCyan;
+            ClientSize = new Size(654, 361);
+            Controls.Add(display);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            Name = "main";
+            Text = " CVIS";
+            Load += main_Load;
+            ResumeLayout(false);
         }
 
         #endregion
