@@ -87,12 +87,6 @@ namespace CVIS.Views
                 return; // Stop further execution
             }
 
-            if (string.IsNullOrWhiteSpace(medlicense_input.Text) ||
-                string.IsNullOrWhiteSpace(licenseexp_input.Text))
-            {
-                MessageBox.Show("Medical license and license expiry date are required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
 
             Staff updateStaff = new Staff
             {
