@@ -21,6 +21,7 @@ namespace CVIS
         private Panel _display;
         private Staff _staff;
         private Dictionary<string, Patient> _patients = Database.getPatients();
+        private List<string> _patients_info = new List<string>();
         public Staff_Main(Panel display, Staff staff)
         {
             InitializeComponent();
@@ -57,7 +58,7 @@ namespace CVIS
             display_nav.Visible = true;
             Sys.loadPage(display_nav, new Navigation_Staff(_display, display_nav, staff));
             display_nav.BringToFront();
-
+            
         }
 
         private void scan_qr_button_Click(object sender, EventArgs e)
@@ -108,11 +109,20 @@ namespace CVIS
 
         private void Staff_Main_Load(object sender, EventArgs e)
         {
-            // ! Should put the initialisation of the patient in an async function to not make the program freeze if there's a lot of patient to load. !
-            Dictionary<string, Patient> patients = Database.getPatients();
+            dataGridHomeInit();
+            infoInit(null);            
+            dataGridVaccine.AllowUserToAddRows= false;
+        }
 
+        private void dataGridHomeInit()
+        {
+            // ! Should put the initialisation of the patient in an async function to not make the program freeze if there's a lot of patient to load. !
+            Dictionary<string, Patient> _patients = Database.getPatients();
+            _patients_info.Clear();
+
+            dataGridHome.Rows.Clear();
             int nb = 0;
-            foreach (var patient in patients.Values)
+            foreach (var patient in _patients.Values)
             {
                 dataGridHome.Rows.Add(nb, patient);
                 dataGridHome.Rows[nb].Cells[0].Value = patient.ID;
@@ -131,12 +141,28 @@ namespace CVIS
                 nb++;
             }
 
-            infoInit(null);            
-            dataGridVaccine.AllowUserToAddRows= false;
 
+            // Converts the patient information into a line a text in order to reduce the time looking into each different value.
+            string info = string.Empty;
+            foreach (var patient in _patients)
+            {
+                info += patient.Value.ID + "/";
+                info += patient.Value.username + "/";
+                info += patient.Value.firstName + "/";
+                info += patient.Value.lastName + "/";
+                info += patient.Value.DOB + "/";
+                info += patient.Value.gender + "/";
+                info += patient.Value.phone + "/";
+                info += patient.Value.email + "/";
+                info += patient.Value.address + "/";
+                info += patient.Value.emergencyContactFirstName + "/";
+                info += patient.Value.emergencyContactLastName + "/";
+                info += patient.Value.emergencyContactPhone + "/";
+                info += patient.Value.emergencyContactRelation + "/";
 
-            
-
+                _patients_info.Add(info);
+                info = string.Empty;
+            }
         }
 
         private void infoInit(Patient patient)
@@ -210,6 +236,7 @@ namespace CVIS
                 vacInit(patient.Value);
                 return;
             }
+            MessageBox.Show("This patient doesn't exist!", "ERROR!");
         }
 
 
@@ -280,5 +307,40 @@ namespace CVIS
             Sys.loadPage(_display, new Staff_Profile(_display, _staff));
         }
 
+        private void search_patient_TextChanged(object sender, EventArgs e)
+        {
+           if (search_patient.Text == "")
+            {
+                dataGridHomeInit();
+                return;
+            } 
+
+            dataGridHome.Rows.Clear();
+            foreach (var patientInfo in _patients_info)
+            {
+                if (patientInfo.Contains(search_patient.Text))
+                {
+
+                    int nb_row = dataGridHome.Rows.Count;
+                    string[] patient = patientInfo.Split('/');
+                    dataGridHome.Rows.Add();
+                    dataGridHome.Rows[nb_row].Cells[0].Value = patient[0];
+                    dataGridHome.Rows[nb_row].Cells[1].Value = patient[1];
+                    dataGridHome.Rows[nb_row].Cells[2].Value = patient[2];
+                    dataGridHome.Rows[nb_row].Cells[3].Value = patient[3];
+                    dataGridHome.Rows[nb_row].Cells[4].Value = patient[4];
+                    dataGridHome.Rows[nb_row].Cells[5].Value = patient[5];
+                    dataGridHome.Rows[nb_row].Cells[6].Value = patient[6];
+                    dataGridHome.Rows[nb_row].Cells[7].Value = patient[7];
+                    dataGridHome.Rows[nb_row].Cells[8].Value = patient[8];
+                    dataGridHome.Rows[nb_row].Cells[9].Value = patient[9];
+                    dataGridHome.Rows[nb_row].Cells[10].Value = patient[10];
+                    dataGridHome.Rows[nb_row].Cells[11].Value = patient[11];
+                    dataGridHome.Rows[nb_row].Cells[12].Value = patient[12];
+
+                    continue;
+                }
+            }
+        }
     }
 }

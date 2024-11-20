@@ -49,7 +49,7 @@
             this.patient_emergencyLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patient_emergencyPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patient_emergencyRelation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.search_patient = new System.Windows.Forms.TextBox();
             this.welcome_text = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.scan_qr_button = new System.Windows.Forms.Button();
@@ -175,7 +175,7 @@
             // 
             this.tabHome.BackColor = System.Drawing.Color.LightCyan;
             this.tabHome.Controls.Add(this.dataGridHome);
-            this.tabHome.Controls.Add(this.textBox1);
+            this.tabHome.Controls.Add(this.search_patient);
             this.tabHome.Controls.Add(this.welcome_text);
             this.tabHome.Controls.Add(this.pictureBox2);
             this.tabHome.Controls.Add(this.scan_qr_button);
@@ -292,12 +292,13 @@
             this.patient_emergencyRelation.Name = "patient_emergencyRelation";
             this.patient_emergencyRelation.ReadOnly = true;
             // 
-            // textBox1
+            // search_patient
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 94);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(549, 25);
-            this.textBox1.TabIndex = 19;
+            this.search_patient.Location = new System.Drawing.Point(6, 94);
+            this.search_patient.Name = "search_patient";
+            this.search_patient.Size = new System.Drawing.Size(549, 25);
+            this.search_patient.TabIndex = 19;
+            this.search_patient.TextChanged += new System.EventHandler(this.search_patient_TextChanged);
             // 
             // welcome_text
             // 
@@ -751,7 +752,7 @@
         private Button scan_qr_button;
         private Label welcome_text;
         private PictureBox pictureBox2;
-        private TextBox textBox1;
+        private TextBox search_patient;
         private DataGridView dataGridHome;
         private DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn1;

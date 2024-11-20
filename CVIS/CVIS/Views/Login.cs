@@ -21,6 +21,7 @@ namespace CVIS
 
             if (username_input.Text.Length <= 0 && password_input.Text.Length <= 0)
             {
+                MessageBox.Show("Please enter your credentials.");
                 return;
             }
 
@@ -30,6 +31,7 @@ namespace CVIS
                 if (username_input.Text == patient.username && password_input.Text == patient.password)
                 {
                     Sys.loadPage(_page_display, new Patient_Main(_page_display, patient));
+                    return;
                 }
             }
 
@@ -39,8 +41,11 @@ namespace CVIS
                 if (username_input.Text == STAFFS[s]["username"] && password_input.Text == STAFFS[s]["password"])
                 {
                     Sys.loadPage(_page_display, new Staff_Main(_page_display, Staff.dataToClass(STAFFS[s])));
+                    return;
                 }
             }
+
+            MessageBox.Show("Wrong credentials! Please try again.", "ERROR!");
 
         }
 
