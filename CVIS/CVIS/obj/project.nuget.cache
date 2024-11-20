@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jZSrXaTE7absPGY7od9Q3hSAAH8szUMBwWr7tG2vzpBXVP9iKNkQ9xoUAvcTEE2YyTSWBrH3jZgxvTYyW31Ykg==",
+  "dgSpecHash": "kYlUDjqRtq2oOO9GD9RRTtwAP3Mr42ZJzmwetq2BmItrdqNrIJEs4FphX8qwjYO+8HSGtWHMkL7mImtPDRc/7A==",
   "success": true,
   "projectFilePath": "D:\\Users\\270292082\\OneDrive - UP Education\\Desktop\\CVIS\\CVIS\\CVIS\\CVIS.csproj",
   "expectedPackageFiles": [
@@ -10,10 +10,7 @@
     "D:\\Users\\270292082\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "D:\\Users\\270292082\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
     "D:\\Users\\270292082\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.6\\sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
-    "D:\\Users\\270292082\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "D:\\Users\\270292082\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.13\\microsoft.netcore.app.runtime.win-x64.6.0.13.nupkg.sha512",
-    "D:\\Users\\270292082\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.13\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.13.nupkg.sha512",
-    "D:\\Users\\270292082\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.13\\microsoft.aspnetcore.app.runtime.win-x64.6.0.13.nupkg.sha512"
+    "D:\\Users\\270292082\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }

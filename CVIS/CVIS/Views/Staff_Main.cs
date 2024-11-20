@@ -227,7 +227,7 @@ namespace CVIS
         {
             foreach (var patient in _patients)
             {
-                if (search.Text != patient.Key.ToString() && search.Text != patient.Value.username)
+                if (search.Text != patient.Key.ToString())
                 {
                     dataGridVaccine.AllowUserToAddRows = false;
                     infoInit(null);
@@ -246,7 +246,7 @@ namespace CVIS
         {
             foreach (var patient in _patients)
             {
-                if (search.Text != patient.Key.ToString())
+                if (search.Text != patient.Key.ToString()) 
                 {
                     dataGridVaccine.AllowUserToAddRows = false;
                     infoInit(null);
@@ -290,11 +290,6 @@ namespace CVIS
 
         private void update_btn_Click(object sender, EventArgs e)
         {
-            if (!_patients.ContainsKey(search.Text))
-            {
-                return;
-            }
-
             _patients[search.Text].vaccines_type.Clear();
             _patients[search.Text].vaccines_lot.Clear();
             _patients[search.Text].vaccines_date.Clear();

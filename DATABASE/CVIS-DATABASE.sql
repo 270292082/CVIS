@@ -59,20 +59,24 @@ create table Staffs_Info (
 --- Patients table data insert ---
 insert into Patients (ID, username, password, firstName, lastName, DOB, gender, phone, email, address)
 values
-('123456','alix0','hellokitty','Alice','Manjaro','2004-04-18','Female','649281','alice.manjaro@gmail.com','8 Ronayne Street, Auckland CBD, Auckland 1010'),
+('123456','alix0','hellokitty','Alice','Manjaro','2004-04-18','Female','64928122','alice.manjaro@gmail.com','8 Ronayne Street, Auckland CBD, Auckland 1010'),
+('626842','monika','justmonika','Monika','Libitina','2004-09-22','Female','272184806','monika.lib@gmail.com','15 Whitaker Place, Grafton, Auckland 1010'),
 ('654321','jdoe','qwerty','John','Doe','1980-12-21','Male','649281','john.doe@gmail.com','9 Madeira Lane, Grafton, Auckland 1023');
 
 --- Vaccines table data insert ---
 insert into Patients_Vaccines (date, patient_ID, type, lot, doctor)
 values
-('2022-04-24','123456','Pfizer','C4892A','Dr. Misha'),
-('2022-04-24','654321','Pfizer','C4892A','Dr. Mikalow'),
-('2022-06-24','654321','mRNA','C8922A','Dr. Shaman');
+('2022-04-24','123456','Pfizer','C4892A','Dr. Afton'),
+('2022-04-24','626842','Pfizer','C8922A','Dr. Afton'),
+('2022-06-24','626842','Pfizer','C6173A','Dr. Gasai'),
+('2022-04-24','654321','mRNA','C4892A','Dr. Gasai'),
+('2022-06-24','654321','mRNA','C8922A','Dr. Gasai');
 
 --- Emergency contact table data insert ---
 insert into Patients_Emergency_Contacts (patient_ID, firstName, lastName, phone, relation)
 values
 ('123456','Florence', 'Marshall','122365','Flatmate'),
+('626842','Thomas', 'Wongsokarto','122365','Husband'),
 ('654321','Martin', 'Blanchard','876832','Brother');
 	
 	
@@ -81,7 +85,7 @@ insert into Staffs (ID, username, password, firstName, lastName, email, position
 values
 ('AD123456','serverix','whitehead','Severus', 'Snape', 'severus.snape@gmail.com','Nurse','Auckland City Hospital'),
 ('AD654321','willy','micheal123','William', 'Afton', 'william.afton@gmail.com','Doctor','Auckland City Hospital'),
-('AD872911','yun0','heisminebitch','Yuno', 'Gasai', 'yuno.gasai341@gmail.com','Nurse','Auckland City Hospital'),
+('AD872911','yun0','heisminebitch','Yuno', 'Gasai', 'yuno.gasai341@gmail.com','Doctor','Auckland City Hospital'),
 ('AD666666','hisoka','gonfreecss','Hisoka', 'Morow', 'hisoka@gmail.com','Admin','Auckland City Hospital');
 	
 --- Staffs Info table data insert
