@@ -94,6 +94,7 @@ namespace CVIS
             tabBtn1.BackColor = Color.FromArgb(178, 223, 220);
             tabBtn2.BackColor = Color.FromArgb(178, 223, 220);
             tabBtn3.BackColor = Color.LightCyan;
+            dataGridVaccine2Init();
 
         }
 
@@ -114,6 +115,27 @@ namespace CVIS
             dataGridVaccine.AllowUserToAddRows= false;
         }
 
+        private void dataGridVaccine2Init()
+        {
+            dataGridVaccines2.Rows.Clear();
+            dataGridVaccines2.AllowUserToAddRows = false;
+            dataGridVaccines2.ReadOnly = true;
+            int nb_rows = 0;
+
+            foreach (var patient in _patients.Values)
+            {
+                dataGridVaccines2.Rows.Add();
+                dataGridVaccines2.Rows[nb_rows].Cells[0].Value = patient.ID;
+                dataGridVaccines2.Rows[nb_rows].Cells[1].Value = patient.firstName;
+                dataGridVaccines2.Rows[nb_rows].Cells[2].Value = patient.lastName;
+                dataGridVaccines2.Rows[nb_rows].Cells[3].Value = patient.DOB;
+                dataGridVaccines2.Rows[nb_rows].Cells[4].Value = patient.gender;
+                dataGridVaccines2.Rows[nb_rows].Cells[5].Value = patient.getStatus(0);
+                dataGridVaccines2.Rows[nb_rows].Cells[6].Value = patient.vaccines_date[patient.vaccines_date.Count-1];
+                nb_rows++;
+            }
+        }
+
         private void dataGridHomeInit()
         {
             // ! Should put the initialisation of the patient in an async function to not make the program freeze if there's a lot of patient to load. !
@@ -131,6 +153,7 @@ namespace CVIS
                 dataGridHome.Rows[nb].Cells[3].Value = patient.lastName;
                 dataGridHome.Rows[nb].Cells[4].Value = patient.DOB;
                 dataGridHome.Rows[nb].Cells[5].Value = patient.gender;
+
                 dataGridHome.Rows[nb].Cells[6].Value = patient.phone;
                 dataGridHome.Rows[nb].Cells[7].Value = patient.email;
                 dataGridHome.Rows[nb].Cells[8].Value = patient.address;

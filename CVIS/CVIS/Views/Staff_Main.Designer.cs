@@ -68,6 +68,13 @@
             this.vac_doctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabVaccinationReports = new System.Windows.Forms.TabPage();
             this.dataGridVaccines2 = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vaccinationStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastVaccinationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearly_report_info = new System.Windows.Forms.Label();
             this.montly_report_info = new System.Windows.Forms.Label();
             this.daily_report_info = new System.Windows.Forms.Label();
@@ -85,13 +92,6 @@
             this.tabBtn2 = new System.Windows.Forms.Button();
             this.tabBtn1 = new System.Windows.Forms.Button();
             this.display_nav = new System.Windows.Forms.Panel();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vaccinationStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastVaccinationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_button)).BeginInit();
@@ -492,6 +492,8 @@
             // 
             // dataGridVaccines2
             // 
+            this.dataGridVaccines2.AllowUserToAddRows = false;
+            this.dataGridVaccines2.AllowUserToDeleteRows = false;
             this.dataGridVaccines2.BackgroundColor = System.Drawing.Color.LightCyan;
             this.dataGridVaccines2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridVaccines2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -505,9 +507,59 @@
             this.lastVaccinationDate});
             this.dataGridVaccines2.Location = new System.Drawing.Point(7, 127);
             this.dataGridVaccines2.Name = "dataGridVaccines2";
+            this.dataGridVaccines2.ReadOnly = true;
             this.dataGridVaccines2.RowTemplate.Height = 25;
             this.dataGridVaccines2.Size = new System.Drawing.Size(639, 117);
             this.dataGridVaccines2.TabIndex = 21;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "User ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 85;
+            // 
+            // firstName
+            // 
+            this.firstName.HeaderText = "First Name";
+            this.firstName.Name = "firstName";
+            this.firstName.ReadOnly = true;
+            this.firstName.Width = 85;
+            // 
+            // lastName
+            // 
+            this.lastName.HeaderText = "Last Name";
+            this.lastName.Name = "lastName";
+            this.lastName.ReadOnly = true;
+            this.lastName.Width = 85;
+            // 
+            // age
+            // 
+            this.age.HeaderText = "Age";
+            this.age.Name = "age";
+            this.age.ReadOnly = true;
+            this.age.Width = 85;
+            // 
+            // gender
+            // 
+            this.gender.HeaderText = "Gender";
+            this.gender.Name = "gender";
+            this.gender.ReadOnly = true;
+            this.gender.Width = 85;
+            // 
+            // vaccinationStatus
+            // 
+            this.vaccinationStatus.HeaderText = "Vaccination Status";
+            this.vaccinationStatus.Name = "vaccinationStatus";
+            this.vaccinationStatus.ReadOnly = true;
+            this.vaccinationStatus.Width = 85;
+            // 
+            // lastVaccinationDate
+            // 
+            this.lastVaccinationDate.HeaderText = "Last Vaccination Date";
+            this.lastVaccinationDate.Name = "lastVaccinationDate";
+            this.lastVaccinationDate.ReadOnly = true;
+            this.lastVaccinationDate.Width = 85;
             // 
             // yearly_report_info
             // 
@@ -694,48 +746,6 @@
             this.display_nav.Name = "display_nav";
             this.display_nav.Size = new System.Drawing.Size(5, 361);
             this.display_nav.TabIndex = 24;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "User ID";
-            this.ID.Name = "ID";
-            this.ID.Width = 85;
-            // 
-            // firstName
-            // 
-            this.firstName.HeaderText = "First Name";
-            this.firstName.Name = "firstName";
-            this.firstName.Width = 85;
-            // 
-            // lastName
-            // 
-            this.lastName.HeaderText = "Last Name";
-            this.lastName.Name = "lastName";
-            this.lastName.Width = 85;
-            // 
-            // age
-            // 
-            this.age.HeaderText = "Age";
-            this.age.Name = "age";
-            this.age.Width = 85;
-            // 
-            // gender
-            // 
-            this.gender.HeaderText = "Gender";
-            this.gender.Name = "gender";
-            this.gender.Width = 85;
-            // 
-            // vaccinationStatus
-            // 
-            this.vaccinationStatus.HeaderText = "Vaccination Status";
-            this.vaccinationStatus.Name = "vaccinationStatus";
-            this.vaccinationStatus.Width = 85;
-            // 
-            // lastVaccinationDate
-            // 
-            this.lastVaccinationDate.HeaderText = "Last Vaccination Date";
-            this.lastVaccinationDate.Name = "lastVaccinationDate";
-            this.lastVaccinationDate.Width = 85;
             // 
             // Staff_Main
             // 
