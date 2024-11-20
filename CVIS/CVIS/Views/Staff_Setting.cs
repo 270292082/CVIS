@@ -81,22 +81,19 @@ namespace CVIS.Views
             }
 
 
-            Staff updateStaff = new Staff
-            {
-                ID = _staff.ID,
-                username = username_input.Text,
-                password = password_input.Text,
+            _staff.username = username_input.Text;
+            _staff.password = password_input.Text;
 
-                email = email_input.Text,
-                phone = phone_input.Text,
-                address = address_input.Text,
+            _staff.email = email_input.Text;
+            _staff.phone = phone_input.Text;
+            _staff.address = address_input.Text;
 
-                medicalLicense = medlicense_input.Text,
-                licenseExp = licenseexp_input.Text
-            };
+            _staff.medicalLicense = medlicense_input.Text;
+            _staff.licenseExp = licenseexp_input.Text;
+
 
             // database update function
-            Database.UpdateStaffInDatabase(updateStaff);
+            Database.UpdateStaffInDatabase(_staff);
         }
     }
 }

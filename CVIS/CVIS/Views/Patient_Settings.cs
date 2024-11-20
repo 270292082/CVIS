@@ -95,24 +95,20 @@ namespace CVIS
                 return;
             }
 
-            Patient updatedPatient = new Patient
-            {
-                ID = _patient.ID,
-                username = username_input.Text,
-                password = password_input.Text,
+            _patient.username = username_input.Text;
+            _patient.password = password_input.Text;
 
-                email = email_input.Text,
-                address = address_input.Text,
-                phone = phone_input.Text,
+            _patient.email = email_input.Text;
+            _patient.address = address_input.Text;
+            _patient.phone = phone_input.Text;
 
-                emergencyContactFirstName = efirstname_input.Text,
-                emergencyContactLastName = elastname_input.Text,
-                emergencyContactPhone = ephone_input.Text,
-                emergencyContactRelation = erelation_input.Text,
-            };
+            _patient.emergencyContactFirstName = efirstname_input.Text;
+            _patient.emergencyContactLastName = elastname_input.Text;
+            _patient.emergencyContactPhone = ephone_input.Text;
+            _patient.emergencyContactRelation = erelation_input.Text;
 
             // call update function
-            Database.UpdatePatientInDatabase(updatedPatient);
+            Database.UpdatePatientInDatabase(_patient);
         }
 
         private void logo_Click(object sender, EventArgs e)
