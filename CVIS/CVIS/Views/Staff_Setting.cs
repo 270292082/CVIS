@@ -66,17 +66,37 @@ namespace CVIS.Views
 
         private void apply_btn_Click(object sender, EventArgs e)
         {
-            _staff.username = username_input.Text;
-            _staff.password = password_input.Text;
-            
-            _staff.email = email_input.Text;
-            _staff.address = address_input.Text;
-            _staff.phone = phone_input.Text;
+            // not to leave blank
+            if (string.IsNullOrWhiteSpace(username_input.Text) ||
+                string.IsNullOrWhiteSpace(password_input.Text) ||
+                string.IsNullOrWhiteSpace(firstname_input.Text) ||
+                string.IsNullOrWhiteSpace(lastname_input.Text) ||
+                string.IsNullOrWhiteSpace(role_input.Text) ||
+                string.IsNullOrWhiteSpace(email_input.Text) ||
+                string.IsNullOrWhiteSpace(address_input.Text) ||
+                string.IsNullOrWhiteSpace(phone_input.Text))
+            {
+                MessageBox.Show("Please fill in all required fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Stop further execution
+            }
 
-            _staff.medicalLicense = medlicense_input.Text;
-            _staff.licenseExp= licenseexp_input.Text;
 
-            Database.UpdateStaffInDatabase(_staff); 
+            Staff updateStaff = new Staff
+            {
+                ID = _staff.ID,
+                username = username_input.Text,
+                password = password_input.Text,
+
+                email = email_input.Text,
+                phone = phone_input.Text,
+                address = address_input.Text,
+
+                medicalLicense = medlicense_input.Text,
+                licenseExp = licenseexp_input.Text
+            };
+
+            // database update function
+            Database.UpdateStaffInDatabase(updateStaff);
         }
     }
 }
