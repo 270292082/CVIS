@@ -265,11 +265,6 @@ namespace CVIS
 
         }
 
-        private void dataGridVaccine_CellEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
         private void update_btn_Click(object sender, EventArgs e)
         {
             if (!_patients.ContainsKey(search.Text))

@@ -85,6 +85,13 @@
             this.tabBtn2 = new System.Windows.Forms.Button();
             this.tabBtn1 = new System.Windows.Forms.Button();
             this.display_nav = new System.Windows.Forms.Panel();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vaccinationStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastVaccinationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.banner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menu_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_button)).BeginInit();
@@ -429,7 +436,6 @@
             this.dataGridVaccine.RowTemplate.Height = 25;
             this.dataGridVaccine.Size = new System.Drawing.Size(571, 101);
             this.dataGridVaccine.TabIndex = 21;
-            this.dataGridVaccine.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridVaccine_CellEnter);
             // 
             // vac_nb
             // 
@@ -489,6 +495,14 @@
             this.dataGridVaccines2.BackgroundColor = System.Drawing.Color.LightCyan;
             this.dataGridVaccines2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridVaccines2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridVaccines2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.firstName,
+            this.lastName,
+            this.age,
+            this.gender,
+            this.vaccinationStatus,
+            this.lastVaccinationDate});
             this.dataGridVaccines2.Location = new System.Drawing.Point(7, 127);
             this.dataGridVaccines2.Name = "dataGridVaccines2";
             this.dataGridVaccines2.RowTemplate.Height = 25;
@@ -681,6 +695,48 @@
             this.display_nav.Size = new System.Drawing.Size(5, 361);
             this.display_nav.TabIndex = 24;
             // 
+            // ID
+            // 
+            this.ID.HeaderText = "User ID";
+            this.ID.Name = "ID";
+            this.ID.Width = 85;
+            // 
+            // firstName
+            // 
+            this.firstName.HeaderText = "First Name";
+            this.firstName.Name = "firstName";
+            this.firstName.Width = 85;
+            // 
+            // lastName
+            // 
+            this.lastName.HeaderText = "Last Name";
+            this.lastName.Name = "lastName";
+            this.lastName.Width = 85;
+            // 
+            // age
+            // 
+            this.age.HeaderText = "Age";
+            this.age.Name = "age";
+            this.age.Width = 85;
+            // 
+            // gender
+            // 
+            this.gender.HeaderText = "Gender";
+            this.gender.Name = "gender";
+            this.gender.Width = 85;
+            // 
+            // vaccinationStatus
+            // 
+            this.vaccinationStatus.HeaderText = "Vaccination Status";
+            this.vaccinationStatus.Name = "vaccinationStatus";
+            this.vaccinationStatus.Width = 85;
+            // 
+            // lastVaccinationDate
+            // 
+            this.lastVaccinationDate.HeaderText = "Last Vaccination Date";
+            this.lastVaccinationDate.Name = "lastVaccinationDate";
+            this.lastVaccinationDate.Width = 85;
+            // 
             // Staff_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -826,5 +882,12 @@
         private DataGridViewTextBoxColumn patient_emergencyPhone;
         private DataGridViewTextBoxColumn patient_emergencyRelation;
         private Panel display_nav;
+        private DataGridViewTextBoxColumn ID;
+        private DataGridViewTextBoxColumn firstName;
+        private DataGridViewTextBoxColumn lastName;
+        private DataGridViewTextBoxColumn age;
+        private DataGridViewTextBoxColumn gender;
+        private DataGridViewTextBoxColumn vaccinationStatus;
+        private DataGridViewTextBoxColumn lastVaccinationDate;
     }
 }
