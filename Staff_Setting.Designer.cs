@@ -73,6 +73,7 @@
             menu_button.SizeMode = PictureBoxSizeMode.Zoom;
             menu_button.TabIndex = 2;
             menu_button.TabStop = false;
+            menu_button.Click += menu_button_Click;
             // 
             // logo
             // 
@@ -84,6 +85,7 @@
             logo.SizeMode = PictureBoxSizeMode.Zoom;
             logo.TabIndex = 0;
             logo.TabStop = false;
+            logo.Click += logo_Click;
             // 
             // banner
             // 
@@ -109,6 +111,7 @@
             profile_button.SizeMode = PictureBoxSizeMode.Zoom;
             profile_button.TabIndex = 1;
             profile_button.TabStop = false;
+            profile_button.Click += profile_button_Click;
             // 
             // qrcode_display
             // 
@@ -179,6 +182,7 @@
             apply_btn.TabIndex = 24;
             apply_btn.Text = "Apply";
             apply_btn.UseVisualStyleBackColor = false;
+            apply_btn.Click += apply_btn_Click;
             // 
             // address_input
             // 
